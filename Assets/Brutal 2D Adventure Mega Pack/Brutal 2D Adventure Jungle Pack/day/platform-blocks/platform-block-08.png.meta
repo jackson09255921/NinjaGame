@@ -53,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0.2
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -79,7 +79,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -92,7 +92,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -105,15 +105,48 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
-    physicsShape: []
+    physicsShape:
+    - - {x: 118.5, y: -170.5}
+      - {x: 101.5, y: -150.5}
+      - {x: 135.5, y: -116.5}
+      - {x: 139.5, y: -98.5}
+      - {x: 139.5, y: 1.5}
+      - {x: 133.5, y: 49.5}
+      - {x: 139.5, y: 67.5}
+      - {x: 139.5, y: 93.5}
+      - {x: 138.5, y: 98.5}
+      - {x: 130.5, y: 112.5}
+      - {x: 122.5, y: 121.5}
+      - {x: 125.5, y: 150.5}
+      - {x: 131.5, y: 179.5}
+      - {x: 139.5, y: 215.5}
+      - {x: 139.5, y: 252.5}
+      - {x: -139.5, y: 252.5}
+      - {x: -139.5, y: -252.5}
+      - {x: 139.5, y: -252.5}
+      - {x: 139.5, y: -232.5}
+      - {x: 131.5, y: -199.5}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
