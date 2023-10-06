@@ -4,33 +4,55 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    public Animator animator;  // 新增Animator變量
     public float moveSpeed = 5f;
+    public float moveSpeedUp = 8f;
     public float jumpForce = 10f;
 
     private Rigidbody2D rb;
     private bool isGrounded;
+    private float horizontalMove = 0f;
+    private bool equipment = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();  // 初始化animator
     }
 
     void Update()
     {
         MoveCharacter();
+        EquipmentChange();
         Jump();
+        Attack();
+    }
+
+    void EquipmentChange()
+    {
+        equipment = !equipment;
+        if (Input.GetKeyDown("c"))
+        {
+            animator.SetBool("Equipment", equipment);
+        }
+    }
+
+    void Attack()
+    {
+        if (Input.GetKeyDown("j"))
+        {
+            animator.SetTrigger("Attack");
+        }
     }
 
     void MoveCharacter()
     {
-        float moveInputHorizontal = Input.GetAxis("Horizontal");
-        float moveInputVertical = Input.GetAxis("Vertical");
-
-        Vector2 movement = new Vector2(moveInputHorizontal, moveInputVertical);
-        movement.Normalize(); // Normalize to prevent faster diagonal movement
+        horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
         // Move the character
-        rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(horizontalMove, rb.velocity.y);
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
     }
 
     void Jump()
