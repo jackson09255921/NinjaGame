@@ -1,0 +1,948 @@
+fileFormatVersion: 2
+guid: 49c40e6beaf30614fb0b4d9625b79215
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: shaman1_Frame_0
+    originalName: 
+    pivot: {x: 0.8243243, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 227
+      width: 37
+      height: 49
+    spriteID: efe9bb98234544b49abbaa5d53764c63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 227}
+  - name: shaman1_Frame_1
+    originalName: 
+    pivot: {x: 0.82894737, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 177
+      width: 38
+      height: 50
+    spriteID: d2eb5c9667205ca4eb38774b864fd9d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 177}
+  - name: shaman1_Frame_2
+    originalName: 
+    pivot: {x: 0.82894737, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 235
+      width: 38
+      height: 50
+    spriteID: 2048b36291b6a8b4f90c5920389873fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 235}
+  - name: shaman1_Frame_3
+    originalName: 
+    pivot: {x: 0.82894737, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 407
+      width: 38
+      height: 49
+    spriteID: 07bff0d9ff364df4daeb76913dd602cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 407}
+  - name: shaman1_Frame_4
+    originalName: 
+    pivot: {x: 0.82894737, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 56
+      width: 38
+      height: 49
+    spriteID: 2ab7561e0f453174c94a920698b9720a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 56}
+  - name: shaman1_Frame_5
+    originalName: 
+    pivot: {x: 0.8552632, y: -0.02}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 293
+      width: 38
+      height: 50
+    spriteID: 3d03e01bfa3af0149b40e2e114b3a31e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 293}
+  - name: shaman1_Frame_6
+    originalName: 
+    pivot: {x: 0.8513514, y: -0.020408163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 284
+      width: 37
+      height: 49
+    spriteID: 3f7d600116877904daf3848f216c9baf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 284}
+  - name: shaman1_Frame_7
+    originalName: 
+    pivot: {x: 0.8472222, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 455
+      width: 36
+      height: 49
+    spriteID: 1dfb2dffaf69d7b47a538cfc56df3d95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 455}
+  - name: shaman1_Frame_8
+    originalName: 
+    pivot: {x: 0.8552632, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 118
+      width: 38
+      height: 51
+    spriteID: 0bd0a38496041184bb0fb55ed4b89a19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 118}
+  - name: shaman1_Frame_9
+    originalName: 
+    pivot: {x: 0.8513514, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 113
+      width: 37
+      height: 50
+    spriteID: f8e5b5bf3416305408edd80e544500a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 113}
+  - name: shaman1_Frame_10
+    originalName: 
+    pivot: {x: 0.8472222, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 179
+      y: 4
+      width: 36
+      height: 49
+    spriteID: d7112e2c813223d4c9fea2b630c14d7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 179, y: 4}
+  - name: shaman1_Frame_11
+    originalName: 
+    pivot: {x: 0.8243243, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 341
+      width: 37
+      height: 49
+    spriteID: 2fd710dff459b794591294b7dfa04ae1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 341}
+  - name: shaman1_Frame_12
+    originalName: 
+    pivot: {x: 0.8142857, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 179
+      y: 61
+      width: 35
+      height: 49
+    spriteID: 696e522d57231284fb4b8228b79d874c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 179, y: 61}
+  - name: shaman1_Frame_13
+    originalName: 
+    pivot: {x: 0.78571427, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 179
+      y: 118
+      width: 35
+      height: 49
+    spriteID: c62f63a75da9e614eb5b219cc407c316
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 179, y: 118}
+  - name: shaman1_Frame_14
+    originalName: 
+    pivot: {x: 0.53, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 176
+      width: 50
+      height: 49
+    spriteID: 1478d772b7dd1b843876ee23c7e33126
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 176}
+  - name: shaman1_Frame_15
+    originalName: 
+    pivot: {x: 0.57608694, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 451
+      width: 46
+      height: 49
+    spriteID: 663d197f962b4d443af8e0cc4e08128a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 451}
+  - name: shaman1_Frame_16
+    originalName: 
+    pivot: {x: 0.6195652, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 4
+      width: 46
+      height: 49
+    spriteID: b32b4f35de06dca4a9def14d2fd4ce23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 4}
+  - name: shaman1_Frame_17
+    originalName: 
+    pivot: {x: 0.8243243, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 398
+      width: 37
+      height: 49
+    spriteID: 9cce1ab9234fd6c4bba42d91f6815370
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 398}
+  - name: shaman1_Frame_18
+    originalName: 
+    pivot: {x: 0.82894737, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 171
+      width: 38
+      height: 48
+    spriteID: 219b54877030ec14b817b83afdc4ec22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 171}
+  - name: shaman1_Frame_19
+    originalName: 
+    pivot: {x: 0.8333333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 351
+      width: 39
+      height: 48
+    spriteID: 5ae727e846ef16f4a8b21d59d889f9e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 351}
+  - name: shaman1_Frame_20
+    originalName: 
+    pivot: {x: 0.6388889, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 62
+      width: 54
+      height: 49
+    spriteID: 80df0ab71626d244da7194c6f3809c9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 62}
+  - name: shaman1_Frame_21
+    originalName: 
+    pivot: {x: 0.6764706, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 119
+      width: 51
+      height: 49
+    spriteID: 5724df183bff12349b8e0f6be7ab9f66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 119}
+  - name: shaman1_Frame_22
+    originalName: 
+    pivot: {x: 0.6979167, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 285
+      width: 48
+      height: 49
+    spriteID: 59e5ad59b12acf4419f98fa27f666407
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 285}
+  - name: shaman1_Frame_23
+    originalName: 
+    pivot: {x: 0.71875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 342
+      width: 48
+      height: 49
+    spriteID: a8fb18e1d296153449247c310840df50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 342}
+  - name: shaman1_Frame_24
+    originalName: 
+    pivot: {x: 0.76666665, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 61
+      width: 45
+      height: 49
+    spriteID: 5e03276eecc503748bf8720376df863f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 61}
+  - name: shaman1_Frame_25
+    originalName: 
+    pivot: {x: 0.46363637, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 55
+      height: 50
+    spriteID: f3b9bc9a0812b3d489a74b2d90250d64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: shaman1_Frame_26
+    originalName: 
+    pivot: {x: 0.37272725, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 233
+      width: 55
+      height: 44
+    spriteID: d11b1606fbffd5941978283c7eedc815
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 233}
+  - name: shaman1_Frame_27
+    originalName: 
+    pivot: {x: 0.38679245, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 399
+      width: 53
+      height: 44
+    spriteID: f2096b0880db0b5479c4b5e91fb5c166
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 399}
+  - name: shaman1_Frame_28
+    originalName: 
+    pivot: {x: 0.41, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 4
+      width: 50
+      height: 44
+    spriteID: ec5565af79d07f2459aef6ec676877ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 826649161
+    name: shaman1
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: shaman1_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 4
+        y: 0
+        width: 37
+        height: 49
+      spriteId: efe9bb98234544b49abbaa5d53764c63
+    - name: shaman1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 3
+        y: 0
+        width: 38
+        height: 50
+      spriteId: d2eb5c9667205ca4eb38774b864fd9d8
+    - name: shaman1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 3
+        y: 0
+        width: 38
+        height: 50
+      spriteId: 2048b36291b6a8b4f90c5920389873fe
+    - name: shaman1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 3
+        y: 0
+        width: 38
+        height: 49
+      spriteId: 07bff0d9ff364df4daeb76913dd602cc
+    - name: shaman1_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 3
+        y: 0
+        width: 38
+        height: 49
+      spriteId: 2ab7561e0f453174c94a920698b9720a
+    - name: shaman1_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 2
+        y: 1
+        width: 38
+        height: 50
+      spriteId: 3d03e01bfa3af0149b40e2e114b3a31e
+    - name: shaman1_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 3
+        y: 1
+        width: 37
+        height: 49
+      spriteId: 3f7d600116877904daf3848f216c9baf
+    - name: shaman1_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 4
+        y: 0
+        width: 36
+        height: 49
+      spriteId: 1dfb2dffaf69d7b47a538cfc56df3d95
+    - name: shaman1_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 2
+        y: 0
+        width: 38
+        height: 51
+      spriteId: 0bd0a38496041184bb0fb55ed4b89a19
+    - name: shaman1_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 3
+        y: 0
+        width: 37
+        height: 50
+      spriteId: f8e5b5bf3416305408edd80e544500a9
+    - name: shaman1_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 4
+        y: 0
+        width: 36
+        height: 49
+      spriteId: d7112e2c813223d4c9fea2b630c14d7c
+    - name: shaman1_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 4
+        y: 0
+        width: 37
+        height: 49
+      spriteId: 2fd710dff459b794591294b7dfa04ae1
+    - name: shaman1_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 6
+        y: 0
+        width: 35
+        height: 49
+      spriteId: 696e522d57231284fb4b8228b79d874c
+    - name: shaman1_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 7
+        y: 0
+        width: 35
+        height: 49
+      spriteId: c62f63a75da9e614eb5b219cc407c316
+    - name: shaman1_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 8
+        y: 0
+        width: 50
+        height: 49
+      spriteId: 1478d772b7dd1b843876ee23c7e33126
+    - name: shaman1_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 8
+        y: 0
+        width: 46
+        height: 49
+      spriteId: 663d197f962b4d443af8e0cc4e08128a
+    - name: shaman1_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 6
+        y: 0
+        width: 46
+        height: 49
+      spriteId: b32b4f35de06dca4a9def14d2fd4ce23
+    - name: shaman1_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 4
+        y: 0
+        width: 37
+        height: 49
+      spriteId: 9cce1ab9234fd6c4bba42d91f6815370
+    - name: shaman1_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 3
+        y: 0
+        width: 38
+        height: 48
+      spriteId: 219b54877030ec14b817b83afdc4ec22
+    - name: shaman1_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 2
+        y: 0
+        width: 39
+        height: 48
+      spriteId: 5ae727e846ef16f4a8b21d59d889f9e5
+    - name: shaman1_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: 0
+        width: 54
+        height: 49
+      spriteId: 80df0ab71626d244da7194c6f3809c9f
+    - name: shaman1_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: 0
+        width: 51
+        height: 49
+      spriteId: 5724df183bff12349b8e0f6be7ab9f66
+    - name: shaman1_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 1
+        y: 0
+        width: 48
+        height: 49
+      spriteId: 59e5ad59b12acf4419f98fa27f666407
+    - name: shaman1_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: 0
+        width: 48
+        height: 49
+      spriteId: a8fb18e1d296153449247c310840df50
+    - name: shaman1_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: 0
+        width: 45
+        height: 49
+      spriteId: 5e03276eecc503748bf8720376df863f
+    - name: shaman1_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 9
+        y: 0
+        width: 55
+        height: 50
+      spriteId: f3b9bc9a0812b3d489a74b2d90250d64
+    - name: shaman1_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 14
+        y: 0
+        width: 55
+        height: 44
+      spriteId: d11b1606fbffd5941978283c7eedc815
+    - name: shaman1_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 14
+        y: 0
+        width: 53
+        height: 44
+      spriteId: f2096b0880db0b5479c4b5e91fb5c166
+    - name: shaman1_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 14
+        y: 0
+        width: 50
+        height: 44
+      spriteId: ec5565af79d07f2459aef6ec676877ff
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 69, y: 51}
