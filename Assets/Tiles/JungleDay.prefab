@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 1785316991648567382}
   - component: {fileID: 1541243845005687639}
   m_Layer: 0
-  m_Name: Palette1
+  m_Name: JungleDay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
