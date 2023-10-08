@@ -160,10 +160,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 1}
-        - {x: -8, y: -8}
-        - {x: 7, y: -8}
-        - {x: 7, y: 1}
+      - - {x: -7, y: 1}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: a3cc99527f1aff9469e68630f4b1bbd8
@@ -185,10 +185,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7, y: 1}
-        - {x: -7, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 1}
+      - - {x: -8, y: 1}
+        - {x: -8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: d17266619d00a25428a0c44a3c21a348
@@ -210,10 +210,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 1}
-        - {x: -8, y: -8}
-        - {x: 7, y: -8}
-        - {x: 7, y: 1}
+      - - {x: 5, y: -5}
+        - {x: 5, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -5}
       tessellationDetail: 0
       bones: []
       spriteID: 1b84f68e27f9326448686547b25c57b1
@@ -235,11 +235,11 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -8, y: -5}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
-      tessellationDetail: 1
+        - {x: 8, y: -5}
+      tessellationDetail: 0
       bones: []
       spriteID: 288c8dff587bac04c95657af59169b32
       internalID: 779885910
@@ -260,10 +260,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 334d72d80ae083b4ab9fd5932d1f89a9
@@ -285,10 +285,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 5f5ca315b636620429003c4b0d12fc7a
@@ -310,10 +310,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: d161e869cf543f14ea297789a2cc7810
@@ -326,8 +326,8 @@ TextureImporter:
       name: DoorWindow_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 176
+        x: 0
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -335,10 +335,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 7883cfb4a602ff64ca1177f7f6c6ac0e
@@ -351,8 +351,8 @@ TextureImporter:
       name: DoorWindow_9
       rect:
         serializedVersion: 2
-        x: 144
-        y: 176
+        x: 16
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -360,10 +360,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: defc35e62c022b945b1db427a5e2eae5
@@ -376,8 +376,8 @@ TextureImporter:
       name: DoorWindow_10
       rect:
         serializedVersion: 2
-        x: 160
-        y: 176
+        x: 32
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -385,10 +385,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 73a741520c4ab2447a0280a1cac8a90f
@@ -401,8 +401,8 @@ TextureImporter:
       name: DoorWindow_11
       rect:
         serializedVersion: 2
-        x: 176
-        y: 176
+        x: 48
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -410,10 +410,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 02de2152ac4ed3741a79770a593e77f7
@@ -426,8 +426,8 @@ TextureImporter:
       name: DoorWindow_12
       rect:
         serializedVersion: 2
-        x: 192
-        y: 176
+        x: 64
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -435,10 +435,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 31cddfb32eaf91c4e829759f015fef2b
@@ -451,8 +451,8 @@ TextureImporter:
       name: DoorWindow_13
       rect:
         serializedVersion: 2
-        x: 208
-        y: 176
+        x: 80
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -460,10 +460,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: efe4ad0b7f1249e40b763ae833fc95e1
@@ -476,8 +476,8 @@ TextureImporter:
       name: DoorWindow_14
       rect:
         serializedVersion: 2
-        x: 224
-        y: 176
+        x: 96
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -485,10 +485,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: e9807e19a8f8d6e4c9c55e1d5cdea665
@@ -501,8 +501,8 @@ TextureImporter:
       name: DoorWindow_15
       rect:
         serializedVersion: 2
-        x: 240
-        y: 176
+        x: 0
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -510,10 +510,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: c0dfb8ee69f49eb4cb16a26008993dca
@@ -526,8 +526,8 @@ TextureImporter:
       name: DoorWindow_16
       rect:
         serializedVersion: 2
-        x: 256
-        y: 176
+        x: 16
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -535,10 +535,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 1ab15ba2d5346df47a92987a005b075c
@@ -551,8 +551,8 @@ TextureImporter:
       name: DoorWindow_17
       rect:
         serializedVersion: 2
-        x: 272
-        y: 176
+        x: 32
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -560,10 +560,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 4820ff62e82bdef4da6bf6d9950ddbd3
@@ -576,8 +576,8 @@ TextureImporter:
       name: DoorWindow_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 48
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -585,10 +585,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 51f61b825bae3024fb0648c41a81cd9c
@@ -601,8 +601,8 @@ TextureImporter:
       name: DoorWindow_19
       rect:
         serializedVersion: 2
-        x: 16
-        y: 160
+        x: 64
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -610,10 +610,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: a0b05f84f5b93f44f8dfcc7507442620
@@ -626,8 +626,8 @@ TextureImporter:
       name: DoorWindow_20
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
+        x: 80
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -635,10 +635,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 102860c9f3c64ee438947b6cd2ba42d2
@@ -651,8 +651,8 @@ TextureImporter:
       name: DoorWindow_21
       rect:
         serializedVersion: 2
-        x: 48
-        y: 160
+        x: 0
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -660,10 +660,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
+      - - {x: -7, y: 1}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: 56d902ae0ce80db449f33a409bece3b3
@@ -676,8 +676,8 @@ TextureImporter:
       name: DoorWindow_22
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
+        x: 16
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -685,10 +685,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
+      - - {x: -7, y: 1}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: fc3e2d7476f4e0b43857a9a3b28cc761
@@ -701,8 +701,8 @@ TextureImporter:
       name: DoorWindow_23
       rect:
         serializedVersion: 2
-        x: 80
-        y: 160
+        x: 48
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -726,8 +726,8 @@ TextureImporter:
       name: DoorWindow_24
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
+        x: 64
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -735,10 +735,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 1703810c63282c946979e1e8bfb03a9c
@@ -751,8 +751,8 @@ TextureImporter:
       name: DoorWindow_25
       rect:
         serializedVersion: 2
-        x: 112
-        y: 160
+        x: 80
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -760,10 +760,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 502b349915071d341a8745d23287f0c0
@@ -776,8 +776,8 @@ TextureImporter:
       name: DoorWindow_26
       rect:
         serializedVersion: 2
-        x: 128
-        y: 160
+        x: 0
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -785,8 +785,8 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
@@ -801,8 +801,8 @@ TextureImporter:
       name: DoorWindow_27
       rect:
         serializedVersion: 2
-        x: 144
-        y: 160
+        x: 16
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -826,8 +826,8 @@ TextureImporter:
       name: DoorWindow_28
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
+        x: 32
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -835,10 +835,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: b8caad7afecad8240970c499a5d5d19a
@@ -851,8 +851,8 @@ TextureImporter:
       name: DoorWindow_29
       rect:
         serializedVersion: 2
-        x: 176
-        y: 160
+        x: 48
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -860,10 +860,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
+      - - {x: 5, y: 8}
+        - {x: 5, y: 5}
+        - {x: 8, y: 5}
         - {x: 8, y: 8}
-        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: 6eaf2af3701df9e4f8f4692ccac1ffb2
@@ -876,8 +876,8 @@ TextureImporter:
       name: DoorWindow_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
+        x: 64
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -886,8 +886,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
+        - {x: -8, y: 5}
+        - {x: 8, y: 5}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -901,8 +901,8 @@ TextureImporter:
       name: DoorWindow_31
       rect:
         serializedVersion: 2
-        x: 208
-        y: 160
+        x: 80
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -910,10 +910,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: e8b3166f71d5ceb45b989b2052af07f4
@@ -926,8 +926,8 @@ TextureImporter:
       name: DoorWindow_32
       rect:
         serializedVersion: 2
-        x: 224
-        y: 160
+        x: 0
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -935,10 +935,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 99e0e955a3d79584095f289fb732fdba
@@ -951,8 +951,8 @@ TextureImporter:
       name: DoorWindow_33
       rect:
         serializedVersion: 2
-        x: 240
-        y: 160
+        x: 16
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -960,8 +960,8 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
@@ -976,8 +976,8 @@ TextureImporter:
       name: DoorWindow_34
       rect:
         serializedVersion: 2
-        x: 256
-        y: 160
+        x: 0
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -985,10 +985,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
+      - - {x: -7, y: 1}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
-        - {x: 8, y: 8}
+        - {x: 8, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: 1a4ba58c80015834abc295c26abaf4fc
@@ -1001,8 +1001,8 @@ TextureImporter:
       name: DoorWindow_35
       rect:
         serializedVersion: 2
-        x: 272
-        y: 160
+        x: 16
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1010,10 +1010,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
+      - - {x: -7, y: 1}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: d08438bae44f211469e20eb8b9719840
@@ -1026,8 +1026,8 @@ TextureImporter:
       name: DoorWindow_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
+        x: 48
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1035,10 +1035,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
+      - - {x: 5, y: -5}
+        - {x: 5, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: -5}
       tessellationDetail: 0
       bones: []
       spriteID: b0ce841ff72478e45a5b8fdadc4fc4b5
@@ -1051,8 +1051,8 @@ TextureImporter:
       name: DoorWindow_37
       rect:
         serializedVersion: 2
-        x: 16
-        y: 144
+        x: 64
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1060,10 +1060,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
+      - - {x: -8, y: -5}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -5}
       tessellationDetail: 0
       bones: []
       spriteID: dc9b8fbe62b577e44a33c0d4ae59ce2b
@@ -1076,8 +1076,8 @@ TextureImporter:
       name: DoorWindow_38
       rect:
         serializedVersion: 2
-        x: 32
-        y: 144
+        x: 80
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1085,10 +1085,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: d9a8aa9ee743e7848859a75953c20555
@@ -1101,8 +1101,8 @@ TextureImporter:
       name: DoorWindow_39
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
+        x: 0
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1110,10 +1110,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: d1cd2fe29772b6b43865e34fcc0831d6
@@ -1126,8 +1126,8 @@ TextureImporter:
       name: DoorWindow_40
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
+        x: 16
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1135,10 +1135,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 88060b18cec91f14e9b8392770c825a1
@@ -1151,8 +1151,8 @@ TextureImporter:
       name: DoorWindow_41
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
+        x: 32
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1160,10 +1160,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: fa8130f7c428bc349a8c1d23217a6430
@@ -1176,8 +1176,8 @@ TextureImporter:
       name: DoorWindow_42
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
+        x: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1185,10 +1185,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 763b899597e8b404eb187b7ed511ff43
@@ -1201,8 +1201,8 @@ TextureImporter:
       name: DoorWindow_43
       rect:
         serializedVersion: 2
-        x: 112
-        y: 144
+        x: 64
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1210,10 +1210,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 2b1b809204a1e2340857b06e89bf2d39
@@ -1226,8 +1226,8 @@ TextureImporter:
       name: DoorWindow_44
       rect:
         serializedVersion: 2
-        x: 128
-        y: 144
+        x: 80
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1235,10 +1235,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: c0b105ed7e233a54da39e5d138967353
@@ -1251,8 +1251,8 @@ TextureImporter:
       name: DoorWindow_45
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
+        x: 0
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1260,10 +1260,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: eef0e06474096174ba67d729c02c2ffe
@@ -1276,8 +1276,8 @@ TextureImporter:
       name: DoorWindow_46
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
+        x: 16
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1285,10 +1285,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 2ce9a468f9b66df43a33eb3d2ddd113c
@@ -1301,8 +1301,8 @@ TextureImporter:
       name: DoorWindow_47
       rect:
         serializedVersion: 2
-        x: 176
-        y: 144
+        x: 48
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1310,10 +1310,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: dec16dc76818c454fbbc3ab632efd439
@@ -1326,8 +1326,8 @@ TextureImporter:
       name: DoorWindow_48
       rect:
         serializedVersion: 2
-        x: 192
-        y: 144
+        x: 64
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1335,10 +1335,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: b68a843ae58dd6c4ba0c2b5334b1ab26
@@ -1351,8 +1351,8 @@ TextureImporter:
       name: DoorWindow_49
       rect:
         serializedVersion: 2
-        x: 208
-        y: 144
+        x: 80
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1360,10 +1360,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 7d2a5c890f685784e866e9762c816072
@@ -1376,8 +1376,8 @@ TextureImporter:
       name: DoorWindow_50
       rect:
         serializedVersion: 2
-        x: 224
-        y: 144
+        x: 0
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -1385,10 +1385,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
+      - - {x: -7, y: 1}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: a4eca1d14258171449a908554d479023
@@ -1401,8 +1401,8 @@ TextureImporter:
       name: DoorWindow_51
       rect:
         serializedVersion: 2
-        x: 240
-        y: 144
+        x: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -1410,10 +1410,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
+      - - {x: -7, y: 1}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: 7c656f4ed0a7adf4c91970a889968f37
@@ -1426,8 +1426,8 @@ TextureImporter:
       name: DoorWindow_52
       rect:
         serializedVersion: 2
-        x: 256
-        y: 144
+        x: 48
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -1435,10 +1435,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: 8, y: 5}
       tessellationDetail: 0
       bones: []
       spriteID: 5b039e71a9b6b0b438d277056b6cf537
@@ -1451,8 +1451,8 @@ TextureImporter:
       name: DoorWindow_53
       rect:
         serializedVersion: 2
-        x: 272
-        y: 144
+        x: 64
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -1460,10 +1460,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 0ede74f709553fa48abc1e556a60d2f7
@@ -1476,8 +1476,8 @@ TextureImporter:
       name: DoorWindow_54
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 80
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -1485,10 +1485,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7, y: 1}
-        - {x: -7, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
-        - {x: 8, y: 1}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: ad6b2317f5e422a46a21049532b00307
@@ -1501,8 +1501,8 @@ TextureImporter:
       name: DoorWindow_55
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -1510,10 +1510,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 1}
-        - {x: -8, y: -8}
-        - {x: 7, y: -8}
-        - {x: 7, y: 1}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: caac1fdc6daf72e479b5dbd0e993a45f
@@ -1526,8 +1526,8 @@ TextureImporter:
       name: DoorWindow_56
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 16
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -1535,10 +1535,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7, y: 1}
+      - - {x: -7, y: 8}
         - {x: -7, y: -8}
         - {x: 8, y: -8}
-        - {x: 8, y: 1}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: ba603db956515684d8e7290c3761d201
@@ -1551,8 +1551,8 @@ TextureImporter:
       name: DoorWindow_57
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
+        x: 32
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -1560,10 +1560,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 1}
+      - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: 7, y: -8}
-        - {x: 7, y: 1}
+        - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 10cecb610e91ccc44a0d1427809f557c
@@ -1576,8 +1576,8 @@ TextureImporter:
       name: DoorWindow_58
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -1585,10 +1585,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
+      - - {x: 5, y: 8}
+        - {x: 5, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 8593819c262c8024aa6f09bd9237c700
@@ -1601,8 +1601,8 @@ TextureImporter:
       name: DoorWindow_59
       rect:
         serializedVersion: 2
-        x: 80
-        y: 128
+        x: 64
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -1610,10 +1610,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 239ae43eca923e34d995981954343b56
@@ -1626,8 +1626,8 @@ TextureImporter:
       name: DoorWindow_60
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -1635,10 +1635,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 192086bf28318aa4e9dc1be95605db3f
@@ -1651,8 +1651,8 @@ TextureImporter:
       name: DoorWindow_61
       rect:
         serializedVersion: 2
-        x: 112
-        y: 128
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -1660,10 +1660,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: dea7866961dff3b4997c36f190645426
@@ -1676,8 +1676,8 @@ TextureImporter:
       name: DoorWindow_62
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -1685,3289 +1685,14 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
+      - - {x: -7, y: 8}
+        - {x: -7, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 69f4f0afb0ac7fb4cbc9ba31322fa08d
       internalID: 130778730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_63
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 966166aa6598bb1469c88c2ad076d130
-      internalID: 1550993776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_64
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fdec281799d9d24682f0be59b9709af
-      internalID: 1980796682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_65
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7835230f8ad9c0841a9e34ddffd34afc
-      internalID: 1990601473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_66
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: b76d6c7da266f5e44a2de24e03a29d0d
-      internalID: 1354583425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_67
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ffa9a920848786418e1a15adac9258a
-      internalID: 1972562465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_68
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2174b5d7d6139d4ca10aa30d7859359
-      internalID: -1628687804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_69
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b0fdd604bc54e54fbccc1eeb9b9c534
-      internalID: -969382828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_70
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: b958c54bac18ec74aa0bfd8a768a2e3d
-      internalID: -1384418152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_71
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9437ef35e6bd4da4b8a3453c55e11b8d
-      internalID: -242870831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_72
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96cc4bbe8d47a274bad44e8ebd50b35f
-      internalID: -1427968703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_73
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2391b706666de154a815dfe4e54c071c
-      internalID: 664789664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_74
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4f3bbd49c8cd2b429e700fc90cdd5f8
-      internalID: 1636382382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_75
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 497eefa93f6460d4f899f3bc2019dba3
-      internalID: 869492790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_76
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b55165c88792b54f98ca998167d7cdb
-      internalID: -1898467290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_77
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f8d677454658a644a576f88f25d7619
-      internalID: -246177957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_78
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb844b1010f663e4d86314346b27a8e9
-      internalID: 787167853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_79
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: faf85e2d49a7f0b45a8f24ebbeb91e70
-      internalID: -913237187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_80
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: bebb4cbe5820cc749becdb9c3d0271e4
-      internalID: 1464560332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_81
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd8cba86786c14b48bd30a43c6c8d15a
-      internalID: -1151035577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_82
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93e34ca38bc9dca44880f5e6be153b7d
-      internalID: 691865458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_83
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c79c2c65503ccfa41bf1b2b3fc10cbd1
-      internalID: 877444475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_84
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60de0a1ea0b40c54cb84215113009efc
-      internalID: -660167655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_85
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f65287cbc22763c47a383bd4844fd690
-      internalID: -1134943524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_86
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3a257b9aa79f2548ba1694e7f41a02a
-      internalID: 1477125422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_87
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a9ea9e689390194c97795666bf5fc5d
-      internalID: 1170999295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_88
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea576a04323f696469492375c1378699
-      internalID: -977404761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_89
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae6a78b18c9738341a415eaa49f449a3
-      internalID: 1912746675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_90
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e85eadac4dcf7b418ebbbbc10dcd4ff
-      internalID: -484904073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_91
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ada0285db27c31045a28216ee0c5ff10
-      internalID: 95932110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_92
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b6f8a97e6d68c1438214d2e93a6e2d9
-      internalID: 1676678185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_93
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47dcb7c22b17cf54a8513dbcb20e2d70
-      internalID: -917256209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_94
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34fb28456c2a27542bd403ac4c127d00
-      internalID: 1513071959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_95
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f66ca4eea3f4454ba12ed54755df741
-      internalID: -811065469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_96
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 214518f843fe43241aee49d82f0ee1e8
-      internalID: 777860297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_97
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: 1}
-        - {x: -7, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f349e36e4b554244a7bb0b663cf355c
-      internalID: -918260890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_98
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 1}
-        - {x: -8, y: -8}
-        - {x: 7, y: -8}
-        - {x: 7, y: 1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5cc6c3bac73eb7409deda023d6a817f
-      internalID: 243995778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_99
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: 1}
-        - {x: -7, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f78d765c3ef4e9140a88b3662e594f10
-      internalID: 1171258706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_100
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 1}
-        - {x: -8, y: -8}
-        - {x: 7, y: -8}
-        - {x: 7, y: 1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1710d3be93fcb248aaec696e64998b0
-      internalID: 1007810073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_101
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89dd5f9c6c800f04d9dbba8d53546998
-      internalID: 784341514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_102
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5541b01546976594296e3108ffad2edd
-      internalID: -851397448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_103
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d2b446544871e24cbb8e98716ee6097
-      internalID: -1170077075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_104
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: df2107fb683568243a7d1519558e3311
-      internalID: -400842011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_105
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d59b959717943c242aa04bccd1372e5f
-      internalID: -452378721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_106
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f05e9ee1467703e4d96ec8d83ccb1ead
-      internalID: 255907181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_107
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e1fbb7073671414bb56a77a5fa21e5e
-      internalID: 521478286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_108
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2208eaadb4572454180559853055019d
-      internalID: 2014155279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_109
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c54de3302c5a9f458b4e56c1e632b07
-      internalID: -1545724441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_110
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 897384ba22509b14999f5979bc36da63
-      internalID: 1606427524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_111
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42aaea6f01f743b42a11904249a8275c
-      internalID: 2062363594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_112
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c5731a4650afa84fb1aa2cfa814dd36
-      internalID: -224234931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_113
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fd5856e63831624a84a6dc290647537
-      internalID: -1769296304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_114
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: addb72fd5b15cb243a0eabd16d485294
-      internalID: 1649477806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_115
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc916f6047f95bd44a9f4ac0ad92596d
-      internalID: 2004766307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_116
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ead721ae10f84454ebf343e4c7ad3136
-      internalID: 2125830445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_117
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5565b962de1481c439f73903a986c070
-      internalID: -723290103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_118
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20ecce8c5bfaeae41b14abaf0a626952
-      internalID: -1211029750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_119
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 434987bc12c4e304c9118c50c5a9d3f0
-      internalID: -780723227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_120
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 952668ef6f4d0a7478af0afe37aa63e7
-      internalID: 676785251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_121
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2effbda22baaa244ba6062d7bb9ce204
-      internalID: -101356644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_122
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: db5654006a1ac804cb72abedcc61079e
-      internalID: 902874895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_123
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d95fc6610594b3243bcc2d3c7fd6ce90
-      internalID: -1812282599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_124
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30afc738b166a5f4b88639a67b96baa2
-      internalID: -2142912404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_125
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c40e872c5dc195c4199156ac940d215d
-      internalID: 1383262813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_126
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9d024f9d393ed845ba818b4a9fd21cc
-      internalID: -2022360360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_127
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36ff4a8cdba9c954ca9c7b650347996e
-      internalID: -1306606602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_128
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 594b6ecb20933bb4b9f18bb49b5ebf4d
-      internalID: 1385635909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_129
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 443957d631b2ce947a2fcf3508a30382
-      internalID: 1581034988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_130
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54cc7dfcf2d38ef419db1619bf6dee90
-      internalID: -1630831008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_131
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: abe25cb2ae377df4b9c0d181b773eb7a
-      internalID: -28221124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_132
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfcf576ccfc65df4ebc606d519328cf6
-      internalID: -1070485054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_133
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86c48615ef9265641899bd59534f2e8f
-      internalID: -1989724410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_134
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75cd2645f87bd6045ab5402455b9febb
-      internalID: 1844868648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_135
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5250db605971cb4e975fa1b6186f6c2
-      internalID: 1554601058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_136
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68aca6466a6359c4cb8fdba5d84feb1d
-      internalID: 295238377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_137
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 473184ca8208ff948af906d815396312
-      internalID: 2075776053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_138
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28637aa2ea8c792418ed76e132206caf
-      internalID: -563912638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_139
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66399cffbb6848e4ca2c79bb5dfb5363
-      internalID: -1907970356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_140
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 403898be834e0c846bb7f254399769bf
-      internalID: 558740657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_141
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 107d6886aa69cee4898b71ac39973ddc
-      internalID: 1461241748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_142
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e3b774d08d5e3f419c81fe512fb2081
-      internalID: 1626084195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_143
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdf519313bfc7d74581e65df2c3b9a4e
-      internalID: -1268940324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_144
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 225e52be777f5514598742590eb034f6
-      internalID: -80607060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_145
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6e09213b6d373e49a5cd760a4640c5c
-      internalID: 1010784080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_146
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37aea38844c766b4da574e684db4f934
-      internalID: 509995462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_147
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a4f0113705a1054d9b05b8692956c32
-      internalID: -725173219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_148
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5d0927332dc2e848a0883b469382c45
-      internalID: -1603271506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_149
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: a14c7dfd09fda9d4483c36cf022d40c8
-      internalID: 2018210790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_150
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c44dae8abfee44c4bbda4e7220286dc9
-      internalID: 54667714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_151
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: 1}
-        - {x: -7, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 725b8e13a39e94e4abb30e19987b1eaf
-      internalID: -1596078078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_152
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 1}
-        - {x: -8, y: -8}
-        - {x: 7, y: -8}
-        - {x: 7, y: 1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d654bed7cdd4154b84f388477ef0574
-      internalID: -1328396625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_153
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: 1}
-        - {x: -7, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a60390a1ddceff44a6b30bc22707017
-      internalID: 47722383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_154
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 1}
-        - {x: -8, y: -8}
-        - {x: 7, y: -8}
-        - {x: 7, y: 1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23d08c12e66cc814183bb636b2ffa0d1
-      internalID: 439969210
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_155
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ffbf48ee04858347b46d1e513cebbc9
-      internalID: 85598550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_156
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0952f26d75044b41bb9014102f66dcc
-      internalID: -1342190010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_157
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e89f73bb58b56943928af90970bade9
-      internalID: 1897652272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_158
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8d06ac7f10bdd54289bbddf4bc9b62c
-      internalID: 742383390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_159
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b37bae9aeb66d9448d22ba885d81fbc
-      internalID: 674943854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_160
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98bb9691ab7a52b429a59d179b4385a3
-      internalID: -1496586396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_161
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -5}
-        - {x: -5, y: -5}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63fde109d9d6bce49900c8785546b214
-      internalID: -367395565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_162
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53ae0a93da821b741bff1556ba0c5cdf
-      internalID: 1354435218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_163
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9899e8cbac81b4d4e8300e12f1581679
-      internalID: 1224599046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_164
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d2b8007dd373274da6e8488c969bf66
-      internalID: -1388542690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_165
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c16cb0f5a039a0a4c95e0d62e4c1be45
-      internalID: 1376512324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_166
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 915e70397e0d47c4aa948bb36672d6d4
-      internalID: 1162547638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_167
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d15da75b2eb1cf479a9103c95674525
-      internalID: -689048713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_168
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a4fe64a46d673343964d48599d003cd
-      internalID: 1632724047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_169
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00e7b92c822209f41877696595e0bdd3
-      internalID: 1468554028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_170
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 395733e79eeb29e4ebd7e4649c20c0ea
-      internalID: 735403281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_171
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6010e6a566359664397abd53b77541b0
-      internalID: 798392100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_172
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83c6f7eb7c9579e4b9413b4076e018b7
-      internalID: -1692397681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_173
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1392a125446931440b8669bdfce8d643
-      internalID: 1942350110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_174
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: -8}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79fafac7089c03b449fe447bc58c1c11
-      internalID: -646872157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_175
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebcba328e837bb4419cd66e3566fd6aa
-      internalID: -367251936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_176
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1740fe765d3317c46b63848a6377af3f
-      internalID: -1216780464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_177
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90db486e2b6063f42bd4b61ec01600bb
-      internalID: -1995535335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_178
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70fc3d9c7efc54044af28a272be54b69
-      internalID: -1173855686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_179
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b0ac8d125a44134d97a89d26a2db620
-      internalID: 1120039713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_180
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea4e9cd1e2574da4e90bb7ffc9ec058e
-      internalID: 2062328786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_181
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cb38897cc91e134fafc857551fa53a8
-      internalID: 1784785514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_182
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb25cb43fe0617846b79becff8daccb3
-      internalID: 439128434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_183
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07ec4b70ea3222d4fba96f27de42f2e7
-      internalID: -452962168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_184
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f37f702d1944d554392762843e358d61
-      internalID: 318006902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_185
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 7, y: 8}
-        - {x: 7, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 431bcdb6ca68374418d9722f9218cddc
-      internalID: -818219396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_186
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3df125947b97c6645b91bc9ffbd00f9b
-      internalID: 648305550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_187
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79c6a42e11bbd714ca7edf87f64c2ab4
-      internalID: -1706211671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_188
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: e45758f2d98812041bb01e9e2d9595aa
-      internalID: 1886850836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_189
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 5, y: 5}
-        - {x: 5, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa17a67c9fa38714b9038edebf867252
-      internalID: 1865807310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_190
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68349c9c2e3133a47932d46aa2b75ae3
-      internalID: 1951149061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_191
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 221e96c6cf43d09449dfc811959d77e7
-      internalID: 1881469195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_192
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: 8}
-        - {x: -5, y: 8}
-        - {x: -5, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d30be7b814bf13347865599d62229863
-      internalID: -736494635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorWindow_193
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1392bcce37d62446932359fd520e3cf
-      internalID: -813715157
       vertices: []
       indices: 
       edges: []
@@ -4986,109 +1711,15 @@ TextureImporter:
       DoorWindow_0: -1537628736
       DoorWindow_1: -677561180
       DoorWindow_10: -349706076
-      DoorWindow_100: 1007810073
-      DoorWindow_101: 784341514
-      DoorWindow_102: -851397448
-      DoorWindow_103: -1170077075
-      DoorWindow_104: -400842011
-      DoorWindow_105: -452378721
-      DoorWindow_106: 255907181
-      DoorWindow_107: 521478286
-      DoorWindow_108: 2014155279
-      DoorWindow_109: -1545724441
       DoorWindow_11: 449930482
-      DoorWindow_110: 1606427524
-      DoorWindow_111: 2062363594
-      DoorWindow_112: -224234931
-      DoorWindow_113: -1769296304
-      DoorWindow_114: 1649477806
-      DoorWindow_115: 2004766307
-      DoorWindow_116: 2125830445
-      DoorWindow_117: -723290103
-      DoorWindow_118: -1211029750
-      DoorWindow_119: -780723227
       DoorWindow_12: 1112672131
-      DoorWindow_120: 676785251
-      DoorWindow_121: -101356644
-      DoorWindow_122: 902874895
-      DoorWindow_123: -1812282599
-      DoorWindow_124: -2142912404
-      DoorWindow_125: 1383262813
-      DoorWindow_126: -2022360360
-      DoorWindow_127: -1306606602
-      DoorWindow_128: 1385635909
-      DoorWindow_129: 1581034988
       DoorWindow_13: 913114554
-      DoorWindow_130: -1630831008
-      DoorWindow_131: -28221124
-      DoorWindow_132: -1070485054
-      DoorWindow_133: -1989724410
-      DoorWindow_134: 1844868648
-      DoorWindow_135: 1554601058
-      DoorWindow_136: 295238377
-      DoorWindow_137: 2075776053
-      DoorWindow_138: -563912638
-      DoorWindow_139: -1907970356
       DoorWindow_14: 668890181
-      DoorWindow_140: 558740657
-      DoorWindow_141: 1461241748
-      DoorWindow_142: 1626084195
-      DoorWindow_143: -1268940324
-      DoorWindow_144: -80607060
-      DoorWindow_145: 1010784080
-      DoorWindow_146: 509995462
-      DoorWindow_147: -725173219
-      DoorWindow_148: -1603271506
-      DoorWindow_149: 2018210790
       DoorWindow_15: -490249306
-      DoorWindow_150: 54667714
-      DoorWindow_151: -1596078078
-      DoorWindow_152: -1328396625
-      DoorWindow_153: 47722383
-      DoorWindow_154: 439969210
-      DoorWindow_155: 85598550
-      DoorWindow_156: -1342190010
-      DoorWindow_157: 1897652272
-      DoorWindow_158: 742383390
-      DoorWindow_159: 674943854
       DoorWindow_16: -687134421
-      DoorWindow_160: -1496586396
-      DoorWindow_161: -367395565
-      DoorWindow_162: 1354435218
-      DoorWindow_163: 1224599046
-      DoorWindow_164: -1388542690
-      DoorWindow_165: 1376512324
-      DoorWindow_166: 1162547638
-      DoorWindow_167: -689048713
-      DoorWindow_168: 1632724047
-      DoorWindow_169: 1468554028
       DoorWindow_17: -825978358
-      DoorWindow_170: 735403281
-      DoorWindow_171: 798392100
-      DoorWindow_172: -1692397681
-      DoorWindow_173: 1942350110
-      DoorWindow_174: -646872157
-      DoorWindow_175: -367251936
-      DoorWindow_176: -1216780464
-      DoorWindow_177: -1995535335
-      DoorWindow_178: -1173855686
-      DoorWindow_179: 1120039713
       DoorWindow_18: -740492978
-      DoorWindow_180: 2062328786
-      DoorWindow_181: 1784785514
-      DoorWindow_182: 439128434
-      DoorWindow_183: -452962168
-      DoorWindow_184: 318006902
-      DoorWindow_185: -818219396
-      DoorWindow_186: 648305550
-      DoorWindow_187: -1706211671
-      DoorWindow_188: 1886850836
-      DoorWindow_189: 1865807310
       DoorWindow_19: -226037298
-      DoorWindow_190: 1951149061
-      DoorWindow_191: 1881469195
-      DoorWindow_192: -736494635
-      DoorWindow_193: -813715157
       DoorWindow_2: 1682190457
       DoorWindow_20: 1925355864
       DoorWindow_21: 569051804
@@ -5137,46 +1768,9 @@ TextureImporter:
       DoorWindow_60: 1463471756
       DoorWindow_61: 1619195531
       DoorWindow_62: 130778730
-      DoorWindow_63: 1550993776
-      DoorWindow_64: 1980796682
-      DoorWindow_65: 1990601473
-      DoorWindow_66: 1354583425
-      DoorWindow_67: 1972562465
-      DoorWindow_68: -1628687804
-      DoorWindow_69: -969382828
       DoorWindow_7: 483092489
-      DoorWindow_70: -1384418152
-      DoorWindow_71: -242870831
-      DoorWindow_72: -1427968703
-      DoorWindow_73: 664789664
-      DoorWindow_74: 1636382382
-      DoorWindow_75: 869492790
-      DoorWindow_76: -1898467290
-      DoorWindow_77: -246177957
-      DoorWindow_78: 787167853
-      DoorWindow_79: -913237187
       DoorWindow_8: -570034446
-      DoorWindow_80: 1464560332
-      DoorWindow_81: -1151035577
-      DoorWindow_82: 691865458
-      DoorWindow_83: 877444475
-      DoorWindow_84: -660167655
-      DoorWindow_85: -1134943524
-      DoorWindow_86: 1477125422
-      DoorWindow_87: 1170999295
-      DoorWindow_88: -977404761
-      DoorWindow_89: 1912746675
       DoorWindow_9: 672344296
-      DoorWindow_90: -484904073
-      DoorWindow_91: 95932110
-      DoorWindow_92: 1676678185
-      DoorWindow_93: -917256209
-      DoorWindow_94: 1513071959
-      DoorWindow_95: -811065469
-      DoorWindow_96: 777860297
-      DoorWindow_97: -918260890
-      DoorWindow_98: 243995778
-      DoorWindow_99: 1171258706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
