@@ -52,7 +52,7 @@ public class PlayerControl : MonoBehaviour
 
     void OnDisable()
     {
-        defaultActionMap.Enable();
+        defaultActionMap.Disable();
     }
 
     void Start()
