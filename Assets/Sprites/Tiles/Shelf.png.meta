@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 321117b8c51ac724f9a7662b402a690f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shelf_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 16
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.19512194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 20.5}
+        - {x: -8, y: -20.5}
+        - {x: 8, y: -20.5}
+        - {x: 8, y: 20.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e78e3a24844fbf4aa3070820f9580e0
+      internalID: -1110532072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 87
+        width: 16
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.19512194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 20.5}
+        - {x: -8, y: -20.5}
+        - {x: 8, y: -20.5}
+        - {x: 8, y: 20.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484779ab6b3fe0046828b2e866859ee4
+      internalID: 2028757386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 87
+        width: 16
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.19512194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 20.5}
+        - {x: -8, y: -20.5}
+        - {x: 8, y: -20.5}
+        - {x: 8, y: 20.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb2eb2a51bf88944871d3aeda47fd9b
+      internalID: 454569706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 87
+        width: 16
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.19512194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 20.5}
+        - {x: -8, y: -20.5}
+        - {x: 8, y: -20.5}
+        - {x: 8, y: 20.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ec63be0845c7e4d997e6aef28cd31c
+      internalID: 1504712017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14528f8990a77c4f9b3dc974bca460e
+      internalID: -445768471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 67
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a1e8ea9814b4a4a805ea0c88604b79
+      internalID: 1309959213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 67
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb89d789a7dbbd041afb1af090cab1c5
+      internalID: 771218061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 67
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05fe722965d5c24998f1759cefd3787
+      internalID: 953705774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 67
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e462c19347ff13b419aef528bf7d8386
+      internalID: -1566543116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 67
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137239f1f75fc2f4ea73c1d68b22fff9
+      internalID: 2051840284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 16
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17021276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 23.5}
+        - {x: -6, y: 17.5}
+        - {x: -8, y: 17.5}
+        - {x: -8, y: -23.5}
+        - {x: 8, y: -23.5}
+        - {x: 8, y: 23.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf3e4efcd6b7f9489306e54eabf46fc
+      internalID: -564179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 20
+        width: 16
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17021276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: 23.5}
+        - {x: -7, y: 17.5}
+        - {x: -8, y: 17.5}
+        - {x: -8, y: -23.5}
+        - {x: 8, y: -23.5}
+        - {x: 8, y: 17.5}
+        - {x: 5, y: 17.5}
+        - {x: 5, y: 23.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef57033fe1908c47b76c3accafc72e7
+      internalID: 1135189343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 20
+        width: 32
+        height: 47
+      alignment: 9
+      pivot: {x: 0.25, y: 0.17021276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 4, y: 23.5}
+        - {x: 4, y: 17.5}
+        - {x: -16, y: 17.5}
+        - {x: -16, y: -23.5}
+        - {x: 16, y: -23.5}
+        - {x: 16, y: 17.5}
+        - {x: 9, y: 17.5}
+        - {x: 9, y: 23.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654c3f2c011c8084bbd351dace682833
+      internalID: 2019788421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 20
+        width: 16
+        height: 47
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.17021276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 23.5}
+        - {x: 2, y: 17.5}
+        - {x: -8, y: 17.5}
+        - {x: -8, y: -23.5}
+        - {x: 8, y: -23.5}
+        - {x: 8, y: 23.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77771d96d494b04298330837473982c
+      internalID: -1841959024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 20
+        width: 16
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17021276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: 23.5}
+        - {x: -1, y: 17.5}
+        - {x: -8, y: 17.5}
+        - {x: -8, y: -23.5}
+        - {x: 8, y: -23.5}
+        - {x: 8, y: 17.5}
+        - {x: 5, y: 17.5}
+        - {x: 5, y: 23.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479a3847869f7b2459b422b6732e5654
+      internalID: -848974014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 20
+      alignment: 9
+      pivot: {x: 0.25, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 10}
+        - {x: -16, y: -10}
+        - {x: 16, y: -10}
+        - {x: 16, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59c2983c18440c42b7b86b1e83f7398
+      internalID: -1694818860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a824db264e4a4aa43b27afd88315db14
+      internalID: 1502851009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907c72cd702531a46aeda8c1a3b67be1
+      internalID: -1083698234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02555773eb929b47b727d10033da450
+      internalID: 934725569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 10}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: 10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f727c3c8ef6e0ab48b96eb84201d8430
+      internalID: -1469071137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Shelf_0: -1110532072
+      Shelf_1: 2028757386
+      Shelf_10: -564179
+      Shelf_11: 1135189343
+      Shelf_12: 2019788421
+      Shelf_13: -1841959024
+      Shelf_14: -848974014
+      Shelf_15: -1694818860
+      Shelf_16: 1502851009
+      Shelf_17: -1083698234
+      Shelf_18: 934725569
+      Shelf_19: -1469071137
+      Shelf_2: 454569706
+      Shelf_3: 1504712017
+      Shelf_4: -445768471
+      Shelf_5: 1309959213
+      Shelf_6: 771218061
+      Shelf_7: 953705774
+      Shelf_8: -1566543116
+      Shelf_9: 2051840284
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

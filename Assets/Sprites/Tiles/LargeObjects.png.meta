@@ -1,0 +1,3318 @@
+fileFormatVersion: 2
+guid: a4aa7aaa213bdf441adab892e5e02168
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AutumnTree_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 704
+        width: 86
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.062015504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 20, y: -43.5}
+        - {x: 25, y: -45.5}
+        - {x: 34, y: -45.5}
+        - {x: 41, y: -44.5}
+        - {x: 43, y: -42.5}
+        - {x: 43, y: -34.5}
+        - {x: 41, y: -31.5}
+        - {x: 43, y: -29.5}
+        - {x: 43, y: -25.5}
+        - {x: 40, y: -21.5}
+        - {x: 37, y: -18.5}
+        - {x: 43, y: -18.5}
+        - {x: 43, y: -0.5}
+        - {x: 38, y: 4.5}
+        - {x: 39, y: 10.5}
+        - {x: 39, y: 13.5}
+        - {x: 36, y: 20.5}
+        - {x: 40, y: 24.5}
+        - {x: 40, y: 28.5}
+        - {x: 36, y: 35.5}
+        - {x: 36, y: 38.5}
+        - {x: 29, y: 48.5}
+        - {x: 29, y: 52.5}
+        - {x: 26, y: 57.5}
+        - {x: 22, y: 63.5}
+        - {x: 20, y: 64.5}
+        - {x: 11, y: 64.5}
+        - {x: 2, y: 55.5}
+        - {x: -3, y: 53.5}
+        - {x: -5, y: 50.5}
+        - {x: -5, y: 47.5}
+        - {x: -10, y: 42.5}
+        - {x: -10, y: 40.5}
+        - {x: -21, y: 29.5}
+        - {x: -21, y: 26.5}
+        - {x: -18, y: 23.5}
+        - {x: -25, y: 19.5}
+        - {x: -28, y: 16.5}
+        - {x: -28, y: 13.5}
+        - {x: -26, y: 10.5}
+        - {x: -34, y: 2.5}
+        - {x: -34, y: -1.5}
+        - {x: -37, y: -4.5}
+        - {x: -38, y: -9.5}
+        - {x: -33, y: -12.5}
+        - {x: -40, y: -19.5}
+        - {x: -43, y: -25.5}
+        - {x: -43, y: -35.5}
+        - {x: -39, y: -38.5}
+        - {x: -31, y: -38.5}
+        - {x: -29, y: -40.5}
+        - {x: -24, y: -43.5}
+        - {x: -15, y: -52.5}
+        - {x: -18, y: -57.5}
+        - {x: -19, y: -60.5}
+        - {x: -19, y: -64.5}
+        - {x: 12, y: -64.5}
+        - {x: 12, y: -58.5}
+        - {x: 9, y: -51.5}
+        - {x: 15, y: -49.5}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 70c5ee9d060b48447aa3885206a2b510
+      internalID: -1167756520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnTree_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 704
+        width: 108
+        height: 154
+      alignment: 9
+      pivot: {x: 0.5, y: 0.051948052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 12, y: -64}
+        - {x: 10, y: -60}
+        - {x: 8, y: -58}
+        - {x: 8, y: -48}
+        - {x: 11, y: -46}
+        - {x: 22, y: -52}
+        - {x: 24, y: -52}
+        - {x: 33, y: -46}
+        - {x: 42, y: -51}
+        - {x: 50, y: -51}
+        - {x: 54, y: -50}
+        - {x: 54, y: -37}
+        - {x: 50, y: -32}
+        - {x: 41, y: -23}
+        - {x: 48, y: -23}
+        - {x: 51, y: -20}
+        - {x: 51, y: -17}
+        - {x: 49, y: -14}
+        - {x: 46, y: -13}
+        - {x: 40, y: -8}
+        - {x: 40, y: -3}
+        - {x: 34, y: 3}
+        - {x: 34, y: 7}
+        - {x: 37, y: 11}
+        - {x: 37, y: 14}
+        - {x: 34, y: 22}
+        - {x: 34, y: 25}
+        - {x: 28, y: 31}
+        - {x: 28, y: 34}
+        - {x: 31, y: 40}
+        - {x: 31, y: 42}
+        - {x: 29, y: 48}
+        - {x: 26, y: 51}
+        - {x: 22, y: 54}
+        - {x: 21, y: 58}
+        - {x: 16, y: 66}
+        - {x: 4, y: 77}
+        - {x: -2, y: 77}
+        - {x: -14, y: 66}
+        - {x: -19, y: 58}
+        - {x: -19, y: 56}
+        - {x: -22, y: 51}
+        - {x: -24, y: 51}
+        - {x: -27, y: 48}
+        - {x: -27, y: 46}
+        - {x: -29, y: 42}
+        - {x: -29, y: 40}
+        - {x: -26, y: 36}
+        - {x: -26, y: 31}
+        - {x: -32, y: 25}
+        - {x: -32, y: 22}
+        - {x: -31, y: 19}
+        - {x: -35, y: 14}
+        - {x: -35, y: 11}
+        - {x: -32, y: 7}
+        - {x: -32, y: 3}
+        - {x: -38, y: -3}
+        - {x: -38, y: -8}
+        - {x: -44, y: -13}
+        - {x: -47, y: -14}
+        - {x: -49, y: -17}
+        - {x: -49, y: -20}
+        - {x: -46, y: -23}
+        - {x: -38, y: -23}
+        - {x: -39, y: -23}
+        - {x: -48, y: -32}
+        - {x: -52, y: -37}
+        - {x: -54, y: -41}
+        - {x: -54, y: -48}
+        - {x: -52, y: -50}
+        - {x: -48, y: -51}
+        - {x: -40, y: -51}
+        - {x: -30, y: -46}
+        - {x: -22, y: -52}
+        - {x: -20, y: -52}
+        - {x: -8, y: -46}
+        - {x: -6, y: -51}
+        - {x: -8, y: -53}
+        - {x: -8, y: -62}
+        - {x: -9, y: -69}
+        - {x: -16, y: -73}
+        - {x: -19, y: -76}
+        - {x: -19, y: -77}
+        - {x: 22, y: -77}
+        - {x: 22, y: -76}
+        - {x: 18, y: -72}
+        - {x: 14, y: -69}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b26d8a3e9814948b0ff127e4b052d8
+      internalID: -2137493438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnTree_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 704
+        width: 122
+        height: 159
+      alignment: 9
+      pivot: {x: 0.5, y: 0.050314464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 12, y: -60.5}
+        - {x: 9, y: -59.5}
+        - {x: 10, y: -54.5}
+        - {x: 10, y: -46.5}
+        - {x: 11, y: -43.5}
+        - {x: 20, y: -47.5}
+        - {x: 26, y: -48.5}
+        - {x: 29, y: -47.5}
+        - {x: 34, y: -41.5}
+        - {x: 38, y: -42.5}
+        - {x: 45, y: -43.5}
+        - {x: 48, y: -43.5}
+        - {x: 54, y: -46.5}
+        - {x: 58, y: -46.5}
+        - {x: 61, y: -43.5}
+        - {x: 61, y: -34.5}
+        - {x: 57, y: -31.5}
+        - {x: 57, y: -28.5}
+        - {x: 50, y: -21.5}
+        - {x: 47, y: -19.5}
+        - {x: 48, y: -16.5}
+        - {x: 47, y: -12.5}
+        - {x: 50, y: -10.5}
+        - {x: 54, y: -6.5}
+        - {x: 54, y: -2.5}
+        - {x: 51, y: 3.5}
+        - {x: 47, y: 7.5}
+        - {x: 44, y: 13.5}
+        - {x: 39, y: 19.5}
+        - {x: 38, y: 29.5}
+        - {x: 36, y: 34.5}
+        - {x: 33, y: 37.5}
+        - {x: 26, y: 43.5}
+        - {x: 27, y: 45.5}
+        - {x: 25, y: 48.5}
+        - {x: 18, y: 52.5}
+        - {x: 20, y: 53.5}
+        - {x: 23, y: 56.5}
+        - {x: 23, y: 59.5}
+        - {x: 18, y: 64.5}
+        - {x: 17, y: 64.5}
+        - {x: 6, y: 75.5}
+        - {x: 6, y: 76.5}
+        - {x: 3, y: 79.5}
+        - {x: -3, y: 79.5}
+        - {x: -6, y: 76.5}
+        - {x: -6, y: 75.5}
+        - {x: -17, y: 64.5}
+        - {x: -18, y: 64.5}
+        - {x: -23, y: 59.5}
+        - {x: -23, y: 56.5}
+        - {x: -20, y: 53.5}
+        - {x: -18, y: 52.5}
+        - {x: -21, y: 50.5}
+        - {x: -27, y: 45.5}
+        - {x: -26, y: 43.5}
+        - {x: -33, y: 37.5}
+        - {x: -36, y: 34.5}
+        - {x: -38, y: 29.5}
+        - {x: -38, y: 24.5}
+        - {x: -35, y: 21.5}
+        - {x: -39, y: 19.5}
+        - {x: -44, y: 13.5}
+        - {x: -43, y: 10.5}
+        - {x: -51, y: 3.5}
+        - {x: -54, y: -2.5}
+        - {x: -54, y: -6.5}
+        - {x: -50, y: -10.5}
+        - {x: -46, y: -12.5}
+        - {x: -41, y: -12.5}
+        - {x: -47, y: -17.5}
+        - {x: -50, y: -21.5}
+        - {x: -57, y: -28.5}
+        - {x: -59, y: -32.5}
+        - {x: -61, y: -34.5}
+        - {x: -61, y: -43.5}
+        - {x: -58, y: -46.5}
+        - {x: -54, y: -46.5}
+        - {x: -48, y: -43.5}
+        - {x: -34, y: -41.5}
+        - {x: -29, y: -47.5}
+        - {x: -26, y: -48.5}
+        - {x: -22, y: -48.5}
+        - {x: -12, y: -43.5}
+        - {x: -10, y: -46.5}
+        - {x: -11, y: -55.5}
+        - {x: -16, y: -70.5}
+        - {x: -21, y: -75.5}
+        - {x: -24, y: -76.5}
+        - {x: -26, y: -78.5}
+        - {x: -26, y: -79.5}
+        - {x: 18, y: -79.5}
+        - {x: 18, y: -78.5}
+        - {x: 12, y: -73.5}
+        - {x: 13, y: -66.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a14addc8ca98442b59b76610143d3a
+      internalID: 154952637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnTree_3
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 576
+        width: 126
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.052980132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -62.5}
+        - {x: 0, y: -58.5}
+        - {x: -2, y: -56.5}
+        - {x: -2, y: -40.5}
+        - {x: -5, y: -36.5}
+        - {x: -5, y: -29.5}
+        - {x: -4, y: -23.5}
+        - {x: 2, y: -16.5}
+        - {x: 4, y: -16.5}
+        - {x: 8, y: -14.5}
+        - {x: 11, y: -16.5}
+        - {x: 18, y: -21.5}
+        - {x: 21, y: -22.5}
+        - {x: 27, y: -22.5}
+        - {x: 33, y: -16.5}
+        - {x: 38, y: -15.5}
+        - {x: 51, y: -2.5}
+        - {x: 51, y: 5.5}
+        - {x: 52, y: 6.5}
+        - {x: 52, y: 9.5}
+        - {x: 51, y: 14.5}
+        - {x: 49, y: 17.5}
+        - {x: 57, y: 24.5}
+        - {x: 63, y: 31.5}
+        - {x: 63, y: 60.5}
+        - {x: 62, y: 63.5}
+        - {x: 58, y: 67.5}
+        - {x: 55, y: 68.5}
+        - {x: 50, y: 68.5}
+        - {x: 48, y: 67.5}
+        - {x: 44, y: 71.5}
+        - {x: 39, y: 71.5}
+        - {x: 35, y: 72.5}
+        - {x: 30, y: 72.5}
+        - {x: 27, y: 69.5}
+        - {x: 24, y: 72.5}
+        - {x: 19, y: 72.5}
+        - {x: 13, y: 68.5}
+        - {x: 9, y: 68.5}
+        - {x: 5, y: 72.5}
+        - {x: 3, y: 72.5}
+        - {x: 0, y: 75.5}
+        - {x: -10, y: 75.5}
+        - {x: -13, y: 74.5}
+        - {x: -18, y: 74.5}
+        - {x: -25, y: 67.5}
+        - {x: -32, y: 59.5}
+        - {x: -48, y: 43.5}
+        - {x: -51, y: 43.5}
+        - {x: -58, y: 36.5}
+        - {x: -58, y: 30.5}
+        - {x: -61, y: 27.5}
+        - {x: -61, y: 22.5}
+        - {x: -59, y: 16.5}
+        - {x: -59, y: 11.5}
+        - {x: -58, y: 8.5}
+        - {x: -53, y: 3.5}
+        - {x: -55, y: 1.5}
+        - {x: -60, y: -7.5}
+        - {x: -62, y: -16.5}
+        - {x: -63, y: -18.5}
+        - {x: -63, y: -32.5}
+        - {x: -53, y: -42.5}
+        - {x: -48, y: -44.5}
+        - {x: -41, y: -44.5}
+        - {x: -35, y: -42.5}
+        - {x: -33, y: -44.5}
+        - {x: -27, y: -44.5}
+        - {x: -22, y: -41.5}
+        - {x: -18, y: -38.5}
+        - {x: -17, y: -39.5}
+        - {x: -17, y: -46.5}
+        - {x: -18, y: -51.5}
+        - {x: -18, y: -54.5}
+        - {x: -17, y: -59.5}
+        - {x: -18, y: -60.5}
+        - {x: -19, y: -67.5}
+        - {x: -22, y: -70.5}
+        - {x: -26, y: -71.5}
+        - {x: -29, y: -74.5}
+        - {x: -29, y: -75.5}
+        - {x: 12, y: -75.5}
+        - {x: 12, y: -74.5}
+        - {x: 8, y: -70.5}
+        - {x: 4, y: -67.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb1ac8e456747548b5526b197ca3194
+      internalID: 1383792811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnTree_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 592
+        width: 68
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0.074074075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -36}
+        - {x: 18, y: -34}
+        - {x: 24, y: -39}
+        - {x: 32, y: -39}
+        - {x: 34, y: -37}
+        - {x: 34, y: -28}
+        - {x: 29, y: -21}
+        - {x: 34, y: -17}
+        - {x: 34, y: -14}
+        - {x: 33, y: -11}
+        - {x: 25, y: -2}
+        - {x: 29, y: 2}
+        - {x: 29, y: 7}
+        - {x: 21, y: 22}
+        - {x: 21, y: 25}
+        - {x: 13, y: 33}
+        - {x: 17, y: 37}
+        - {x: 17, y: 40}
+        - {x: 3, y: 54}
+        - {x: -3, y: 54}
+        - {x: -17, y: 40}
+        - {x: -17, y: 37}
+        - {x: -13, y: 33}
+        - {x: -21, y: 25}
+        - {x: -21, y: 22}
+        - {x: -18, y: 18}
+        - {x: -29, y: 7}
+        - {x: -29, y: 2}
+        - {x: -25, y: -2}
+        - {x: -24, y: -2}
+        - {x: -34, y: -13}
+        - {x: -34, y: -18}
+        - {x: -29, y: -22}
+        - {x: -26, y: -21}
+        - {x: -34, y: -29}
+        - {x: -34, y: -37}
+        - {x: -32, y: -39}
+        - {x: -24, y: -39}
+        - {x: -17, y: -34}
+        - {x: -14, y: -36}
+        - {x: -8, y: -36}
+        - {x: -7, y: -45}
+        - {x: -15, y: -52}
+        - {x: -15, y: -54}
+        - {x: 15, y: -54}
+        - {x: 14, y: -51}
+        - {x: 8, y: -45}
+        - {x: 8, y: -36}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b20dcdb148c8247ad621d0217a0e30
+      internalID: 161671054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnTree_5
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 608
+        width: 64
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08988764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -29.5}
+        - {x: 18, y: -28.5}
+        - {x: 23, y: -30.5}
+        - {x: 29, y: -30.5}
+        - {x: 32, y: -28.5}
+        - {x: 32, y: -19.5}
+        - {x: 25, y: -11.5}
+        - {x: 29, y: -7.5}
+        - {x: 29, y: -2.5}
+        - {x: 21, y: 12.5}
+        - {x: 21, y: 15.5}
+        - {x: 13, y: 23.5}
+        - {x: 17, y: 27.5}
+        - {x: 17, y: 30.5}
+        - {x: 3, y: 44.5}
+        - {x: -3, y: 44.5}
+        - {x: -17, y: 30.5}
+        - {x: -17, y: 27.5}
+        - {x: -13, y: 23.5}
+        - {x: -21, y: 15.5}
+        - {x: -21, y: 12.5}
+        - {x: -18, y: 8.5}
+        - {x: -29, y: -2.5}
+        - {x: -29, y: -7.5}
+        - {x: -25, y: -11.5}
+        - {x: -23, y: -11.5}
+        - {x: -32, y: -20.5}
+        - {x: -32, y: -28.5}
+        - {x: -29, y: -30.5}
+        - {x: -23, y: -31.5}
+        - {x: -15, y: -30.5}
+        - {x: -7, y: -35.5}
+        - {x: -15, y: -42.5}
+        - {x: -15, y: -44.5}
+        - {x: 15, y: -44.5}
+        - {x: 14, y: -41.5}
+        - {x: 8, y: -35.5}
+        - {x: 7, y: -31.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a51828fa988b224781499d7fde56dee
+      internalID: -404926403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnTree_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 624
+        width: 48
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12307692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 22, y: -20.5}
+        - {x: 24, y: -18.5}
+        - {x: 24, y: -7.5}
+        - {x: 21, y: 0.5}
+        - {x: 21, y: 3.5}
+        - {x: 13, y: 11.5}
+        - {x: 17, y: 15.5}
+        - {x: 17, y: 18.5}
+        - {x: 3, y: 32.5}
+        - {x: -3, y: 32.5}
+        - {x: -17, y: 18.5}
+        - {x: -17, y: 15.5}
+        - {x: -13, y: 11.5}
+        - {x: -21, y: 3.5}
+        - {x: -21, y: 0.5}
+        - {x: -18, y: -3.5}
+        - {x: -24, y: -9.5}
+        - {x: -24, y: -18.5}
+        - {x: -22, y: -20.5}
+        - {x: -18, y: -20.5}
+        - {x: -15, y: -18.5}
+        - {x: -11, y: -21.5}
+        - {x: -7, y: -23.5}
+        - {x: -9, y: -26.5}
+        - {x: -15, y: -30.5}
+        - {x: -15, y: -32.5}
+        - {x: 15, y: -32.5}
+        - {x: 14, y: -29.5}
+        - {x: 10, y: -26.5}
+        - {x: 11, y: -21.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287c0467218c79040a918a9e0e8a3db9
+      internalID: -312462776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnTree_7
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 576
+        width: 66
+        height: 113
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07079646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15, y: -23.5}
+        - {x: 26, y: -13.5}
+        - {x: 28, y: -7.5}
+        - {x: 28, y: -0.5}
+        - {x: 12, y: -12.5}
+        - {x: 8, y: -13.5}
+        - {x: 8, y: -8.5}
+        - {x: 9, y: 0.5}
+        - {x: 12, y: 9.5}
+        - {x: 16, y: 12.5}
+        - {x: 20, y: 14.5}
+        - {x: 29, y: 19.5}
+        - {x: 32, y: 25.5}
+        - {x: 33, y: 34.5}
+        - {x: 33, y: 44.5}
+        - {x: 31, y: 44.5}
+        - {x: 27, y: 40.5}
+        - {x: 26, y: 32.5}
+        - {x: 23, y: 36.5}
+        - {x: 23, y: 41.5}
+        - {x: 31, y: 52.5}
+        - {x: 33, y: 56.5}
+        - {x: 28, y: 56.5}
+        - {x: 16, y: 44.5}
+        - {x: 16, y: 30.5}
+        - {x: 20, y: 24.5}
+        - {x: 14, y: 23.5}
+        - {x: 8, y: 20.5}
+        - {x: 4, y: 15.5}
+        - {x: 2, y: 10.5}
+        - {x: 1, y: 5.5}
+        - {x: -2, y: 9.5}
+        - {x: -2, y: 20.5}
+        - {x: -3, y: 23.5}
+        - {x: -21, y: 44.5}
+        - {x: -21, y: 51.5}
+        - {x: -23, y: 51.5}
+        - {x: -26, y: 46.5}
+        - {x: -26, y: 40.5}
+        - {x: -22, y: 32.5}
+        - {x: -17, y: 26.5}
+        - {x: -24, y: 27.5}
+        - {x: -31, y: 30.5}
+        - {x: -33, y: 28.5}
+        - {x: -33, y: 23.5}
+        - {x: -23, y: 17.5}
+        - {x: -11, y: 16.5}
+        - {x: -11, y: 5.5}
+        - {x: -1, y: -8.5}
+        - {x: -1, y: -22.5}
+        - {x: -8, y: -41.5}
+        - {x: -12, y: -50.5}
+        - {x: -17, y: -56.5}
+        - {x: 14, y: -56.5}
+        - {x: 10, y: -42.5}
+        - {x: 10, y: -33.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a925d2de284c7149b8ca73952d515fd
+      internalID: -847275989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnStump_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 32
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2962963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 9, y: -5.5}
+        - {x: 9, y: 10.5}
+        - {x: 6, y: 13.5}
+        - {x: -5, y: 13.5}
+        - {x: -6, y: 12.5}
+        - {x: -6, y: 5.5}
+        - {x: -8, y: 0.5}
+        - {x: -12, y: -5.5}
+        - {x: -16, y: -9.5}
+        - {x: -16, y: -13.5}
+        - {x: 16, y: -13.5}
+        - {x: 16, y: -10.5}
+        - {x: 12, y: -8.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6afc186d06c1684c9f5a4e895b5a4ee
+      internalID: -349064086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnStump_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 576
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23529412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 11, y: -4}
+        - {x: 9, y: 0}
+        - {x: 7, y: 2}
+        - {x: 7, y: 14}
+        - {x: 5, y: 17}
+        - {x: -7, y: 17}
+        - {x: -8, y: 16}
+        - {x: -8, y: 12}
+        - {x: -9, y: 7}
+        - {x: -9, y: -2}
+        - {x: -10, y: -9}
+        - {x: -17, y: -13}
+        - {x: -19, y: -15}
+        - {x: -19, y: -17}
+        - {x: 19, y: -17}
+        - {x: 19, y: -13}
+        - {x: 13, y: -9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33e9177f5478084d94f535aadca89f3
+      internalID: 1310743341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnStump_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 576
+        width: 28
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 4.5}
+        - {x: -14, y: 1.5}
+        - {x: -14, y: -9.5}
+        - {x: 14, y: -9.5}
+        - {x: 14, y: -1.5}
+        - {x: 11, y: 4.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84277295095747a4894919db9afabd32
+      internalID: 221216489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterTree_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 416
+        width: 86
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.062015504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 20, y: -43.5}
+        - {x: 25, y: -45.5}
+        - {x: 34, y: -45.5}
+        - {x: 41, y: -44.5}
+        - {x: 43, y: -42.5}
+        - {x: 43, y: -34.5}
+        - {x: 41, y: -31.5}
+        - {x: 43, y: -29.5}
+        - {x: 43, y: -25.5}
+        - {x: 40, y: -21.5}
+        - {x: 37, y: -18.5}
+        - {x: 43, y: -18.5}
+        - {x: 43, y: -0.5}
+        - {x: 38, y: 4.5}
+        - {x: 39, y: 10.5}
+        - {x: 39, y: 13.5}
+        - {x: 36, y: 20.5}
+        - {x: 40, y: 24.5}
+        - {x: 40, y: 28.5}
+        - {x: 36, y: 35.5}
+        - {x: 36, y: 38.5}
+        - {x: 29, y: 48.5}
+        - {x: 29, y: 52.5}
+        - {x: 26, y: 57.5}
+        - {x: 22, y: 63.5}
+        - {x: 20, y: 64.5}
+        - {x: 11, y: 64.5}
+        - {x: 2, y: 55.5}
+        - {x: -3, y: 53.5}
+        - {x: -5, y: 50.5}
+        - {x: -5, y: 47.5}
+        - {x: -10, y: 42.5}
+        - {x: -10, y: 40.5}
+        - {x: -21, y: 29.5}
+        - {x: -21, y: 26.5}
+        - {x: -18, y: 23.5}
+        - {x: -25, y: 19.5}
+        - {x: -28, y: 16.5}
+        - {x: -28, y: 13.5}
+        - {x: -26, y: 10.5}
+        - {x: -34, y: 2.5}
+        - {x: -34, y: -1.5}
+        - {x: -37, y: -4.5}
+        - {x: -38, y: -9.5}
+        - {x: -33, y: -12.5}
+        - {x: -40, y: -19.5}
+        - {x: -43, y: -25.5}
+        - {x: -43, y: -35.5}
+        - {x: -39, y: -38.5}
+        - {x: -31, y: -38.5}
+        - {x: -29, y: -40.5}
+        - {x: -24, y: -43.5}
+        - {x: -15, y: -52.5}
+        - {x: -18, y: -57.5}
+        - {x: -19, y: -60.5}
+        - {x: -19, y: -64.5}
+        - {x: 12, y: -64.5}
+        - {x: 12, y: -58.5}
+        - {x: 9, y: -51.5}
+        - {x: 15, y: -49.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a70faa522dca2843a2909c0fc456703
+      internalID: 1049873654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterTree_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 416
+        width: 108
+        height: 154
+      alignment: 9
+      pivot: {x: 0.5, y: 0.051948052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 12, y: -64}
+        - {x: 10, y: -60}
+        - {x: 8, y: -58}
+        - {x: 8, y: -48}
+        - {x: 11, y: -46}
+        - {x: 22, y: -52}
+        - {x: 24, y: -52}
+        - {x: 33, y: -46}
+        - {x: 42, y: -51}
+        - {x: 50, y: -51}
+        - {x: 54, y: -50}
+        - {x: 54, y: -37}
+        - {x: 50, y: -32}
+        - {x: 41, y: -23}
+        - {x: 48, y: -23}
+        - {x: 51, y: -20}
+        - {x: 51, y: -17}
+        - {x: 49, y: -14}
+        - {x: 46, y: -13}
+        - {x: 40, y: -8}
+        - {x: 40, y: -3}
+        - {x: 34, y: 3}
+        - {x: 34, y: 7}
+        - {x: 37, y: 11}
+        - {x: 37, y: 14}
+        - {x: 34, y: 22}
+        - {x: 34, y: 25}
+        - {x: 28, y: 31}
+        - {x: 28, y: 34}
+        - {x: 31, y: 40}
+        - {x: 31, y: 42}
+        - {x: 29, y: 48}
+        - {x: 26, y: 51}
+        - {x: 22, y: 54}
+        - {x: 21, y: 58}
+        - {x: 16, y: 66}
+        - {x: 4, y: 77}
+        - {x: -2, y: 77}
+        - {x: -14, y: 66}
+        - {x: -19, y: 58}
+        - {x: -19, y: 56}
+        - {x: -22, y: 51}
+        - {x: -24, y: 51}
+        - {x: -27, y: 48}
+        - {x: -27, y: 46}
+        - {x: -29, y: 42}
+        - {x: -29, y: 40}
+        - {x: -26, y: 36}
+        - {x: -26, y: 31}
+        - {x: -32, y: 25}
+        - {x: -32, y: 22}
+        - {x: -31, y: 19}
+        - {x: -35, y: 14}
+        - {x: -35, y: 11}
+        - {x: -32, y: 7}
+        - {x: -32, y: 3}
+        - {x: -38, y: -3}
+        - {x: -38, y: -8}
+        - {x: -44, y: -13}
+        - {x: -47, y: -14}
+        - {x: -49, y: -17}
+        - {x: -49, y: -20}
+        - {x: -46, y: -23}
+        - {x: -38, y: -23}
+        - {x: -39, y: -23}
+        - {x: -48, y: -32}
+        - {x: -52, y: -37}
+        - {x: -54, y: -41}
+        - {x: -54, y: -48}
+        - {x: -52, y: -50}
+        - {x: -48, y: -51}
+        - {x: -40, y: -51}
+        - {x: -30, y: -46}
+        - {x: -22, y: -52}
+        - {x: -20, y: -52}
+        - {x: -8, y: -46}
+        - {x: -6, y: -51}
+        - {x: -8, y: -53}
+        - {x: -8, y: -62}
+        - {x: -9, y: -69}
+        - {x: -16, y: -73}
+        - {x: -19, y: -76}
+        - {x: -19, y: -77}
+        - {x: 22, y: -77}
+        - {x: 22, y: -76}
+        - {x: 18, y: -72}
+        - {x: 14, y: -69}
+      tessellationDetail: 0
+      bones: []
+      spriteID: efecb10e894e53f4ca74f2f88f939096
+      internalID: 1709335482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterTree_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 416
+        width: 122
+        height: 159
+      alignment: 9
+      pivot: {x: 0.5, y: 0.050314464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 12, y: -60.5}
+        - {x: 9, y: -59.5}
+        - {x: 10, y: -54.5}
+        - {x: 10, y: -46.5}
+        - {x: 11, y: -43.5}
+        - {x: 20, y: -47.5}
+        - {x: 26, y: -48.5}
+        - {x: 29, y: -47.5}
+        - {x: 34, y: -41.5}
+        - {x: 38, y: -42.5}
+        - {x: 45, y: -43.5}
+        - {x: 48, y: -43.5}
+        - {x: 54, y: -46.5}
+        - {x: 58, y: -46.5}
+        - {x: 61, y: -43.5}
+        - {x: 61, y: -34.5}
+        - {x: 57, y: -31.5}
+        - {x: 57, y: -28.5}
+        - {x: 50, y: -21.5}
+        - {x: 47, y: -19.5}
+        - {x: 48, y: -16.5}
+        - {x: 47, y: -12.5}
+        - {x: 50, y: -10.5}
+        - {x: 54, y: -6.5}
+        - {x: 54, y: -2.5}
+        - {x: 51, y: 3.5}
+        - {x: 47, y: 7.5}
+        - {x: 44, y: 13.5}
+        - {x: 39, y: 19.5}
+        - {x: 38, y: 29.5}
+        - {x: 36, y: 34.5}
+        - {x: 33, y: 37.5}
+        - {x: 26, y: 43.5}
+        - {x: 27, y: 45.5}
+        - {x: 25, y: 48.5}
+        - {x: 18, y: 52.5}
+        - {x: 20, y: 53.5}
+        - {x: 23, y: 56.5}
+        - {x: 23, y: 59.5}
+        - {x: 18, y: 64.5}
+        - {x: 17, y: 64.5}
+        - {x: 6, y: 75.5}
+        - {x: 6, y: 76.5}
+        - {x: 3, y: 79.5}
+        - {x: -3, y: 79.5}
+        - {x: -6, y: 76.5}
+        - {x: -6, y: 75.5}
+        - {x: -17, y: 64.5}
+        - {x: -18, y: 64.5}
+        - {x: -23, y: 59.5}
+        - {x: -23, y: 56.5}
+        - {x: -20, y: 53.5}
+        - {x: -18, y: 52.5}
+        - {x: -21, y: 50.5}
+        - {x: -27, y: 45.5}
+        - {x: -26, y: 43.5}
+        - {x: -33, y: 37.5}
+        - {x: -36, y: 34.5}
+        - {x: -38, y: 29.5}
+        - {x: -38, y: 24.5}
+        - {x: -35, y: 21.5}
+        - {x: -39, y: 19.5}
+        - {x: -44, y: 13.5}
+        - {x: -43, y: 10.5}
+        - {x: -51, y: 3.5}
+        - {x: -54, y: -2.5}
+        - {x: -54, y: -6.5}
+        - {x: -50, y: -10.5}
+        - {x: -46, y: -12.5}
+        - {x: -41, y: -12.5}
+        - {x: -47, y: -17.5}
+        - {x: -50, y: -21.5}
+        - {x: -57, y: -28.5}
+        - {x: -59, y: -32.5}
+        - {x: -61, y: -34.5}
+        - {x: -61, y: -43.5}
+        - {x: -58, y: -46.5}
+        - {x: -54, y: -46.5}
+        - {x: -48, y: -43.5}
+        - {x: -34, y: -41.5}
+        - {x: -29, y: -47.5}
+        - {x: -26, y: -48.5}
+        - {x: -22, y: -48.5}
+        - {x: -12, y: -43.5}
+        - {x: -10, y: -46.5}
+        - {x: -11, y: -55.5}
+        - {x: -16, y: -70.5}
+        - {x: -21, y: -75.5}
+        - {x: -24, y: -76.5}
+        - {x: -26, y: -78.5}
+        - {x: -26, y: -79.5}
+        - {x: 18, y: -79.5}
+        - {x: 18, y: -78.5}
+        - {x: 12, y: -73.5}
+        - {x: 13, y: -66.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8ba9c8bb5b9f24a86d0c88cc621e4b
+      internalID: 1249162771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterTree_3
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 288
+        width: 126
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.052980132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -62.5}
+        - {x: 0, y: -58.5}
+        - {x: -2, y: -56.5}
+        - {x: -2, y: -40.5}
+        - {x: -5, y: -36.5}
+        - {x: -5, y: -29.5}
+        - {x: -4, y: -23.5}
+        - {x: 2, y: -16.5}
+        - {x: 4, y: -16.5}
+        - {x: 8, y: -14.5}
+        - {x: 11, y: -16.5}
+        - {x: 18, y: -21.5}
+        - {x: 21, y: -22.5}
+        - {x: 27, y: -22.5}
+        - {x: 33, y: -16.5}
+        - {x: 38, y: -15.5}
+        - {x: 51, y: -2.5}
+        - {x: 51, y: 5.5}
+        - {x: 52, y: 6.5}
+        - {x: 52, y: 9.5}
+        - {x: 51, y: 14.5}
+        - {x: 49, y: 17.5}
+        - {x: 57, y: 24.5}
+        - {x: 63, y: 31.5}
+        - {x: 63, y: 60.5}
+        - {x: 62, y: 63.5}
+        - {x: 58, y: 67.5}
+        - {x: 55, y: 68.5}
+        - {x: 50, y: 68.5}
+        - {x: 48, y: 67.5}
+        - {x: 44, y: 71.5}
+        - {x: 39, y: 71.5}
+        - {x: 35, y: 72.5}
+        - {x: 30, y: 72.5}
+        - {x: 27, y: 69.5}
+        - {x: 24, y: 72.5}
+        - {x: 19, y: 72.5}
+        - {x: 13, y: 68.5}
+        - {x: 9, y: 68.5}
+        - {x: 5, y: 72.5}
+        - {x: 3, y: 72.5}
+        - {x: 0, y: 75.5}
+        - {x: -10, y: 75.5}
+        - {x: -13, y: 74.5}
+        - {x: -18, y: 74.5}
+        - {x: -25, y: 67.5}
+        - {x: -32, y: 59.5}
+        - {x: -48, y: 43.5}
+        - {x: -51, y: 43.5}
+        - {x: -58, y: 36.5}
+        - {x: -58, y: 30.5}
+        - {x: -61, y: 27.5}
+        - {x: -61, y: 22.5}
+        - {x: -59, y: 16.5}
+        - {x: -59, y: 11.5}
+        - {x: -58, y: 8.5}
+        - {x: -53, y: 3.5}
+        - {x: -55, y: 1.5}
+        - {x: -60, y: -7.5}
+        - {x: -62, y: -16.5}
+        - {x: -63, y: -18.5}
+        - {x: -63, y: -32.5}
+        - {x: -53, y: -42.5}
+        - {x: -48, y: -44.5}
+        - {x: -41, y: -44.5}
+        - {x: -35, y: -42.5}
+        - {x: -33, y: -44.5}
+        - {x: -27, y: -44.5}
+        - {x: -22, y: -41.5}
+        - {x: -18, y: -38.5}
+        - {x: -17, y: -39.5}
+        - {x: -17, y: -46.5}
+        - {x: -18, y: -51.5}
+        - {x: -18, y: -54.5}
+        - {x: -17, y: -59.5}
+        - {x: -18, y: -60.5}
+        - {x: -19, y: -67.5}
+        - {x: -22, y: -70.5}
+        - {x: -26, y: -71.5}
+        - {x: -29, y: -74.5}
+        - {x: -29, y: -75.5}
+        - {x: 12, y: -75.5}
+        - {x: 12, y: -74.5}
+        - {x: 8, y: -70.5}
+        - {x: 4, y: -67.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2241426add525004fae980c7fc4eae17
+      internalID: 121276875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterTree_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 304
+        width: 68
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0.074074075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -36}
+        - {x: 18, y: -34}
+        - {x: 24, y: -39}
+        - {x: 32, y: -39}
+        - {x: 34, y: -37}
+        - {x: 34, y: -28}
+        - {x: 29, y: -21}
+        - {x: 34, y: -17}
+        - {x: 34, y: -14}
+        - {x: 33, y: -11}
+        - {x: 25, y: -2}
+        - {x: 29, y: 2}
+        - {x: 29, y: 7}
+        - {x: 21, y: 22}
+        - {x: 21, y: 25}
+        - {x: 13, y: 33}
+        - {x: 17, y: 37}
+        - {x: 17, y: 40}
+        - {x: 3, y: 54}
+        - {x: -3, y: 54}
+        - {x: -17, y: 40}
+        - {x: -17, y: 37}
+        - {x: -13, y: 33}
+        - {x: -21, y: 25}
+        - {x: -21, y: 22}
+        - {x: -18, y: 18}
+        - {x: -29, y: 7}
+        - {x: -29, y: 2}
+        - {x: -25, y: -2}
+        - {x: -24, y: -2}
+        - {x: -34, y: -13}
+        - {x: -34, y: -18}
+        - {x: -29, y: -22}
+        - {x: -26, y: -21}
+        - {x: -34, y: -29}
+        - {x: -34, y: -37}
+        - {x: -32, y: -39}
+        - {x: -24, y: -39}
+        - {x: -17, y: -34}
+        - {x: -14, y: -36}
+        - {x: -8, y: -36}
+        - {x: -7, y: -45}
+        - {x: -15, y: -52}
+        - {x: -15, y: -54}
+        - {x: 15, y: -54}
+        - {x: 14, y: -51}
+        - {x: 8, y: -45}
+        - {x: 8, y: -36}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ee52a01895e8c4ca5f3c472b424984
+      internalID: -467542035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterTree_5
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 320
+        width: 64
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08988764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -29.5}
+        - {x: 18, y: -28.5}
+        - {x: 23, y: -30.5}
+        - {x: 29, y: -30.5}
+        - {x: 32, y: -28.5}
+        - {x: 32, y: -19.5}
+        - {x: 25, y: -11.5}
+        - {x: 29, y: -7.5}
+        - {x: 29, y: -2.5}
+        - {x: 21, y: 12.5}
+        - {x: 21, y: 15.5}
+        - {x: 13, y: 23.5}
+        - {x: 17, y: 27.5}
+        - {x: 17, y: 30.5}
+        - {x: 3, y: 44.5}
+        - {x: -3, y: 44.5}
+        - {x: -17, y: 30.5}
+        - {x: -17, y: 27.5}
+        - {x: -13, y: 23.5}
+        - {x: -21, y: 15.5}
+        - {x: -21, y: 12.5}
+        - {x: -18, y: 8.5}
+        - {x: -29, y: -2.5}
+        - {x: -29, y: -7.5}
+        - {x: -25, y: -11.5}
+        - {x: -23, y: -11.5}
+        - {x: -32, y: -20.5}
+        - {x: -32, y: -28.5}
+        - {x: -29, y: -30.5}
+        - {x: -23, y: -31.5}
+        - {x: -15, y: -30.5}
+        - {x: -7, y: -35.5}
+        - {x: -15, y: -42.5}
+        - {x: -15, y: -44.5}
+        - {x: 15, y: -44.5}
+        - {x: 14, y: -41.5}
+        - {x: 8, y: -35.5}
+        - {x: 7, y: -31.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077d6bc8e3507be49bafe4d5ee11953b
+      internalID: 614125869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterTree_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 48
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12307692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 22, y: -20.5}
+        - {x: 24, y: -18.5}
+        - {x: 24, y: -7.5}
+        - {x: 21, y: 0.5}
+        - {x: 21, y: 3.5}
+        - {x: 13, y: 11.5}
+        - {x: 17, y: 15.5}
+        - {x: 17, y: 18.5}
+        - {x: 3, y: 32.5}
+        - {x: -3, y: 32.5}
+        - {x: -17, y: 18.5}
+        - {x: -17, y: 15.5}
+        - {x: -13, y: 11.5}
+        - {x: -21, y: 3.5}
+        - {x: -21, y: 0.5}
+        - {x: -18, y: -3.5}
+        - {x: -24, y: -9.5}
+        - {x: -24, y: -18.5}
+        - {x: -22, y: -20.5}
+        - {x: -18, y: -20.5}
+        - {x: -15, y: -18.5}
+        - {x: -11, y: -21.5}
+        - {x: -7, y: -23.5}
+        - {x: -9, y: -26.5}
+        - {x: -15, y: -30.5}
+        - {x: -15, y: -32.5}
+        - {x: 15, y: -32.5}
+        - {x: 14, y: -29.5}
+        - {x: 10, y: -26.5}
+        - {x: 11, y: -21.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7688d4b8183564283c162e1279b84d
+      internalID: -1139161484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterTree_7
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 288
+        width: 66
+        height: 113
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07079646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15, y: -23.5}
+        - {x: 26, y: -13.5}
+        - {x: 28, y: -7.5}
+        - {x: 28, y: -0.5}
+        - {x: 12, y: -12.5}
+        - {x: 8, y: -13.5}
+        - {x: 8, y: -8.5}
+        - {x: 9, y: 0.5}
+        - {x: 12, y: 9.5}
+        - {x: 16, y: 12.5}
+        - {x: 20, y: 14.5}
+        - {x: 29, y: 19.5}
+        - {x: 32, y: 25.5}
+        - {x: 33, y: 34.5}
+        - {x: 33, y: 44.5}
+        - {x: 31, y: 44.5}
+        - {x: 27, y: 40.5}
+        - {x: 26, y: 32.5}
+        - {x: 23, y: 36.5}
+        - {x: 23, y: 41.5}
+        - {x: 31, y: 52.5}
+        - {x: 33, y: 56.5}
+        - {x: 28, y: 56.5}
+        - {x: 16, y: 44.5}
+        - {x: 16, y: 30.5}
+        - {x: 20, y: 24.5}
+        - {x: 14, y: 23.5}
+        - {x: 8, y: 20.5}
+        - {x: 4, y: 15.5}
+        - {x: 2, y: 10.5}
+        - {x: 1, y: 5.5}
+        - {x: -2, y: 9.5}
+        - {x: -2, y: 20.5}
+        - {x: -3, y: 23.5}
+        - {x: -21, y: 44.5}
+        - {x: -21, y: 51.5}
+        - {x: -23, y: 51.5}
+        - {x: -26, y: 46.5}
+        - {x: -26, y: 40.5}
+        - {x: -22, y: 32.5}
+        - {x: -17, y: 26.5}
+        - {x: -24, y: 27.5}
+        - {x: -31, y: 30.5}
+        - {x: -33, y: 28.5}
+        - {x: -33, y: 23.5}
+        - {x: -23, y: 17.5}
+        - {x: -11, y: 16.5}
+        - {x: -11, y: 5.5}
+        - {x: -1, y: -8.5}
+        - {x: -1, y: -22.5}
+        - {x: -8, y: -41.5}
+        - {x: -12, y: -50.5}
+        - {x: -17, y: -56.5}
+        - {x: 14, y: -56.5}
+        - {x: 10, y: -42.5}
+        - {x: 10, y: -33.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dd6f79ef6d8fd42b566b8442190414
+      internalID: -153508978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterStump_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2962963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 9, y: -5.5}
+        - {x: 9, y: 10.5}
+        - {x: 6, y: 13.5}
+        - {x: -5, y: 13.5}
+        - {x: -6, y: 12.5}
+        - {x: -6, y: 5.5}
+        - {x: -8, y: 0.5}
+        - {x: -12, y: -5.5}
+        - {x: -16, y: -9.5}
+        - {x: -16, y: -13.5}
+        - {x: 16, y: -13.5}
+        - {x: 16, y: -10.5}
+        - {x: 12, y: -8.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e8e44266ae8544292a7848d1e28342
+      internalID: -411332226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterStump_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 288
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23529412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 11, y: -4}
+        - {x: 9, y: 0}
+        - {x: 7, y: 2}
+        - {x: 7, y: 14}
+        - {x: 5, y: 17}
+        - {x: -7, y: 17}
+        - {x: -8, y: 16}
+        - {x: -8, y: 12}
+        - {x: -9, y: 7}
+        - {x: -9, y: -2}
+        - {x: -10, y: -9}
+        - {x: -17, y: -13}
+        - {x: -19, y: -15}
+        - {x: -19, y: -17}
+        - {x: 19, y: -17}
+        - {x: 19, y: -13}
+        - {x: 13, y: -9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbe97118097b86409d5350f11284f68
+      internalID: 710744406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterStump_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 288
+        width: 28
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 4.5}
+        - {x: -14, y: 1.5}
+        - {x: -14, y: -9.5}
+        - {x: 14, y: -9.5}
+        - {x: 14, y: -1.5}
+        - {x: 11, y: 4.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c44e339053fcde438870a49c8990070
+      internalID: -338354047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerTree_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 128
+        width: 86
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.062015504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 20, y: -43.5}
+        - {x: 25, y: -45.5}
+        - {x: 34, y: -45.5}
+        - {x: 41, y: -44.5}
+        - {x: 43, y: -42.5}
+        - {x: 43, y: -34.5}
+        - {x: 41, y: -31.5}
+        - {x: 43, y: -29.5}
+        - {x: 43, y: -25.5}
+        - {x: 40, y: -21.5}
+        - {x: 37, y: -18.5}
+        - {x: 43, y: -18.5}
+        - {x: 43, y: -0.5}
+        - {x: 38, y: 4.5}
+        - {x: 39, y: 10.5}
+        - {x: 39, y: 13.5}
+        - {x: 36, y: 20.5}
+        - {x: 40, y: 24.5}
+        - {x: 40, y: 28.5}
+        - {x: 36, y: 35.5}
+        - {x: 36, y: 38.5}
+        - {x: 29, y: 48.5}
+        - {x: 29, y: 52.5}
+        - {x: 26, y: 57.5}
+        - {x: 22, y: 63.5}
+        - {x: 20, y: 64.5}
+        - {x: 11, y: 64.5}
+        - {x: 2, y: 55.5}
+        - {x: -3, y: 53.5}
+        - {x: -5, y: 50.5}
+        - {x: -5, y: 47.5}
+        - {x: -10, y: 42.5}
+        - {x: -10, y: 40.5}
+        - {x: -21, y: 29.5}
+        - {x: -21, y: 26.5}
+        - {x: -18, y: 23.5}
+        - {x: -25, y: 19.5}
+        - {x: -28, y: 16.5}
+        - {x: -28, y: 13.5}
+        - {x: -26, y: 10.5}
+        - {x: -34, y: 2.5}
+        - {x: -34, y: -1.5}
+        - {x: -37, y: -4.5}
+        - {x: -38, y: -9.5}
+        - {x: -33, y: -12.5}
+        - {x: -40, y: -19.5}
+        - {x: -43, y: -25.5}
+        - {x: -43, y: -35.5}
+        - {x: -39, y: -38.5}
+        - {x: -31, y: -38.5}
+        - {x: -29, y: -40.5}
+        - {x: -24, y: -43.5}
+        - {x: -15, y: -52.5}
+        - {x: -18, y: -57.5}
+        - {x: -19, y: -60.5}
+        - {x: -19, y: -64.5}
+        - {x: 12, y: -64.5}
+        - {x: 12, y: -58.5}
+        - {x: 9, y: -51.5}
+        - {x: 15, y: -49.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b583ef24dd19d4e458f69bcbc7d41615
+      internalID: 1033325359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerTree_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 128
+        width: 108
+        height: 154
+      alignment: 9
+      pivot: {x: 0.5, y: 0.051948052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 12, y: -64}
+        - {x: 10, y: -60}
+        - {x: 8, y: -58}
+        - {x: 8, y: -48}
+        - {x: 11, y: -46}
+        - {x: 22, y: -52}
+        - {x: 24, y: -52}
+        - {x: 33, y: -46}
+        - {x: 42, y: -51}
+        - {x: 50, y: -51}
+        - {x: 54, y: -50}
+        - {x: 54, y: -37}
+        - {x: 50, y: -32}
+        - {x: 41, y: -23}
+        - {x: 48, y: -23}
+        - {x: 51, y: -20}
+        - {x: 51, y: -17}
+        - {x: 49, y: -14}
+        - {x: 46, y: -13}
+        - {x: 40, y: -8}
+        - {x: 40, y: -3}
+        - {x: 34, y: 3}
+        - {x: 34, y: 7}
+        - {x: 37, y: 11}
+        - {x: 37, y: 14}
+        - {x: 34, y: 22}
+        - {x: 34, y: 25}
+        - {x: 28, y: 31}
+        - {x: 28, y: 34}
+        - {x: 31, y: 40}
+        - {x: 31, y: 42}
+        - {x: 29, y: 48}
+        - {x: 26, y: 51}
+        - {x: 22, y: 54}
+        - {x: 21, y: 58}
+        - {x: 16, y: 66}
+        - {x: 4, y: 77}
+        - {x: -2, y: 77}
+        - {x: -14, y: 66}
+        - {x: -19, y: 58}
+        - {x: -19, y: 56}
+        - {x: -22, y: 51}
+        - {x: -24, y: 51}
+        - {x: -27, y: 48}
+        - {x: -27, y: 46}
+        - {x: -29, y: 42}
+        - {x: -29, y: 40}
+        - {x: -26, y: 36}
+        - {x: -26, y: 31}
+        - {x: -32, y: 25}
+        - {x: -32, y: 22}
+        - {x: -31, y: 19}
+        - {x: -35, y: 14}
+        - {x: -35, y: 11}
+        - {x: -32, y: 7}
+        - {x: -32, y: 3}
+        - {x: -38, y: -3}
+        - {x: -38, y: -8}
+        - {x: -44, y: -13}
+        - {x: -47, y: -14}
+        - {x: -49, y: -17}
+        - {x: -49, y: -20}
+        - {x: -46, y: -23}
+        - {x: -38, y: -23}
+        - {x: -39, y: -23}
+        - {x: -48, y: -32}
+        - {x: -52, y: -37}
+        - {x: -54, y: -41}
+        - {x: -54, y: -48}
+        - {x: -52, y: -50}
+        - {x: -48, y: -51}
+        - {x: -40, y: -51}
+        - {x: -30, y: -46}
+        - {x: -22, y: -52}
+        - {x: -20, y: -52}
+        - {x: -8, y: -46}
+        - {x: -6, y: -51}
+        - {x: -8, y: -53}
+        - {x: -8, y: -62}
+        - {x: -9, y: -69}
+        - {x: -16, y: -73}
+        - {x: -19, y: -76}
+        - {x: -19, y: -77}
+        - {x: 22, y: -77}
+        - {x: 22, y: -76}
+        - {x: 18, y: -72}
+        - {x: 14, y: -69}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 3954e2aef0203a94e8319e02985ed440
+      internalID: -576823657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerTree_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 128
+        width: 122
+        height: 159
+      alignment: 9
+      pivot: {x: 0.5, y: 0.050314464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 12, y: -60.5}
+        - {x: 9, y: -59.5}
+        - {x: 10, y: -54.5}
+        - {x: 10, y: -46.5}
+        - {x: 11, y: -43.5}
+        - {x: 20, y: -47.5}
+        - {x: 26, y: -48.5}
+        - {x: 29, y: -47.5}
+        - {x: 34, y: -41.5}
+        - {x: 38, y: -42.5}
+        - {x: 45, y: -43.5}
+        - {x: 48, y: -43.5}
+        - {x: 54, y: -46.5}
+        - {x: 58, y: -46.5}
+        - {x: 61, y: -43.5}
+        - {x: 61, y: -34.5}
+        - {x: 57, y: -31.5}
+        - {x: 57, y: -28.5}
+        - {x: 50, y: -21.5}
+        - {x: 47, y: -19.5}
+        - {x: 48, y: -16.5}
+        - {x: 47, y: -12.5}
+        - {x: 50, y: -10.5}
+        - {x: 54, y: -6.5}
+        - {x: 54, y: -2.5}
+        - {x: 51, y: 3.5}
+        - {x: 47, y: 7.5}
+        - {x: 44, y: 13.5}
+        - {x: 39, y: 19.5}
+        - {x: 38, y: 29.5}
+        - {x: 36, y: 34.5}
+        - {x: 33, y: 37.5}
+        - {x: 26, y: 43.5}
+        - {x: 27, y: 45.5}
+        - {x: 25, y: 48.5}
+        - {x: 18, y: 52.5}
+        - {x: 20, y: 53.5}
+        - {x: 23, y: 56.5}
+        - {x: 23, y: 59.5}
+        - {x: 18, y: 64.5}
+        - {x: 17, y: 64.5}
+        - {x: 6, y: 75.5}
+        - {x: 6, y: 76.5}
+        - {x: 3, y: 79.5}
+        - {x: -3, y: 79.5}
+        - {x: -6, y: 76.5}
+        - {x: -6, y: 75.5}
+        - {x: -17, y: 64.5}
+        - {x: -18, y: 64.5}
+        - {x: -23, y: 59.5}
+        - {x: -23, y: 56.5}
+        - {x: -20, y: 53.5}
+        - {x: -18, y: 52.5}
+        - {x: -21, y: 50.5}
+        - {x: -27, y: 45.5}
+        - {x: -26, y: 43.5}
+        - {x: -33, y: 37.5}
+        - {x: -36, y: 34.5}
+        - {x: -38, y: 29.5}
+        - {x: -38, y: 24.5}
+        - {x: -35, y: 21.5}
+        - {x: -39, y: 19.5}
+        - {x: -44, y: 13.5}
+        - {x: -43, y: 10.5}
+        - {x: -51, y: 3.5}
+        - {x: -54, y: -2.5}
+        - {x: -54, y: -6.5}
+        - {x: -50, y: -10.5}
+        - {x: -46, y: -12.5}
+        - {x: -41, y: -12.5}
+        - {x: -47, y: -17.5}
+        - {x: -50, y: -21.5}
+        - {x: -57, y: -28.5}
+        - {x: -59, y: -32.5}
+        - {x: -61, y: -34.5}
+        - {x: -61, y: -43.5}
+        - {x: -58, y: -46.5}
+        - {x: -54, y: -46.5}
+        - {x: -48, y: -43.5}
+        - {x: -34, y: -41.5}
+        - {x: -29, y: -47.5}
+        - {x: -26, y: -48.5}
+        - {x: -22, y: -48.5}
+        - {x: -12, y: -43.5}
+        - {x: -10, y: -46.5}
+        - {x: -11, y: -55.5}
+        - {x: -16, y: -70.5}
+        - {x: -21, y: -75.5}
+        - {x: -24, y: -76.5}
+        - {x: -26, y: -78.5}
+        - {x: -26, y: -79.5}
+        - {x: 18, y: -79.5}
+        - {x: 18, y: -78.5}
+        - {x: 12, y: -73.5}
+        - {x: 13, y: -66.5}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 9c1243e3b55f9eb4bbc5d05d8042b028
+      internalID: 936235585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerTree_3
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 126
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5, y: 0.052980132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -62.5}
+        - {x: 0, y: -58.5}
+        - {x: -2, y: -56.5}
+        - {x: -2, y: -40.5}
+        - {x: -5, y: -36.5}
+        - {x: -5, y: -29.5}
+        - {x: -4, y: -23.5}
+        - {x: 2, y: -16.5}
+        - {x: 4, y: -16.5}
+        - {x: 8, y: -14.5}
+        - {x: 11, y: -16.5}
+        - {x: 18, y: -21.5}
+        - {x: 21, y: -22.5}
+        - {x: 27, y: -22.5}
+        - {x: 33, y: -16.5}
+        - {x: 38, y: -15.5}
+        - {x: 51, y: -2.5}
+        - {x: 51, y: 5.5}
+        - {x: 52, y: 6.5}
+        - {x: 52, y: 9.5}
+        - {x: 51, y: 14.5}
+        - {x: 49, y: 17.5}
+        - {x: 57, y: 24.5}
+        - {x: 63, y: 31.5}
+        - {x: 63, y: 60.5}
+        - {x: 62, y: 63.5}
+        - {x: 58, y: 67.5}
+        - {x: 55, y: 68.5}
+        - {x: 50, y: 68.5}
+        - {x: 48, y: 67.5}
+        - {x: 44, y: 71.5}
+        - {x: 39, y: 71.5}
+        - {x: 35, y: 72.5}
+        - {x: 30, y: 72.5}
+        - {x: 27, y: 69.5}
+        - {x: 24, y: 72.5}
+        - {x: 19, y: 72.5}
+        - {x: 13, y: 68.5}
+        - {x: 9, y: 68.5}
+        - {x: 5, y: 72.5}
+        - {x: 3, y: 72.5}
+        - {x: 0, y: 75.5}
+        - {x: -10, y: 75.5}
+        - {x: -13, y: 74.5}
+        - {x: -18, y: 74.5}
+        - {x: -25, y: 67.5}
+        - {x: -32, y: 59.5}
+        - {x: -48, y: 43.5}
+        - {x: -51, y: 43.5}
+        - {x: -58, y: 36.5}
+        - {x: -58, y: 30.5}
+        - {x: -61, y: 27.5}
+        - {x: -61, y: 22.5}
+        - {x: -59, y: 16.5}
+        - {x: -59, y: 11.5}
+        - {x: -58, y: 8.5}
+        - {x: -53, y: 3.5}
+        - {x: -55, y: 1.5}
+        - {x: -60, y: -7.5}
+        - {x: -62, y: -16.5}
+        - {x: -63, y: -18.5}
+        - {x: -63, y: -32.5}
+        - {x: -53, y: -42.5}
+        - {x: -48, y: -44.5}
+        - {x: -41, y: -44.5}
+        - {x: -35, y: -42.5}
+        - {x: -33, y: -44.5}
+        - {x: -27, y: -44.5}
+        - {x: -22, y: -41.5}
+        - {x: -18, y: -38.5}
+        - {x: -17, y: -39.5}
+        - {x: -17, y: -46.5}
+        - {x: -18, y: -51.5}
+        - {x: -18, y: -54.5}
+        - {x: -17, y: -59.5}
+        - {x: -18, y: -60.5}
+        - {x: -19, y: -67.5}
+        - {x: -22, y: -70.5}
+        - {x: -26, y: -71.5}
+        - {x: -29, y: -74.5}
+        - {x: -29, y: -75.5}
+        - {x: 12, y: -75.5}
+        - {x: 12, y: -74.5}
+        - {x: 8, y: -70.5}
+        - {x: 4, y: -67.5}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 328b2c4d91a69e940af04bebcb07a2e0
+      internalID: -37244782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerTree_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 16
+        width: 68
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0.074074075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -36}
+        - {x: 18, y: -34}
+        - {x: 24, y: -39}
+        - {x: 32, y: -39}
+        - {x: 34, y: -37}
+        - {x: 34, y: -28}
+        - {x: 29, y: -21}
+        - {x: 34, y: -17}
+        - {x: 34, y: -14}
+        - {x: 33, y: -11}
+        - {x: 25, y: -2}
+        - {x: 29, y: 2}
+        - {x: 29, y: 7}
+        - {x: 21, y: 22}
+        - {x: 21, y: 25}
+        - {x: 13, y: 33}
+        - {x: 17, y: 37}
+        - {x: 17, y: 40}
+        - {x: 3, y: 54}
+        - {x: -3, y: 54}
+        - {x: -17, y: 40}
+        - {x: -17, y: 37}
+        - {x: -13, y: 33}
+        - {x: -21, y: 25}
+        - {x: -21, y: 22}
+        - {x: -18, y: 18}
+        - {x: -29, y: 7}
+        - {x: -29, y: 2}
+        - {x: -25, y: -2}
+        - {x: -24, y: -2}
+        - {x: -34, y: -13}
+        - {x: -34, y: -18}
+        - {x: -29, y: -22}
+        - {x: -26, y: -21}
+        - {x: -34, y: -29}
+        - {x: -34, y: -37}
+        - {x: -32, y: -39}
+        - {x: -24, y: -39}
+        - {x: -17, y: -34}
+        - {x: -14, y: -36}
+        - {x: -8, y: -36}
+        - {x: -7, y: -45}
+        - {x: -15, y: -52}
+        - {x: -15, y: -54}
+        - {x: 15, y: -54}
+        - {x: 14, y: -51}
+        - {x: 8, y: -45}
+        - {x: 8, y: -36}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 1a37599f1054083448f32a1613ed9227
+      internalID: -1923058455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerTree_5
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 32
+        width: 64
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08988764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -29.5}
+        - {x: 18, y: -28.5}
+        - {x: 23, y: -30.5}
+        - {x: 29, y: -30.5}
+        - {x: 32, y: -28.5}
+        - {x: 32, y: -19.5}
+        - {x: 25, y: -11.5}
+        - {x: 29, y: -7.5}
+        - {x: 29, y: -2.5}
+        - {x: 21, y: 12.5}
+        - {x: 21, y: 15.5}
+        - {x: 13, y: 23.5}
+        - {x: 17, y: 27.5}
+        - {x: 17, y: 30.5}
+        - {x: 3, y: 44.5}
+        - {x: -3, y: 44.5}
+        - {x: -17, y: 30.5}
+        - {x: -17, y: 27.5}
+        - {x: -13, y: 23.5}
+        - {x: -21, y: 15.5}
+        - {x: -21, y: 12.5}
+        - {x: -18, y: 8.5}
+        - {x: -29, y: -2.5}
+        - {x: -29, y: -7.5}
+        - {x: -25, y: -11.5}
+        - {x: -23, y: -11.5}
+        - {x: -32, y: -20.5}
+        - {x: -32, y: -28.5}
+        - {x: -29, y: -30.5}
+        - {x: -23, y: -31.5}
+        - {x: -15, y: -30.5}
+        - {x: -7, y: -35.5}
+        - {x: -15, y: -42.5}
+        - {x: -15, y: -44.5}
+        - {x: 15, y: -44.5}
+        - {x: 14, y: -41.5}
+        - {x: 8, y: -35.5}
+        - {x: 7, y: -31.5}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 4568050217bd5f84cad5d50ccd770c8f
+      internalID: -862648155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerTree_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 48
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12307692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 22, y: -20.5}
+        - {x: 24, y: -18.5}
+        - {x: 24, y: -7.5}
+        - {x: 21, y: 0.5}
+        - {x: 21, y: 3.5}
+        - {x: 13, y: 11.5}
+        - {x: 17, y: 15.5}
+        - {x: 17, y: 18.5}
+        - {x: 3, y: 32.5}
+        - {x: -3, y: 32.5}
+        - {x: -17, y: 18.5}
+        - {x: -17, y: 15.5}
+        - {x: -13, y: 11.5}
+        - {x: -21, y: 3.5}
+        - {x: -21, y: 0.5}
+        - {x: -18, y: -3.5}
+        - {x: -24, y: -9.5}
+        - {x: -24, y: -18.5}
+        - {x: -22, y: -20.5}
+        - {x: -18, y: -20.5}
+        - {x: -15, y: -18.5}
+        - {x: -11, y: -21.5}
+        - {x: -7, y: -23.5}
+        - {x: -9, y: -26.5}
+        - {x: -15, y: -30.5}
+        - {x: -15, y: -32.5}
+        - {x: 15, y: -32.5}
+        - {x: 14, y: -29.5}
+        - {x: 10, y: -26.5}
+        - {x: 11, y: -21.5}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 0bef2370b5f9a124e93bc649a88f1ec1
+      internalID: -2009406473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerTree_7
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 66
+        height: 113
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07079646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15, y: -23.5}
+        - {x: 26, y: -13.5}
+        - {x: 28, y: -7.5}
+        - {x: 28, y: -0.5}
+        - {x: 12, y: -12.5}
+        - {x: 8, y: -13.5}
+        - {x: 8, y: -8.5}
+        - {x: 9, y: 0.5}
+        - {x: 12, y: 9.5}
+        - {x: 16, y: 12.5}
+        - {x: 20, y: 14.5}
+        - {x: 29, y: 19.5}
+        - {x: 32, y: 25.5}
+        - {x: 33, y: 34.5}
+        - {x: 33, y: 44.5}
+        - {x: 31, y: 44.5}
+        - {x: 27, y: 40.5}
+        - {x: 26, y: 32.5}
+        - {x: 23, y: 36.5}
+        - {x: 23, y: 41.5}
+        - {x: 31, y: 52.5}
+        - {x: 33, y: 56.5}
+        - {x: 28, y: 56.5}
+        - {x: 16, y: 44.5}
+        - {x: 16, y: 30.5}
+        - {x: 20, y: 24.5}
+        - {x: 14, y: 23.5}
+        - {x: 8, y: 20.5}
+        - {x: 4, y: 15.5}
+        - {x: 2, y: 10.5}
+        - {x: 1, y: 5.5}
+        - {x: -2, y: 9.5}
+        - {x: -2, y: 20.5}
+        - {x: -3, y: 23.5}
+        - {x: -21, y: 44.5}
+        - {x: -21, y: 51.5}
+        - {x: -23, y: 51.5}
+        - {x: -26, y: 46.5}
+        - {x: -26, y: 40.5}
+        - {x: -22, y: 32.5}
+        - {x: -17, y: 26.5}
+        - {x: -24, y: 27.5}
+        - {x: -31, y: 30.5}
+        - {x: -33, y: 28.5}
+        - {x: -33, y: 23.5}
+        - {x: -23, y: 17.5}
+        - {x: -11, y: 16.5}
+        - {x: -11, y: 5.5}
+        - {x: -1, y: -8.5}
+        - {x: -1, y: -22.5}
+        - {x: -8, y: -41.5}
+        - {x: -12, y: -50.5}
+        - {x: -17, y: -56.5}
+        - {x: 14, y: -56.5}
+        - {x: 10, y: -42.5}
+        - {x: 10, y: -33.5}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: ea9c703a5c63c884890dec488a26063b
+      internalID: -695833333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerStump_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2962963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 9, y: -5.5}
+        - {x: 9, y: 10.5}
+        - {x: 6, y: 13.5}
+        - {x: -5, y: 13.5}
+        - {x: -6, y: 12.5}
+        - {x: -6, y: 5.5}
+        - {x: -8, y: 0.5}
+        - {x: -12, y: -5.5}
+        - {x: -16, y: -9.5}
+        - {x: -16, y: -13.5}
+        - {x: 16, y: -13.5}
+        - {x: 16, y: -10.5}
+        - {x: 12, y: -8.5}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: bcfc7bec55407f0428ef0fc5acd93d2d
+      internalID: 328751322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerStump_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23529412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 11, y: -4}
+        - {x: 9, y: 0}
+        - {x: 7, y: 2}
+        - {x: 7, y: 14}
+        - {x: 5, y: 17}
+        - {x: -7, y: 17}
+        - {x: -8, y: 16}
+        - {x: -8, y: 12}
+        - {x: -9, y: 7}
+        - {x: -9, y: -2}
+        - {x: -10, y: -9}
+        - {x: -17, y: -13}
+        - {x: -19, y: -15}
+        - {x: -19, y: -17}
+        - {x: 19, y: -17}
+        - {x: 19, y: -13}
+        - {x: 13, y: -9}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: e619a9e199b3907479b8103e9e762aed
+      internalID: 1398880045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerStump_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 28
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 7}
+        - {x: -14, y: 4}
+        - {x: -14, y: -7}
+        - {x: 14, y: -7}
+        - {x: 14, y: 1}
+        - {x: 11, y: 7}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 60b44e22c00d5a649af755e9bb9c563e
+      internalID: 501726316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnCaveEnd_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 784
+        width: 176
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 29, y: -34}
+        - {x: 31, y: -34}
+        - {x: 35, y: -30}
+        - {x: 35, y: -28}
+        - {x: 35, y: -29}
+        - {x: 37, y: -31}
+        - {x: 40, y: -30}
+        - {x: 40, y: -25}
+        - {x: 42, y: -23}
+        - {x: 43, y: -19}
+        - {x: 45, y: -22}
+        - {x: 48, y: -21}
+        - {x: 50, y: -15}
+        - {x: 53, y: -14}
+        - {x: 54, y: -9}
+        - {x: 57, y: -6}
+        - {x: 57, y: -4}
+        - {x: 56, y: -1}
+        - {x: 57, y: 4}
+        - {x: 60, y: 8}
+        - {x: 61, y: 5}
+        - {x: 63, y: 3}
+        - {x: 66, y: 4}
+        - {x: 71, y: 14}
+        - {x: 71, y: 16}
+        - {x: 70, y: 17}
+        - {x: 77, y: 24}
+        - {x: 79, y: 22}
+        - {x: 81, y: 22}
+        - {x: 87, y: 30}
+        - {x: 88, y: 32}
+        - {x: 88, y: 40}
+        - {x: -88, y: 40}
+        - {x: -88, y: 33}
+        - {x: -87, y: 30}
+        - {x: -83, y: 25}
+        - {x: -80, y: 22}
+        - {x: -79, y: 22}
+        - {x: -77, y: 24}
+        - {x: -70, y: 17}
+        - {x: -71, y: 16}
+        - {x: -71, y: 14}
+        - {x: -69, y: 10}
+        - {x: -66, y: 5}
+        - {x: -64, y: 3}
+        - {x: -61, y: 4}
+        - {x: -60, y: 8}
+        - {x: -58, y: 4}
+        - {x: -56, y: 3}
+        - {x: -56, y: -1}
+        - {x: -57, y: -4}
+        - {x: -57, y: -6}
+        - {x: -53, y: -9}
+        - {x: -53, y: -13}
+        - {x: -51, y: -15}
+        - {x: -48, y: -15}
+        - {x: -48, y: -20}
+        - {x: -46, y: -22}
+        - {x: -45, y: -22}
+        - {x: -42, y: -23}
+        - {x: -40, y: -29}
+        - {x: -38, y: -31}
+        - {x: -35, y: -30}
+        - {x: -31, y: -34}
+        - {x: -29, y: -34}
+        - {x: -26, y: -31}
+        - {x: -21, y: -33}
+        - {x: -25, y: -39}
+        - {x: -25, y: -40}
+        - {x: 25, y: -40}
+        - {x: 25, y: -39}
+        - {x: 21, y: -33}
+        - {x: 26, y: -31}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebdd65d0baad27478b4455efd552298
+      internalID: -1761244495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnCaveEnd_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 176
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 44, y: -9}
+        - {x: 46, y: -4}
+        - {x: 46, y: -1}
+        - {x: 44, y: 5}
+        - {x: 43, y: 11}
+        - {x: 43, y: 14}
+        - {x: 39, y: 18}
+        - {x: 32, y: 22}
+        - {x: 24, y: 22}
+        - {x: 25, y: 26}
+        - {x: 25, y: 32}
+        - {x: -25, y: 32}
+        - {x: -25, y: 26}
+        - {x: -24, y: 21}
+        - {x: -32, y: 22}
+        - {x: -37, y: 20}
+        - {x: -43, y: 14}
+        - {x: -42, y: 7}
+        - {x: -44, y: 5}
+        - {x: -46, y: -1}
+        - {x: -46, y: -4}
+        - {x: -44, y: -9}
+        - {x: -50, y: -20}
+        - {x: -50, y: -25}
+        - {x: -52, y: -29}
+        - {x: -52, y: -32}
+        - {x: 52, y: -32}
+        - {x: 52, y: -29}
+        - {x: 50, y: -25}
+        - {x: 50, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39600991c587fa48956286633d0ae35
+      internalID: 851948016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnCaveEnd_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 656
+        width: 176
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 28, y: -25}
+        - {x: 30, y: -27}
+        - {x: 33, y: -26}
+        - {x: 35, y: -20}
+        - {x: 37, y: -22}
+        - {x: 38, y: -22}
+        - {x: 40, y: -20}
+        - {x: 43, y: -14}
+        - {x: 43, y: -11}
+        - {x: 42, y: -7}
+        - {x: 44, y: -5}
+        - {x: 46, y: 1}
+        - {x: 46, y: 4}
+        - {x: 44, y: 9}
+        - {x: 50, y: 20}
+        - {x: 52, y: 29}
+        - {x: 52, y: 32}
+        - {x: -52, y: 32}
+        - {x: -52, y: 29}
+        - {x: -50, y: 20}
+        - {x: -44, y: 9}
+        - {x: -46, y: 4}
+        - {x: -46, y: 1}
+        - {x: -44, y: -5}
+        - {x: -43, y: -11}
+        - {x: -43, y: -14}
+        - {x: -40, y: -20}
+        - {x: -38, y: -22}
+        - {x: -37, y: -22}
+        - {x: -33, y: -21}
+        - {x: -33, y: -25}
+        - {x: -31, y: -27}
+        - {x: -28, y: -26}
+        - {x: -27, y: -21}
+        - {x: -25, y: -26}
+        - {x: -25, y: -32}
+        - {x: 25, y: -32}
+        - {x: 25, y: -26}
+        - {x: 24, y: -23}
+        - {x: 27, y: -21}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec04c1986242bb04eb041e47fa51bf44
+      internalID: -97076871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutumnCaveEnd_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 176
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 83, y: -25}
+        - {x: 78, y: -25}
+        - {x: 71, y: -17}
+        - {x: 72, y: -13}
+        - {x: 67, y: -7}
+        - {x: 62, y: -6}
+        - {x: 60, y: -7}
+        - {x: 57, y: -3}
+        - {x: 57, y: 6}
+        - {x: 51, y: 12}
+        - {x: 48, y: 17}
+        - {x: 42, y: 20}
+        - {x: 42, y: 23}
+        - {x: 39, y: 26}
+        - {x: 34, y: 26}
+        - {x: 35, y: 30}
+        - {x: 31, y: 34}
+        - {x: 29, y: 34}
+        - {x: 26, y: 31}
+        - {x: 21, y: 33}
+        - {x: 25, y: 39}
+        - {x: 25, y: 40}
+        - {x: -25, y: 40}
+        - {x: -25, y: 39}
+        - {x: -21, y: 33}
+        - {x: -26, y: 31}
+        - {x: -29, y: 34}
+        - {x: -31, y: 34}
+        - {x: -36, y: 31}
+        - {x: -35, y: 26}
+        - {x: -39, y: 26}
+        - {x: -42, y: 23}
+        - {x: -42, y: 20}
+        - {x: -48, y: 17}
+        - {x: -52, y: 12}
+        - {x: -57, y: 6}
+        - {x: -57, y: -4}
+        - {x: -60, y: -8}
+        - {x: -62, y: -6}
+        - {x: -64, y: -6}
+        - {x: -69, y: -10}
+        - {x: -72, y: -13}
+        - {x: -71, y: -17}
+        - {x: -78, y: -25}
+        - {x: -83, y: -25}
+        - {x: -86, y: -27}
+        - {x: -88, y: -33}
+        - {x: -88, y: -40}
+        - {x: 88, y: -40}
+        - {x: 88, y: -33}
+        - {x: 87, y: -30}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300daf1eea0aaf94080f4e78d555ed83
+      internalID: 184669996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterCaveEnd_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 496
+        width: 176
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 29, y: -34}
+        - {x: 31, y: -34}
+        - {x: 35, y: -30}
+        - {x: 35, y: -28}
+        - {x: 35, y: -29}
+        - {x: 37, y: -31}
+        - {x: 40, y: -30}
+        - {x: 40, y: -25}
+        - {x: 42, y: -23}
+        - {x: 43, y: -19}
+        - {x: 45, y: -22}
+        - {x: 48, y: -21}
+        - {x: 50, y: -15}
+        - {x: 53, y: -14}
+        - {x: 54, y: -9}
+        - {x: 57, y: -6}
+        - {x: 57, y: -4}
+        - {x: 56, y: -1}
+        - {x: 57, y: 4}
+        - {x: 60, y: 8}
+        - {x: 61, y: 5}
+        - {x: 63, y: 3}
+        - {x: 66, y: 4}
+        - {x: 71, y: 14}
+        - {x: 71, y: 16}
+        - {x: 70, y: 17}
+        - {x: 77, y: 24}
+        - {x: 79, y: 22}
+        - {x: 81, y: 22}
+        - {x: 87, y: 30}
+        - {x: 88, y: 32}
+        - {x: 88, y: 40}
+        - {x: -88, y: 40}
+        - {x: -88, y: 33}
+        - {x: -87, y: 30}
+        - {x: -83, y: 25}
+        - {x: -80, y: 22}
+        - {x: -79, y: 22}
+        - {x: -77, y: 24}
+        - {x: -70, y: 17}
+        - {x: -71, y: 16}
+        - {x: -71, y: 14}
+        - {x: -69, y: 10}
+        - {x: -66, y: 5}
+        - {x: -64, y: 3}
+        - {x: -61, y: 4}
+        - {x: -60, y: 8}
+        - {x: -58, y: 4}
+        - {x: -56, y: 3}
+        - {x: -56, y: -1}
+        - {x: -57, y: -4}
+        - {x: -57, y: -6}
+        - {x: -53, y: -9}
+        - {x: -53, y: -13}
+        - {x: -51, y: -15}
+        - {x: -48, y: -15}
+        - {x: -48, y: -20}
+        - {x: -46, y: -22}
+        - {x: -45, y: -22}
+        - {x: -42, y: -23}
+        - {x: -40, y: -29}
+        - {x: -38, y: -31}
+        - {x: -35, y: -30}
+        - {x: -31, y: -34}
+        - {x: -29, y: -34}
+        - {x: -26, y: -31}
+        - {x: -21, y: -33}
+        - {x: -25, y: -39}
+        - {x: -25, y: -40}
+        - {x: 25, y: -40}
+        - {x: 25, y: -39}
+        - {x: 21, y: -33}
+        - {x: 26, y: -31}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a0fb26f5fb49d48ae4d3960764b89c
+      internalID: 1351226043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterCaveEnd_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 432
+        width: 176
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 44, y: -9}
+        - {x: 46, y: -4}
+        - {x: 46, y: -1}
+        - {x: 44, y: 5}
+        - {x: 43, y: 11}
+        - {x: 43, y: 14}
+        - {x: 39, y: 18}
+        - {x: 32, y: 22}
+        - {x: 24, y: 22}
+        - {x: 25, y: 26}
+        - {x: 25, y: 32}
+        - {x: -25, y: 32}
+        - {x: -25, y: 26}
+        - {x: -24, y: 21}
+        - {x: -32, y: 22}
+        - {x: -37, y: 20}
+        - {x: -43, y: 14}
+        - {x: -42, y: 7}
+        - {x: -44, y: 5}
+        - {x: -46, y: -1}
+        - {x: -46, y: -4}
+        - {x: -44, y: -9}
+        - {x: -50, y: -20}
+        - {x: -50, y: -25}
+        - {x: -52, y: -29}
+        - {x: -52, y: -32}
+        - {x: 52, y: -32}
+        - {x: 52, y: -29}
+        - {x: 50, y: -25}
+        - {x: 50, y: -20}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40cdca5145d416479811434c4b05aa5
+      internalID: -1301045828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterCaveEnd_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 368
+        width: 176
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 28, y: -25}
+        - {x: 30, y: -27}
+        - {x: 33, y: -26}
+        - {x: 35, y: -20}
+        - {x: 37, y: -22}
+        - {x: 38, y: -22}
+        - {x: 40, y: -20}
+        - {x: 43, y: -14}
+        - {x: 43, y: -11}
+        - {x: 42, y: -7}
+        - {x: 44, y: -5}
+        - {x: 46, y: 1}
+        - {x: 46, y: 4}
+        - {x: 44, y: 9}
+        - {x: 50, y: 20}
+        - {x: 52, y: 29}
+        - {x: 52, y: 32}
+        - {x: -52, y: 32}
+        - {x: -52, y: 29}
+        - {x: -50, y: 20}
+        - {x: -44, y: 9}
+        - {x: -46, y: 4}
+        - {x: -46, y: 1}
+        - {x: -44, y: -5}
+        - {x: -43, y: -11}
+        - {x: -43, y: -14}
+        - {x: -40, y: -20}
+        - {x: -38, y: -22}
+        - {x: -37, y: -22}
+        - {x: -33, y: -21}
+        - {x: -33, y: -25}
+        - {x: -31, y: -27}
+        - {x: -28, y: -26}
+        - {x: -27, y: -21}
+        - {x: -25, y: -26}
+        - {x: -25, y: -32}
+        - {x: 25, y: -32}
+        - {x: 25, y: -26}
+        - {x: 24, y: -23}
+        - {x: 27, y: -21}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25efcc3c36b54704fb17e5c2d130f80a
+      internalID: -664369377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinterCaveEnd_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 176
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 83, y: -25}
+        - {x: 78, y: -25}
+        - {x: 71, y: -17}
+        - {x: 72, y: -13}
+        - {x: 67, y: -7}
+        - {x: 62, y: -6}
+        - {x: 60, y: -7}
+        - {x: 57, y: -3}
+        - {x: 57, y: 6}
+        - {x: 51, y: 12}
+        - {x: 48, y: 17}
+        - {x: 42, y: 20}
+        - {x: 42, y: 23}
+        - {x: 39, y: 26}
+        - {x: 34, y: 26}
+        - {x: 35, y: 30}
+        - {x: 31, y: 34}
+        - {x: 29, y: 34}
+        - {x: 26, y: 31}
+        - {x: 21, y: 33}
+        - {x: 25, y: 39}
+        - {x: 25, y: 40}
+        - {x: -25, y: 40}
+        - {x: -25, y: 39}
+        - {x: -21, y: 33}
+        - {x: -26, y: 31}
+        - {x: -29, y: 34}
+        - {x: -31, y: 34}
+        - {x: -36, y: 31}
+        - {x: -35, y: 26}
+        - {x: -39, y: 26}
+        - {x: -42, y: 23}
+        - {x: -42, y: 20}
+        - {x: -48, y: 17}
+        - {x: -52, y: 12}
+        - {x: -57, y: 6}
+        - {x: -57, y: -4}
+        - {x: -60, y: -8}
+        - {x: -62, y: -6}
+        - {x: -64, y: -6}
+        - {x: -69, y: -10}
+        - {x: -72, y: -13}
+        - {x: -71, y: -17}
+        - {x: -78, y: -25}
+        - {x: -83, y: -25}
+        - {x: -86, y: -27}
+        - {x: -88, y: -33}
+        - {x: -88, y: -40}
+        - {x: 88, y: -40}
+        - {x: 88, y: -33}
+        - {x: 87, y: -30}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140cd1889e454e94c9cac6fa43d0f0d0
+      internalID: -1102597220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerCaveEnd_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 208
+        width: 176
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 29, y: -34}
+        - {x: 31, y: -34}
+        - {x: 35, y: -30}
+        - {x: 35, y: -28}
+        - {x: 35, y: -29}
+        - {x: 37, y: -31}
+        - {x: 40, y: -30}
+        - {x: 40, y: -25}
+        - {x: 42, y: -23}
+        - {x: 43, y: -19}
+        - {x: 45, y: -22}
+        - {x: 48, y: -21}
+        - {x: 50, y: -15}
+        - {x: 53, y: -14}
+        - {x: 54, y: -9}
+        - {x: 57, y: -6}
+        - {x: 57, y: -4}
+        - {x: 56, y: -1}
+        - {x: 57, y: 4}
+        - {x: 60, y: 8}
+        - {x: 61, y: 5}
+        - {x: 63, y: 3}
+        - {x: 66, y: 4}
+        - {x: 71, y: 14}
+        - {x: 71, y: 16}
+        - {x: 70, y: 17}
+        - {x: 77, y: 24}
+        - {x: 79, y: 22}
+        - {x: 81, y: 22}
+        - {x: 87, y: 30}
+        - {x: 88, y: 32}
+        - {x: 88, y: 40}
+        - {x: -88, y: 40}
+        - {x: -88, y: 33}
+        - {x: -87, y: 30}
+        - {x: -83, y: 25}
+        - {x: -80, y: 22}
+        - {x: -79, y: 22}
+        - {x: -77, y: 24}
+        - {x: -70, y: 17}
+        - {x: -71, y: 16}
+        - {x: -71, y: 14}
+        - {x: -69, y: 10}
+        - {x: -66, y: 5}
+        - {x: -64, y: 3}
+        - {x: -61, y: 4}
+        - {x: -60, y: 8}
+        - {x: -58, y: 4}
+        - {x: -56, y: 3}
+        - {x: -56, y: -1}
+        - {x: -57, y: -4}
+        - {x: -57, y: -6}
+        - {x: -53, y: -9}
+        - {x: -53, y: -13}
+        - {x: -51, y: -15}
+        - {x: -48, y: -15}
+        - {x: -48, y: -20}
+        - {x: -46, y: -22}
+        - {x: -45, y: -22}
+        - {x: -42, y: -23}
+        - {x: -40, y: -29}
+        - {x: -38, y: -31}
+        - {x: -35, y: -30}
+        - {x: -31, y: -34}
+        - {x: -29, y: -34}
+        - {x: -26, y: -31}
+        - {x: -21, y: -33}
+        - {x: -25, y: -39}
+        - {x: -25, y: -40}
+        - {x: 25, y: -40}
+        - {x: 25, y: -39}
+        - {x: 21, y: -33}
+        - {x: 26, y: -31}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 3a1a9816ad75f7a4eaf07114ceea381c
+      internalID: 521523463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerCaveEnd_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 176
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 44, y: -9}
+        - {x: 46, y: -4}
+        - {x: 46, y: -1}
+        - {x: 44, y: 5}
+        - {x: 43, y: 11}
+        - {x: 43, y: 14}
+        - {x: 39, y: 18}
+        - {x: 32, y: 22}
+        - {x: 24, y: 22}
+        - {x: 25, y: 26}
+        - {x: 25, y: 32}
+        - {x: -25, y: 32}
+        - {x: -25, y: 26}
+        - {x: -24, y: 21}
+        - {x: -32, y: 22}
+        - {x: -37, y: 20}
+        - {x: -43, y: 14}
+        - {x: -42, y: 7}
+        - {x: -44, y: 5}
+        - {x: -46, y: -1}
+        - {x: -46, y: -4}
+        - {x: -44, y: -9}
+        - {x: -50, y: -20}
+        - {x: -50, y: -25}
+        - {x: -52, y: -29}
+        - {x: -52, y: -32}
+        - {x: 52, y: -32}
+        - {x: 52, y: -29}
+        - {x: 50, y: -25}
+        - {x: 50, y: -20}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 9faf7fbdc8cbaa743bf925b4fb31c336
+      internalID: 1290218961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerCaveEnd_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 80
+        width: 176
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 28, y: -25}
+        - {x: 30, y: -27}
+        - {x: 33, y: -26}
+        - {x: 35, y: -20}
+        - {x: 37, y: -22}
+        - {x: 38, y: -22}
+        - {x: 40, y: -20}
+        - {x: 43, y: -14}
+        - {x: 43, y: -11}
+        - {x: 42, y: -7}
+        - {x: 44, y: -5}
+        - {x: 46, y: 1}
+        - {x: 46, y: 4}
+        - {x: 44, y: 9}
+        - {x: 50, y: 20}
+        - {x: 52, y: 29}
+        - {x: 52, y: 32}
+        - {x: -52, y: 32}
+        - {x: -52, y: 29}
+        - {x: -50, y: 20}
+        - {x: -44, y: 9}
+        - {x: -46, y: 4}
+        - {x: -46, y: 1}
+        - {x: -44, y: -5}
+        - {x: -43, y: -11}
+        - {x: -43, y: -14}
+        - {x: -40, y: -20}
+        - {x: -38, y: -22}
+        - {x: -37, y: -22}
+        - {x: -33, y: -21}
+        - {x: -33, y: -25}
+        - {x: -31, y: -27}
+        - {x: -28, y: -26}
+        - {x: -27, y: -21}
+        - {x: -25, y: -26}
+        - {x: -25, y: -32}
+        - {x: 25, y: -32}
+        - {x: 25, y: -26}
+        - {x: 24, y: -23}
+        - {x: 27, y: -21}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 0a134a6e20cf508439b198fcfc3d0017
+      internalID: 997923418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummerCaveEnd_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 176
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 83, y: -25}
+        - {x: 78, y: -25}
+        - {x: 71, y: -17}
+        - {x: 72, y: -13}
+        - {x: 67, y: -7}
+        - {x: 62, y: -6}
+        - {x: 60, y: -7}
+        - {x: 57, y: -3}
+        - {x: 57, y: 6}
+        - {x: 51, y: 12}
+        - {x: 48, y: 17}
+        - {x: 42, y: 20}
+        - {x: 42, y: 23}
+        - {x: 39, y: 26}
+        - {x: 34, y: 26}
+        - {x: 35, y: 30}
+        - {x: 31, y: 34}
+        - {x: 29, y: 34}
+        - {x: 26, y: 31}
+        - {x: 21, y: 33}
+        - {x: 25, y: 39}
+        - {x: 25, y: 40}
+        - {x: -25, y: 40}
+        - {x: -25, y: 39}
+        - {x: -21, y: 33}
+        - {x: -26, y: 31}
+        - {x: -29, y: 34}
+        - {x: -31, y: 34}
+        - {x: -36, y: 31}
+        - {x: -35, y: 26}
+        - {x: -39, y: 26}
+        - {x: -42, y: 23}
+        - {x: -42, y: 20}
+        - {x: -48, y: 17}
+        - {x: -52, y: 12}
+        - {x: -57, y: 6}
+        - {x: -57, y: -4}
+        - {x: -60, y: -8}
+        - {x: -62, y: -6}
+        - {x: -64, y: -6}
+        - {x: -69, y: -10}
+        - {x: -72, y: -13}
+        - {x: -71, y: -17}
+        - {x: -78, y: -25}
+        - {x: -83, y: -25}
+        - {x: -86, y: -27}
+        - {x: -88, y: -33}
+        - {x: -88, y: -40}
+        - {x: 88, y: -40}
+        - {x: 88, y: -33}
+        - {x: 87, y: -30}
+      tessellationDetail: 0.7
+      bones: []
+      spriteID: 402b7e047324bbb43bb392d702bb9513
+      internalID: 2033912612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AutumnCaveEnd_0: -1761244495
+      AutumnCaveEnd_1: 851948016
+      AutumnCaveEnd_2: -97076871
+      AutumnCaveEnd_3: 184669996
+      AutumnStump_0: -349064086
+      AutumnStump_1: 1310743341
+      AutumnStump_2: 221216489
+      AutumnTree_0: -1167756520
+      AutumnTree_1: -2137493438
+      AutumnTree_2: 154952637
+      AutumnTree_3: 1383792811
+      AutumnTree_4: 161671054
+      AutumnTree_5: -404926403
+      AutumnTree_6: -312462776
+      AutumnTree_7: -847275989
+      Objects_4: -1881248929
+      SummerCaveEnd_0: 521523463
+      SummerCaveEnd_1: 1290218961
+      SummerCaveEnd_2: 997923418
+      SummerCaveEnd_3: 2033912612
+      SummerStump_0: 328751322
+      SummerStump_1: 1398880045
+      SummerStump_2: 501726316
+      SummerTree_0: 1033325359
+      SummerTree_1: -576823657
+      SummerTree_2: 936235585
+      SummerTree_3: -37244782
+      SummerTree_4: -1923058455
+      SummerTree_5: -862648155
+      SummerTree_6: -2009406473
+      SummerTree_7: -695833333
+      WinterCaveEnd_0: 1351226043
+      WinterCaveEnd_1: -1301045828
+      WinterCaveEnd_2: -664369377
+      WinterCaveEnd_3: -1102597220
+      WinterStump_0: -411332226
+      WinterStump_1: 710744406
+      WinterStump_2: -338354047
+      WinterTree_0: 1049873654
+      WinterTree_1: 1709335482
+      WinterTree_2: 1249162771
+      WinterTree_3: 121276875
+      WinterTree_4: -467542035
+      WinterTree_5: 614125869
+      WinterTree_6: -1139161484
+      WinterTree_7: -153508978
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
