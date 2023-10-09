@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: DecorSummer_5
+  m_Name: Cage_5
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 812738367, guid: 3c87c5fdefc47ca47aeaaf6d2348de1d, type: 3}
+  m_Sprite: {fileID: 1996472616, guid: 513e82fcbc9bf074893e03473e3b09bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

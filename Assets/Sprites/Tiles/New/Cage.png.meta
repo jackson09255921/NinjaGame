@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3c87c5fdefc47ca47aeaaf6d2348de1d
+guid: 513e82fcbc9bf074893e03473e3b09bd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,145 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DecorSummer_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 364f6f50faa5c1045b37211b4dd151ce
-      internalID: -1901987123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorSummer_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c9f9dcaf22cc8a41ae65d92bcb6d772
-      internalID: -1720024101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorSummer_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3bb163463f64284291d766ea66192a9
-      internalID: -975040163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorSummer_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: e74a08dd2dcd0864f90640450c8830e4
-      internalID: 812738367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorSummer_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 447917914a3215c4ab43bc0154d244dd
-      internalID: -1230206105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorSummer_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce9754a35b2ee524c993f84382dacfe8
-      internalID: 603394877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorSummer_6
+      name: Cage_0
       rect:
         serializedVersion: 2
         x: 0
@@ -273,26 +135,24 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -3}
-        - {x: -4, y: -3}
-        - {x: -2, y: -5}
-        - {x: -2, y: -8}
-        - {x: 2, y: -8}
-        - {x: 2, y: -5}
-        - {x: 4, y: -3}
-        - {x: 8, y: -3}
-        - {x: 8, y: 8}
+      - - {x: -2, y: -1}
+        - {x: -3, y: -2}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 2}
+        - {x: 6, y: 2}
+        - {x: 2, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: 82aab525459318041b54542e2f58767f
-      internalID: -2095247605
+      spriteID: 652e2015a8d5b5e4c90b73c17421b714
+      internalID: -2092367809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DecorSummer_7
+      name: Cage_1
       rect:
         serializedVersion: 2
         x: 16
@@ -304,26 +164,24 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -3}
-        - {x: -4, y: -3}
-        - {x: -2, y: -5}
-        - {x: -2, y: -8}
-        - {x: 2, y: -8}
-        - {x: 2, y: -5}
-        - {x: 4, y: -3}
-        - {x: 8, y: -3}
-        - {x: 8, y: 8}
+      - - {x: -2, y: -1}
+        - {x: -3, y: -2}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 2}
+        - {x: 6, y: 2}
+        - {x: 2, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: 376ef6c05351afc418c5d07e0856531a
-      internalID: 1293510463
+      spriteID: a0cac905981a69b4396b6bcbd81467fb
+      internalID: -204852383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DecorSummer_10
+      name: Cage_2
       rect:
         serializedVersion: 2
         x: 32
@@ -334,69 +192,25 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de6638059088bdd45a5c89775eefc506
-      internalID: 908090756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorSummer_11
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d60d1c338c8fa8441ac226ca96905ba7
-      internalID: -916801387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorSummer_9
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
       physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -3}
-        - {x: -4, y: -3}
-        - {x: -2, y: -5}
-        - {x: -2, y: -8}
-        - {x: 2, y: -8}
-        - {x: 2, y: -5}
-        - {x: 4, y: -3}
-        - {x: 8, y: -3}
-        - {x: 8, y: 8}
+      - - {x: 2, y: -1}
+        - {x: 3, y: -2}
+        - {x: 4, y: -5}
+        - {x: 4, y: -8}
+        - {x: -8, y: -8}
+        - {x: -8, y: 2}
+        - {x: -6, y: 2}
+        - {x: -2, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: 22b5536099c37294b9296ec71d903496
-      internalID: 597962237
+      spriteID: eeb706df75b12ae4594b29c4a658342e
+      internalID: -2025519598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DecorSummer_8
+      name: Cage_3
       rect:
         serializedVersion: 2
         x: 0
@@ -408,26 +222,70 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -3}
-        - {x: -4, y: -3}
-        - {x: -2, y: -5}
-        - {x: -2, y: -8}
-        - {x: 2, y: -8}
-        - {x: 2, y: -5}
-        - {x: 4, y: -3}
-        - {x: 8, y: -3}
+      - - {x: -4, y: -8}
+        - {x: -4, y: 8}
         - {x: 8, y: 8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 85a45b284c7673747b3ca212d8344b16
-      internalID: 1807777266
+      spriteID: c359b2514fb6cfc42a4183659f21460e
+      internalID: -480298997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DecorSummer_12
+      name: Cage_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -8}
+        - {x: -4, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4ee4d4d237ba14b8f14db15858855c
+      internalID: -1696100895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61697904adce8a4cbd3cd48ffb69e8d
+      internalID: 1996472616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_6
       rect:
         serializedVersion: 2
         x: 0
@@ -439,21 +297,64 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -1, y: 3}
-        - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: -3, y: -4}
-        - {x: -1, y: -8}
-        - {x: 2, y: -8}
-        - {x: 2, y: -3}
-        - {x: 5, y: -3}
-        - {x: 8, y: 0}
-        - {x: 8, y: 1}
-        - {x: 6, y: 3}
+      - - {x: -4, y: -8}
+        - {x: -4, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: f1b4307a8d5d78241b96862d671b7599
-      internalID: 1616037136
+      spriteID: fddab401c959878468e0f9df67e89a5d
+      internalID: -758032201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -8}
+        - {x: -4, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cbf68113f815d4d8a4077335e25e89
+      internalID: -405584381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ac1e39e00b2f3438f1fabe47f2f162
+      internalID: -813532673
       vertices: []
       indices: 
       edges: []
@@ -469,19 +370,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DecorSummer_0: -1901987123
-      DecorSummer_1: -1720024101
-      DecorSummer_10: -916801387
-      DecorSummer_11: -916801387
-      DecorSummer_12: 1616037136
-      DecorSummer_2: -975040163
-      DecorSummer_3: 603394877
-      DecorSummer_4: -1230206105
-      DecorSummer_5: 812738367
-      DecorSummer_6: -2095247605
-      DecorSummer_7: 1807777266
-      DecorSummer_8: 597962237
-      DecorSummer_9: 908090756
+      Cage_0: -2092367809
+      Cage_1: -204852383
+      Cage_2: -2025519598
+      Cage_3: -480298997
+      Cage_4: -1696100895
+      Cage_5: 1996472616
+      Cage_6: -758032201
+      Cage_7: -405584381
+      Cage_8: -813532673
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
