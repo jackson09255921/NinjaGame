@@ -32,6 +32,8 @@ public class PlayerControl : MonoBehaviour
     ContactPoint2D[] contacts = new ContactPoint2D[16];
     bool equipment = true;
 
+    public Transform shootPoint;
+
     void Awake()
     {
         defaultActionMap = actionAsset.FindActionMap("Default");
@@ -52,7 +54,7 @@ public class PlayerControl : MonoBehaviour
 
     void OnDisable()
     {
-        defaultActionMap.Disable();
+        defaultActionMap.Enable();
     }
 
     void Start()
@@ -67,6 +69,7 @@ public class PlayerControl : MonoBehaviour
         UpdateEquipment();
         UpdateAttack();
         UpdateInteract();
+        UpdateShootPointPosition();
     }
 
     void UpdateVertical()
@@ -172,16 +175,20 @@ public class PlayerControl : MonoBehaviour
         {
             runTime = 0;
         }
+
+        // 角色翻轉
         direction = horizontal;
         lastVelocity = rb.velocity;
         if (direction > 0)
         {
             spriteRenderer.flipX = false;
+
         }
         if (direction < 0)
         {
             spriteRenderer.flipX = true;
         }
+
         animator.SetFloat("Speed", Mathf.Abs(currentVelocityX));
     }
 
@@ -238,5 +245,16 @@ public class PlayerControl : MonoBehaviour
             Idle,
             Run,
             Dash,
+    }
+
+    void UpdateShootPointPosition()
+    {
+        // 更新射擊點位置
+        float xOffset = spriteRenderer.flipX ? -1f : 1f;
+        shootPoint.position = new Vector3(transform.position.x + xOffset, transform.position.y - 0.5f, transform.position.z);
+        
+        // 更新射擊點方向
+        Vector3 newRotation = spriteRenderer.flipX ? new Vector3(0, 180, 0) : Vector3.zero;
+        shootPoint.rotation = Quaternion.Euler(newRotation);
     }
 }
