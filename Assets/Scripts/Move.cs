@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+<<<<<<< Updated upstream
     public float moveSpeed = 5f;
+=======
+    public Animator animator;  // 新增Animator變量
+    public float moveSpeed = 8f;
+    public float moveSpeedUp = 12f;
+>>>>>>> Stashed changes
     public float jumpForce = 10f;
 
     private Rigidbody2D rb;
@@ -30,14 +36,22 @@ public class Move : MonoBehaviour
         movement.Normalize(); // Normalize to prevent faster diagonal movement
 
         // Move the character
+<<<<<<< Updated upstream
         rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
+=======
+        rb.velocity = new Vector2(horizontalMove, rb.velocity.y);
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
+        Jump();
+>>>>>>> Stashed changes
     }
 
     void Jump()
     {
         if (Input.GetButtonDown("Jump"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce * Time.fixedDeltaTime);
         }
     }
 
