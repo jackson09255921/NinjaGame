@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerControl : MonoBehaviour
 {
     public float runSpeed = 5;
+    public float aerialSpeed = 2;
     public float dashSpeed = 10;
     public float acceleration = 40;
     public float deceleration = 20;
@@ -25,10 +26,10 @@ public class PlayerControl : MonoBehaviour
     Animator animator;
     HorizontalState horizontalState = HorizontalState.Idle;
     Vector2 lastVelocity;
-    public float targetVelocityX = 0;
-    public int direction = 0;
-    public float runTime = 0;
-    public bool isGrounded = false;
+    float targetVelocityX = 0;
+    int direction = 0;
+    float runTime = 0;
+    bool jumped = false;
     ContactPoint2D[] contacts = new ContactPoint2D[16];
     bool equipment = true;
 
@@ -71,18 +72,9 @@ public class PlayerControl : MonoBehaviour
 
     void UpdateVertical()
     {
-        isGrounded = false;
-        int contactCount = rb.GetContacts(contacts);
-        for (int i = 0; i < contactCount; ++i)
+        if (jumpAction.WasPerformedThisFrame())
         {
-            if (contacts[i].normal.y > minGroundNormalY)
-            {
-                isGrounded = true;
-            }
-        }
-        if (isGrounded && jumpAction.WasPerformedThisFrame())
-        {
-            rb.velocity = new(rb.velocity.x, jumpSpeed);
+            jumped = true;
         }
     }
 
@@ -123,40 +115,6 @@ public class PlayerControl : MonoBehaviour
             }
         }
         float currentVelocityX = rb.velocity.x;
-        if (currentVelocityX != targetVelocityX)
-        {
-            float nextVelocityX = currentVelocityX;
-            if (currentVelocityX == 0)
-            {
-                nextVelocityX = targetVelocityX > 0 ?
-                Math.Min(acceleration*Time.deltaTime, targetVelocityX) :
-                Math.Max(-acceleration*Time.deltaTime, targetVelocityX);
-            }
-            if (currentVelocityX > 0)
-            {
-                if (targetVelocityX < currentVelocityX)
-                {
-                    nextVelocityX = Math.Max(currentVelocityX-deceleration*Time.deltaTime, 0);
-                }
-                else if (isGrounded)
-                {
-                    nextVelocityX = Math.Min(currentVelocityX+acceleration*Time.deltaTime, targetVelocityX);
-                }
-            }
-            if (currentVelocityX < 0)
-            {
-                if (targetVelocityX > currentVelocityX)
-                {
-                    nextVelocityX = Math.Min(currentVelocityX+deceleration*Time.deltaTime, 0);
-                }
-                else if (isGrounded)
-                {
-                    nextVelocityX = Math.Max(currentVelocityX-acceleration*Time.deltaTime, targetVelocityX);
-                }
-            }
-            rb.velocity = new(nextVelocityX, rb.velocity.y);
-        }
-        currentVelocityX = rb.velocity.x;
         if (horizontal != 0)
         {
             if (horizontal == direction && currentVelocityX != 0)
@@ -173,16 +131,39 @@ public class PlayerControl : MonoBehaviour
             runTime = 0;
         }
         direction = horizontal;
-        lastVelocity = rb.velocity;
-        if (direction > 0)
+        float speed = Math.Abs(currentVelocityX);
+        Quaternion rotation = transform.rotation;
+        Vector3 eulerAngles = rotation.eulerAngles;
+        switch (direction)
         {
-            spriteRenderer.flipX = false;
+            case 1:
+            {
+                eulerAngles.y = 0;
+                animator.SetFloat("Speed", speed);
+                break;
+            }
+            case -1:
+            {
+                eulerAngles.y = 180;
+                animator.SetFloat("Speed", speed);
+                break;
+            }
+            case 0:
+            {
+                if (currentVelocityX > 0.5f)
+                {
+                    eulerAngles.y = 0;
+                }
+                if (currentVelocityX < -0.5f)
+                {
+                    eulerAngles.y = 180;
+                }
+                animator.SetFloat("Speed", speed > 0.5f ? speed*0.5f : 0);
+                break;
+            }
         }
-        if (direction < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        animator.SetFloat("Speed", Mathf.Abs(currentVelocityX));
+        rotation.eulerAngles = eulerAngles;
+        transform.rotation = rotation;
     }
 
     void UpdateEquipment()
@@ -208,6 +189,58 @@ public class PlayerControl : MonoBehaviour
         {
 
         }
+    }
+
+    void FixedUpdate()
+    {
+        Vector2 maxYNormal = new(0, -1);
+        int contactCount = rb.GetContacts(contacts);
+        for (int i = 0; i < contactCount; ++i)
+        {
+            if (contacts[i].normal.y > maxYNormal.y)
+            {
+                maxYNormal = contacts[i].normal;
+            }
+        }
+        bool isGrounded = maxYNormal.y > minGroundNormalY;
+        float currentVelocityX = rb.velocity.x;
+        if (currentVelocityX != targetVelocityX)
+        {
+            float accelerationX = 0;
+            if (currentVelocityX == 0)
+            {
+                accelerationX = targetVelocityX > 0 ? acceleration : -acceleration;
+            }
+            if (currentVelocityX > 0)
+            {
+                if (targetVelocityX < currentVelocityX)
+                {
+                    accelerationX = -Math.Min(1, (currentVelocityX-targetVelocityX)*4)*deceleration;
+                }
+                else if (isGrounded || Math.Abs(currentVelocityX) < aerialSpeed)
+                {
+                    accelerationX = Math.Min(1, (targetVelocityX-currentVelocityX)*4)*acceleration;
+                }
+            }
+            if (currentVelocityX < 0)
+            {
+                if (targetVelocityX > currentVelocityX)
+                {
+                    accelerationX = Math.Min(1, (targetVelocityX-currentVelocityX)*4)*deceleration;
+                }
+                else if (isGrounded || Math.Abs(currentVelocityX) < aerialSpeed)
+                {
+                    accelerationX = -Math.Min(1, (currentVelocityX-targetVelocityX)*4)*acceleration;
+                }
+            }
+            rb.AddForce(new(accelerationX*rb.mass, 0), ForceMode2D.Force);
+        }
+        if (jumped && isGrounded)
+        {
+            rb.AddForce(new(0, jumpSpeed*rb.mass), ForceMode2D.Impulse);
+        }
+        jumped = false;
+        lastVelocity = rb.velocity;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
