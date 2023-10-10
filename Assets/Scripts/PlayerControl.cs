@@ -14,6 +14,7 @@ public class PlayerControl : MonoBehaviour
     public float jumpSpeed = 15;
     public float dashRunTime = 2;
     public float minGroundNormalY = 0.65f;
+    public Transform shootPoint;
     public InputActionAsset actionAsset;
     InputActionMap defaultActionMap;
     InputAction jumpAction;
@@ -68,6 +69,7 @@ public class PlayerControl : MonoBehaviour
         UpdateEquipment();
         UpdateAttack();
         UpdateInteract();
+        UpdateShootPointPosition();
     }
 
     void UpdateVertical()
@@ -189,6 +191,17 @@ public class PlayerControl : MonoBehaviour
         {
 
         }
+    }
+
+    void UpdateShootPointPosition()
+    {
+        // 更新射擊點位置
+        //float xOffset = spriteRenderer.flipX ? -1f : 1f;
+        //shootPoint.position = new Vector3(transform.position.x + xOffset, transform.position.y - 0.5f, transform.position.z);
+        
+        // 更新射擊點方向
+        //Vector3 newRotation = spriteRenderer.flipX ? new Vector3(0, 180, 0) : Vector3.zero;
+        //shootPoint.rotation = Quaternion.Euler(newRotation);
     }
 
     void FixedUpdate()
