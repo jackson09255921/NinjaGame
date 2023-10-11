@@ -78,9 +78,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 310255373
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f1026c1441cf430489592389734b425b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0db0fe4f6436f84d972c5d5f4b8ee0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -205,7 +205,6 @@ MonoBehaviour:
   dashRunTime: 2
   minGroundNormalY: 0.65
   shootPoint: {fileID: 3790771758387084657}
-  actionAsset: {fileID: -944628639613478452, guid: 32a7e4e35cb79d04e93fae96ed3ba756, type: 3}
 --- !u!114 &4329268622734247588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +217,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1d8d12dbac2a344b304b9826c7dce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootPoint: {fileID: 0}
   kunaiPrefab: {fileID: 5892215068170934691, guid: 1312aa44b4d1a9947b3b2af6ab3ff45e, type: 3}
 --- !u!1 &3942257627793354725
 GameObject:
@@ -230,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2563525780388310922}
   - component: {fileID: 7134880639189755617}
+  - component: {fileID: 9164139643224395585}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
@@ -267,12 +266,12 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.4
+  m_FalloffIntensity: 0.7
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.09
+  m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000a13130f6f9c8a1ed0d1f7e12
+  m_ApplyToSortingLayers: f9c8a1edd7c88a6c0d1f7e128583e6e3
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -286,8 +285,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.00020003319, y: -0.00080001354, z: 0}
-    m_Extent: {x: 1.204, y: 1.2042, z: 0}
+    m_Center: {x: -0.0015999675, y: -0.005550027, z: 0}
+    m_Extent: {x: 1.7035999, y: 1.69365, z: 0}
   m_PointLightInnerAngle: 352.29
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -295,7 +294,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 1
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -0.5, y: -0.5, z: 0}
@@ -306,6 +305,22 @@ MonoBehaviour:
   - {x: 0, y: 0.7, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
   - {x: -0.7, y: 0, z: 0}
+--- !u!114 &9164139643224395585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3942257627793354725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164df17d33362264993d5fdc5fc1020f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startIntensity: 0
+  endIntensity: 1
+  dimTime: 30
+  debug: 1
 --- !u!1 &6827865678498274926
 GameObject:
   m_ObjectHideFlags: 0

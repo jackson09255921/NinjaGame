@@ -15,17 +15,15 @@ public class PlayerControl : MonoBehaviour
     public float dashRunTime = 2;
     public float minGroundNormalY = 0.65f;
     public Transform shootPoint;
-    public InputActionAsset actionAsset;
-    InputActionMap defaultActionMap;
+    InputManager inputManager;
     InputAction jumpAction;
     InputAction horizontalAction;
     InputAction equipmentAction;
     InputAction attackAction;
     InputAction interactAction;
     Rigidbody2D rb;
-    SpriteRenderer spriteRenderer;
     Animator animator;
-    WeaponControl weaponControl;
+    Inventory inventory;
     HorizontalState horizontalState = HorizontalState.Idle;
     Vector2 lastVelocity;
     float targetVelocityX = 0;
@@ -33,36 +31,23 @@ public class PlayerControl : MonoBehaviour
     float runTime = 0;
     bool jumped = false;
     ContactPoint2D[] contacts = new ContactPoint2D[16];
-    bool equipment = true;
 
     void Awake()
     {
-        defaultActionMap = actionAsset.FindActionMap("Default");
-        jumpAction = defaultActionMap.FindAction("Jump");
-        horizontalAction = defaultActionMap.FindAction("Horizontal");
-        equipmentAction = defaultActionMap.FindAction("Equipment");
-        attackAction = defaultActionMap.FindAction("Attack");
-        interactAction = defaultActionMap.FindAction("Interact");
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        weaponControl = GetComponent<WeaponControl>();
-        weaponControl.shootPoint = shootPoint;
-    }
-
-    void OnEnable()
-    {
-        defaultActionMap.Enable();
-    }
-
-    void OnDisable()
-    {
-        defaultActionMap.Disable();
+        inventory = GetComponent<Inventory>();
+        inventory.shootPoint = shootPoint;
     }
 
     void Start()
     {
-
+        inputManager = InputManager.Instance;
+        jumpAction = inputManager.FindAction("Jump");
+        horizontalAction = inputManager.FindAction("Horizontal");
+        equipmentAction = inputManager.FindAction("Equipment");
+        attackAction = inputManager.FindAction("Attack");
+        interactAction = inputManager.FindAction("Interact");
     }
 
     void Update()
@@ -154,14 +139,6 @@ public class PlayerControl : MonoBehaviour
             }
             case 0:
             {
-                if (currentVelocityX > 0.5f)
-                {
-                    eulerAngles.y = 0;
-                }
-                if (currentVelocityX < -0.5f)
-                {
-                    eulerAngles.y = 180;
-                }
                 animator.SetFloat("Speed", speed > 0.5f ? speed*0.5f : 0);
                 break;
             }
@@ -174,8 +151,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (equipmentAction.WasPerformedThisFrame())
         {
-            equipment = !equipment;
-            animator.SetBool("Equipment", equipment);
+            inventory.UpdateEquipment();
         }
     }
     
@@ -183,8 +159,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (attackAction.WasPerformedThisFrame())
         {
-            animator.SetTrigger("Attack");
-            weaponControl.Shoot();
+            inventory.UpdateAttack();
         }
     }
     

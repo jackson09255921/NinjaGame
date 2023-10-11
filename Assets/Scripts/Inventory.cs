@@ -2,21 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponControl : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
-    public Transform shootPoint;
     public GameObject kunaiPrefab;
-    Animator animator;  
+    internal Transform shootPoint;
+    Animator animator;
+    bool equipment = true;
 
     void Awake() {
         animator = GetComponent<Animator>();
     }
 
-    internal void Shoot() {
-        if (!animator.GetBool("Equipment"))
+    internal void UpdateEquipment()
+    {
+        equipment = !equipment;
+        animator.SetBool("Equipment", equipment);
+    }
+
+    internal void UpdateAttack() {
+        if (!equipment)
         {
             GameObject kunaiInstance = Instantiate(kunaiPrefab, shootPoint.position, shootPoint.rotation);
             Destroy(kunaiInstance, 0.5f);
+            animator.SetTrigger("Attack");
         }
     }
 }

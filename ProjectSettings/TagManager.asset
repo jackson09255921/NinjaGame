@@ -45,9 +45,18 @@ TagManager:
   - name: Background
     uniqueID: 4130353569
     locked: 0
-  - name: Ground
+  - name: Midground
     uniqueID: 3986802937
     locked: 0
-  - name: Player
+  - name: Ground
+    uniqueID: 1821034711
+    locked: 0
+  - name: Entity
     uniqueID: 310255373
+    locked: 0
+  - name: Foreground
+    uniqueID: 3823534981
+    locked: 0
+  - name: UI
+    uniqueID: 3503983021
     locked: 0
