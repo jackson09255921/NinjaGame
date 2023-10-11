@@ -25,6 +25,7 @@ public class PlayerControl : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
     Animator animator;
+    WeaponControl weaponControl;
     HorizontalState horizontalState = HorizontalState.Idle;
     Vector2 lastVelocity;
     float targetVelocityX = 0;
@@ -45,6 +46,8 @@ public class PlayerControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        weaponControl = GetComponent<WeaponControl>();
+        weaponControl.shootPoint = shootPoint;
     }
 
     void OnEnable()
@@ -181,6 +184,7 @@ public class PlayerControl : MonoBehaviour
         if (attackAction.WasPerformedThisFrame())
         {
             animator.SetTrigger("Attack");
+            weaponControl.Shoot();
         }
     }
     

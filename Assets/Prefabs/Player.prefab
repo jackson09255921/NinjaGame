@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6752384441668661684}
   - component: {fileID: 7086697425351926620}
   - component: {fileID: 1966582830021014310}
+  - component: {fileID: 4329268622734247588}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -205,6 +206,20 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   shootPoint: {fileID: 3790771758387084657}
   actionAsset: {fileID: -944628639613478452, guid: 32a7e4e35cb79d04e93fae96ed3ba756, type: 3}
+--- !u!114 &4329268622734247588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100170929915547699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1d8d12dbac2a344b304b9826c7dce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPoint: {fileID: 0}
+  kunaiPrefab: {fileID: 5892215068170934691, guid: 1312aa44b4d1a9947b3b2af6ab3ff45e, type: 3}
 --- !u!1 &3942257627793354725
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,8 +286,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0037499666, y: 0.0036500096, z: 0}
-    m_Extent: {x: 1.19935, y: 1.19975, z: 0}
+    m_Center: {x: 0.00020003319, y: -0.00080001354, z: 0}
+    m_Extent: {x: 1.204, y: 1.2042, z: 0}
   m_PointLightInnerAngle: 352.29
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
