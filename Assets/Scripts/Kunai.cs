@@ -5,17 +5,21 @@ using UnityEngine;
 public class Kunai : MonoBehaviour
 {
     public float speed = 20f;
-    public Rigidbody2D rb;
-    // Start is called before the first frame update
+    Rigidbody2D rb;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void Start()
     {
         rb.velocity = transform.right * speed;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)

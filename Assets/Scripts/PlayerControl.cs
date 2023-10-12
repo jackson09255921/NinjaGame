@@ -31,6 +31,8 @@ public class PlayerControl : MonoBehaviour
     float runTime = 0;
     bool jumped = false;
     ContactPoint2D[] contacts = new ContactPoint2D[16];
+    Vector2 maxYNormal;
+    bool grounded;
 
     void Awake()
     {
@@ -53,18 +55,62 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         UpdateVertical();
-        UpdateHorizontal();
         UpdateEquipment();
         UpdateAttack();
         UpdateInteract();
     }
 
+    void FixedUpdate()
+    {
+        UpdateGrounded();
+        UpdateHorizontal();
+        UpdateForces();
+    }
+
     void UpdateVertical()
     {
-        if (jumpAction.WasPerformedThisFrame())
+        if (Time.timeScale > 0 && jumpAction.WasPerformedThisFrame())
         {
             jumped = true;
         }
+    }
+
+    void UpdateEquipment()
+    {
+        if (Time.timeScale > 0 && equipmentAction.WasPerformedThisFrame())
+        {
+            inventory.UpdateEquipment();
+        }
+    }
+    
+    void UpdateAttack()
+    {
+        if (Time.timeScale > 0 && attackAction.WasPerformedThisFrame())
+        {
+            inventory.UpdateAttack();
+        }
+    }
+
+    void UpdateInteract()
+    {
+        if (Time.timeScale > 0 && interactAction.WasPerformedThisFrame())
+        {
+
+        }
+    }
+
+    void UpdateGrounded()
+    {
+        maxYNormal = new(0, -1);
+        int contactCount = rb.GetContacts(contacts);
+        for (int i = 0; i < contactCount; ++i)
+        {
+            if (contacts[i].normal.y > maxYNormal.y)
+            {
+                maxYNormal = contacts[i].normal;
+            }
+        }
+        grounded = maxYNormal.y > minGroundNormalY;
     }
 
     void UpdateHorizontal()
@@ -108,7 +154,7 @@ public class PlayerControl : MonoBehaviour
         {
             if (horizontal == direction && currentVelocityX != 0)
             {
-                runTime += Time.deltaTime;
+                runTime += Time.fixedDeltaTime;
             }
             else
             {
@@ -121,68 +167,34 @@ public class PlayerControl : MonoBehaviour
         }
         direction = horizontal;
         float speed = Math.Abs(currentVelocityX);
-        Quaternion rotation = transform.rotation;
+        Quaternion rotation = transform.localRotation;
         Vector3 eulerAngles = rotation.eulerAngles;
         switch (direction)
         {
             case 1:
             {
                 eulerAngles.y = 0;
-                animator.SetFloat("Speed", speed);
+                animator.SetFloat("Speed", (currentVelocityX < 0.5f ? 0.5f : speed)*(grounded ? 1 : 0.1f));
                 break;
             }
             case -1:
             {
                 eulerAngles.y = 180;
-                animator.SetFloat("Speed", speed);
+                animator.SetFloat("Speed", (currentVelocityX > -0.5f ? 0.5f : speed)*(grounded ? 1 : 0.1f));
                 break;
             }
             case 0:
             {
-                animator.SetFloat("Speed", speed > 0.5f ? speed*0.5f : 0);
+                animator.SetFloat("Speed", (speed > 1 ? currentVelocityX*0.5f : 0)*(grounded ? 1 : 0.1f));
                 break;
             }
         }
         rotation.eulerAngles = eulerAngles;
-        transform.rotation = rotation;
+        transform.localRotation = rotation;
     }
 
-    void UpdateEquipment()
+    void UpdateForces()
     {
-        if (equipmentAction.WasPerformedThisFrame())
-        {
-            inventory.UpdateEquipment();
-        }
-    }
-    
-    void UpdateAttack()
-    {
-        if (attackAction.WasPerformedThisFrame())
-        {
-            inventory.UpdateAttack();
-        }
-    }
-    
-    void UpdateInteract()
-    {
-        if (interactAction.WasPerformedThisFrame())
-        {
-
-        }
-    }
-
-    void FixedUpdate()
-    {
-        Vector2 maxYNormal = new(0, -1);
-        int contactCount = rb.GetContacts(contacts);
-        for (int i = 0; i < contactCount; ++i)
-        {
-            if (contacts[i].normal.y > maxYNormal.y)
-            {
-                maxYNormal = contacts[i].normal;
-            }
-        }
-        bool isGrounded = maxYNormal.y > minGroundNormalY;
         float currentVelocityX = rb.velocity.x;
         if (currentVelocityX != targetVelocityX)
         {
@@ -197,7 +209,7 @@ public class PlayerControl : MonoBehaviour
                 {
                     accelerationX = -Math.Min(1, (currentVelocityX-targetVelocityX)*4)*deceleration;
                 }
-                else if (isGrounded || Math.Abs(currentVelocityX) < aerialSpeed)
+                else if (grounded || Math.Abs(currentVelocityX) < aerialSpeed)
                 {
                     accelerationX = Math.Min(1, (targetVelocityX-currentVelocityX)*4)*acceleration;
                 }
@@ -208,14 +220,14 @@ public class PlayerControl : MonoBehaviour
                 {
                     accelerationX = Math.Min(1, (targetVelocityX-currentVelocityX)*4)*deceleration;
                 }
-                else if (isGrounded || Math.Abs(currentVelocityX) < aerialSpeed)
+                else if (grounded || Math.Abs(currentVelocityX) < aerialSpeed)
                 {
                     accelerationX = -Math.Min(1, (currentVelocityX-targetVelocityX)*4)*acceleration;
                 }
             }
             rb.AddForce(new(accelerationX*rb.mass, 0), ForceMode2D.Force);
         }
-        if (jumped && isGrounded)
+        if (jumped && grounded)
         {
             rb.AddForce(new(0, jumpSpeed*rb.mass), ForceMode2D.Impulse);
         }
