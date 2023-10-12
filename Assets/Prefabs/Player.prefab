@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kunaiPrefab: {fileID: 5892215068170934691, guid: 1312aa44b4d1a9947b3b2af6ab3ff45e, type: 3}
+  shurikenPrefab: {fileID: 7786205462291043031, guid: dec78be0445f1314394bd76bacfa30f9, type: 3}
 --- !u!1 &3942257627793354725
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,8 +286,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0040500164, y: 0.0047500134, z: 0}
-    m_Extent: {x: 1.70205, y: 1.70375, z: 0}
+    m_Center: {x: 0.002649963, y: -0.0016499758, z: 0}
+    m_Extent: {x: 1.70045, y: 1.69165, z: 0}
   m_PointLightInnerAngle: 352.29
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

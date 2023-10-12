@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -101,15 +102,8 @@ public class PlayerControl : MonoBehaviour
 
     void UpdateGrounded()
     {
-        maxYNormal = new(0, -1);
-        int contactCount = rb.GetContacts(contacts);
-        for (int i = 0; i < contactCount; ++i)
-        {
-            if (contacts[i].normal.y > maxYNormal.y)
-            {
-                maxYNormal = contacts[i].normal;
-            }
-        }
+        int count = rb.GetContacts(contacts);
+        maxYNormal = contacts[0..count].Select(c => c.normal).DefaultIfEmpty(new(0, -1)).Aggregate((a, b) => a.y > b.y ? a : b);
         grounded = maxYNormal.y > minGroundNormalY;
     }
 
