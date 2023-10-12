@@ -101,7 +101,7 @@ public class PlayerControl : MonoBehaviour
     void UpdateGrounded()
     {
         int count = rb.GetContacts(contacts);
-        maxYNormal = contacts[0..count].Select(c => c.normal).DefaultIfEmpty(new(0, -1)).Aggregate((a, b) => a.y > b.y ? a : b);
+        maxYNormal = contacts[0..count].Select(c => c.normal).OrderBy(n => n.y).DefaultIfEmpty(new(0, -1)).Last();
         grounded = maxYNormal.y > minGroundNormalY;
     }
 
