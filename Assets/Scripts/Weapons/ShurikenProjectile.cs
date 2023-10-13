@@ -16,11 +16,7 @@ public class Shuriken : MonoBehaviour
         Vector2 facing = transform.right;
         rb.velocity = facing*speed;
         rb.angularVelocity = facing.x*angularSpeed;
-    }
-
-    void Update()
-    {
-
+        Destroy(gameObject, 0.5f);
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)

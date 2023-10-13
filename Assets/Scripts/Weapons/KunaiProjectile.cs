@@ -13,11 +13,7 @@ public class Kunai : MonoBehaviour
     void Start()
     {
         rb.velocity = transform.right*speed;
-    }
-
-    void Update()
-    {
-
+        Destroy(gameObject, 0.5f);
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)

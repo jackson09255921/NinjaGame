@@ -3,8 +3,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerControl : MonoBehaviour
+public class Player : MonoBehaviour
 {
+    // Serialized fields
     public float runSpeed = 5;
     public float aerialSpeed = 2;
     public float dashSpeed = 10;
@@ -13,23 +14,31 @@ public class PlayerControl : MonoBehaviour
     public float jumpSpeed = 15;
     public float dashRunTime = 2;
     public float minGroundNormalY = 0.65f;
-    public Transform shootPoint;
+    public Weapon[] weapons;
+
+    // Components
+    internal Rigidbody2D rb;
+    internal Animator animator;
+
+    // Inputs
     InputManager inputManager;
     InputAction jumpAction;
     InputAction horizontalAction;
     InputAction equipmentAction;
     InputAction attackAction;
     InputAction interactAction;
-    Rigidbody2D rb;
-    Animator animator;
-    Inventory inventory;
+
+    // Weapon fields
+    int slot;
+
+    // Movement fields
     HorizontalState horizontalState = HorizontalState.Idle;
     Vector2 lastVelocity;
     float targetVelocityX = 0;
     int direction = 0;
     float runTime = 0;
     bool jumped = false;
-    ContactPoint2D[] contacts = new ContactPoint2D[16];
+    readonly ContactPoint2D[] contacts = new ContactPoint2D[16];
     Vector2 maxYNormal;
     bool grounded;
 
@@ -37,8 +46,6 @@ public class PlayerControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        inventory = GetComponent<Inventory>();
-        inventory.shootPoint = shootPoint;
     }
 
     void Start()
@@ -77,8 +84,15 @@ public class PlayerControl : MonoBehaviour
     void UpdateEquipment()
     {
         if (Time.timeScale > 0 && equipmentAction.WasPerformedThisFrame())
-        {
-            inventory.UpdateEquipment();
+        { 
+            int nextSlot = (slot+1)%weapons.Length;
+            if (weapons[nextSlot] != null)
+            {
+                slot = nextSlot;
+                float speed = animator.GetFloat("Speed");
+                animator.runtimeAnimatorController = weapons[slot].animationController;
+                animator.SetFloat("Speed", speed);
+            }
         }
     }
     
@@ -86,7 +100,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (Time.timeScale > 0 && attackAction.WasPerformedThisFrame())
         {
-            inventory.UpdateAttack();
+            weapons[slot].PerformAttack(this);
         }
     }
 
@@ -101,7 +115,7 @@ public class PlayerControl : MonoBehaviour
     void UpdateGrounded()
     {
         int count = rb.GetContacts(contacts);
-        maxYNormal = contacts[0..count].Select(c => c.normal).OrderBy(n => n.y).DefaultIfEmpty(new(0, -1)).Last();
+        maxYNormal = contacts.Take(count).Select(c => c.normal).OrderBy(n => n.y).DefaultIfEmpty(new(0, -1)).Last();
         grounded = maxYNormal.y > minGroundNormalY;
     }
 
