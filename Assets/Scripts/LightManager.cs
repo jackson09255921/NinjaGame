@@ -3,23 +3,20 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 
-public class LightControl : MonoBehaviour
+public class LightManager : MonoBehaviour
 {
-    public float startIntensity = 2;
-    public float endIntensity = 0;
     public float dimTime = 30;
+    public LightDimEntry[] lightDimEntries;
     public bool debug;
     InputManager inputManager;
     InputAction toggleAction;
     InputAction adjustAction;
-    Light2D lightComponent;
     float dimProgress;
     float dimSpeed;
     bool started = false;
 
     void Awake()
     {
-        lightComponent = GetComponent<Light2D>();
         dimSpeed = 1/dimTime;
     }
 
@@ -29,7 +26,10 @@ public class LightControl : MonoBehaviour
         toggleAction = inputManager.FindDebugAction("Light Toggle");
         adjustAction = inputManager.FindDebugAction("Light Adjust");
         dimProgress = 0;
-        lightComponent.intensity = startIntensity;
+        foreach(LightDimEntry entry in lightDimEntries)
+        {
+            entry.light.intensity = entry.startIntensity;
+        }
         if (!debug)
         {
             started = true;
@@ -51,6 +51,17 @@ public class LightControl : MonoBehaviour
             dimProgress -= dimSpeed*Time.deltaTime;
         }
         dimProgress = Math.Clamp(dimProgress, 0, 1);
-        lightComponent.intensity = Mathf.Lerp(startIntensity, endIntensity, dimProgress);
+        foreach(LightDimEntry entry in lightDimEntries)
+        {
+            entry.light.intensity = Mathf.Lerp(entry.startIntensity, entry.endIntensity, dimProgress);
+        }
+    }
+
+    [Serializable]
+    public struct LightDimEntry
+    {
+        public Light2D light;
+        public float startIntensity;
+        public float endIntensity;
     }
 }

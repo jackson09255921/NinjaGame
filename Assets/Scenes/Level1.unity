@@ -8615,7 +8615,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1587984807}
   - component: {fileID: 1587984806}
-  - component: {fileID: 1587984808}
   m_Layer: 0
   m_Name: Global Light 2D
   m_TagString: Untagged
@@ -8688,22 +8687,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1587984808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587984805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 164df17d33362264993d5fdc5fc1020f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startIntensity: 2
-  endIntensity: 0
-  dimTime: 30
-  debug: 1
 --- !u!43 &1616046809
 Mesh:
   m_ObjectHideFlags: 0
@@ -9362,6 +9345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1903782448}
   - component: {fileID: 1903782447}
+  - component: {fileID: 1903782449}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9397,6 +9381,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1903782449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903782446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efdd6b5d950c0541ae2491891935c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dimTime: 30
+  lightDimEntries:
+  - light: {fileID: 1587984806}
+    startIntensity: 2
+    endIntensity: 0
+  - light: {fileID: 2097153476}
+    startIntensity: 0
+    endIntensity: 2
+  debug: 1
 --- !u!1 &1904404030
 GameObject:
   m_ObjectHideFlags: 0
@@ -9596,6 +9601,17 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: 0.0000019073486, z: 0}
     m_Extent: {x: 27.474266, y: 28.46171, z: 0}
+--- !u!114 &2097153476 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7134880639189755617, guid: d930557d0f935644aa4abd74934dd04c, type: 3}
+  m_PrefabInstance: {fileID: 3818801208753881546}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2109814222
 GameObject:
   m_ObjectHideFlags: 0
