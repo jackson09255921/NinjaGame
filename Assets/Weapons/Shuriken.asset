@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4215f403b03b62647b8e0755cf37bff9, type: 3}
+  m_Script: {fileID: 11500000, guid: 749396efde89c52419863dc2390eed41, type: 3}
   m_Name: Shuriken
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 22e1a31db6f3db54f86f9d68f07a04be, type: 3}
   animationController: {fileID: 9100000, guid: 103b7e74aae7a0547b2fb685fe3da6eb, type: 2}
-  projectilePrefab: {fileID: 7786205462291043031, guid: dec78be0445f1314394bd76bacfa30f9, type: 3}
+  attackPrefab: {fileID: 1925589848503485498, guid: dec78be0445f1314394bd76bacfa30f9, type: 3}
   offset: {x: 0.25, y: 0.3}
+  groundCheckRadius: 0.5

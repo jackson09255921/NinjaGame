@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class Kunai : MonoBehaviour
+public class ShurikenAttack : Attack
 {
     public float speed = 20;
+    public float angularSpeed = 360;
     Rigidbody2D rb;
 
     void Awake()
@@ -12,7 +13,9 @@ public class Kunai : MonoBehaviour
 
     void Start()
     {
-        rb.velocity = transform.right*speed;
+        Vector2 facing = transform.right;
+        rb.velocity = facing*speed;
+        rb.angularVelocity = facing.x*angularSpeed;
         Destroy(gameObject, 0.5f);
     }
 

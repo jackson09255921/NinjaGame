@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     int slot;
 
     // Movement fields
-    HorizontalState horizontalState = HorizontalState.Idle;
+    internal HorizontalState horizontalState = HorizontalState.Idle;
     Vector2 lastVelocity;
     float targetVelocityX = 0;
     int direction = 0;
@@ -195,6 +195,7 @@ public class Player : MonoBehaviour
                 break;
             }
         }
+        animator.SetBool("Dash", horizontalState == HorizontalState.Dash);
         rotation.eulerAngles = eulerAngles;
         transform.localRotation = rotation;
     }
