@@ -173,19 +173,17 @@ public class Player : MonoBehaviour
         }
         direction = horizontal;
         float speed = Math.Abs(currentVelocityX);
-        Quaternion rotation = transform.localRotation;
-        Vector3 eulerAngles = rotation.eulerAngles;
         switch (direction)
         {
             case 1:
             {
-                eulerAngles.y = 0;
+                transform.localRotation = Constants.rightRotation;
                 animator.SetFloat("Speed", (currentVelocityX < 0.5f ? 0.5f : speed)*(grounded ? 1 : 0.1f));
                 break;
             }
             case -1:
             {
-                eulerAngles.y = 180;
+                transform.localRotation = Constants.leftRotation;
                 animator.SetFloat("Speed", (currentVelocityX > -0.5f ? 0.5f : speed)*(grounded ? 1 : 0.1f));
                 break;
             }
@@ -196,8 +194,6 @@ public class Player : MonoBehaviour
             }
         }
         animator.SetBool("Dash", horizontalState == HorizontalState.Dash);
-        rotation.eulerAngles = eulerAngles;
-        transform.localRotation = rotation;
     }
 
     void UpdateForces()

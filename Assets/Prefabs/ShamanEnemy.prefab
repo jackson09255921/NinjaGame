@@ -122,7 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  patrolDuration: 3
+  acceleration: 20
+  patrolRange: 3
+  idleDuration: 1
   attackRange: 3
   specialAttackCooldown: 5
   attackCooldown: 1
