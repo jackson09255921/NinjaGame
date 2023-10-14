@@ -60,7 +60,6 @@ public class EnemyController : MonoBehaviour
                 if (idleTimer <= 0)
                 {
                     isIdle = false;
-                    movingRight = !movingRight;
                 }
             }
             else
@@ -69,11 +68,13 @@ public class EnemyController : MonoBehaviour
                 if (movingRight && transform.position.x-homeX < patrolRange)
                 {
                     accelerationX = Math.Min(1, (moveSpeed-speed)*4)*acceleration;
+                    transform.rotation = Constants.rightRotation;
                     animator.SetFloat("Speed", currentVelocityX < 0.5f ? 0.5f : speed);
                 }
                 else if (!movingRight && homeX-transform.position.x < patrolRange)
                 {
                     accelerationX = -Math.Min(1, (moveSpeed-speed)*4)*acceleration;
+                    transform.rotation = Constants.leftRotation;
                     animator.SetFloat("Speed", currentVelocityX > -0.5f ? 0.5f : speed);
                 }
                 else
@@ -81,6 +82,7 @@ public class EnemyController : MonoBehaviour
                     animator.SetFloat("Speed", speed > 1 ? currentVelocityX*0.5f : 0);
                     idleTimer = idleDuration;
                     isIdle = true;
+                    movingRight = !movingRight;
                 }
                 rb.AddForce(new(accelerationX*rb.mass, 0), ForceMode2D.Force);
             }
@@ -89,10 +91,10 @@ public class EnemyController : MonoBehaviour
         {
             animator.SetFloat("Speed", speed > 1 ? currentVelocityX*0.5f : 0);
             movingRight = player.position.x > transform.position.x;
+            transform.rotation = movingRight ? Constants.rightRotation : Constants.leftRotation;
             idleTimer = idleDuration;
             isIdle = true;
         }
-        transform.rotation = movingRight ? Constants.rightRotation : Constants.leftRotation;
     }
 
     void UpdateAttack()

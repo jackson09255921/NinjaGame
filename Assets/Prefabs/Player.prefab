@@ -205,6 +205,7 @@ MonoBehaviour:
   weapons:
   - {fileID: 11400000, guid: e1e7b28204a76394fb19c692d66d3ee4, type: 2}
   - {fileID: 11400000, guid: c6eb65bbc83e78541822b1009af4eab0, type: 2}
+  - {fileID: 11400000, guid: 92229ecf249edc64bbad39f937204d2c, type: 2}
 --- !u!1 &3942257627793354725
 GameObject:
   m_ObjectHideFlags: 0
