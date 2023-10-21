@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public float acceleration = 40;
     public float deceleration = 20;
     public float jumpSpeed = 15;
+    public int jumpBufferFrames = 5;
+    public float jumpSlowFactor = 0.5f;
     public float dashRunTime = 2;
     public float minGroundNormalY = 0.65f;
     public Weapon[] weapons;
@@ -37,7 +39,8 @@ public class Player : MonoBehaviour
     float targetVelocityX = 0;
     int direction = 0;
     float runTime = 0;
-    bool jumped = false;
+    int jumped = 0;
+    bool stoppedJump = false;
     readonly ContactPoint2D[] contacts = new ContactPoint2D[16];
     Vector2 maxYNormal;
     bool grounded;
@@ -75,9 +78,20 @@ public class Player : MonoBehaviour
 
     void UpdateVertical()
     {
-        if (Time.timeScale > 0 && jumpAction.WasPerformedThisFrame())
+        if (Time.timeScale > 0)
         {
-            jumped = true;
+            if (jumpAction.WasPressedThisFrame())
+            {
+                jumped = 1;
+            }
+            else if (jumped > 0 && jumpAction.IsPressed())
+            {
+                jumped++;
+            }
+            else if (jumpAction.WasReleasedThisFrame())
+            {
+                stoppedJump = true;
+            }
         }
     }
 
@@ -208,7 +222,7 @@ public class Player : MonoBehaviour
             }
             if (currentVelocityX > 0)
             {
-                if (targetVelocityX < currentVelocityX)
+                if (targetVelocityX <= 0)
                 {
                     accelerationX = -Math.Min(1, (currentVelocityX-targetVelocityX)*4)*deceleration;
                 }
@@ -219,7 +233,7 @@ public class Player : MonoBehaviour
             }
             if (currentVelocityX < 0)
             {
-                if (targetVelocityX > currentVelocityX)
+                if (targetVelocityX >= 0)
                 {
                     accelerationX = Math.Min(1, (targetVelocityX-currentVelocityX)*4)*deceleration;
                 }
@@ -228,37 +242,32 @@ public class Player : MonoBehaviour
                     accelerationX = -Math.Min(1, (currentVelocityX-targetVelocityX)*4)*acceleration;
                 }
             }
-            rb.AddForce(new(accelerationX*rb.mass, 0), ForceMode2D.Force);
+            rb.AddForce(accelerationX*rb.mass*(grounded ? -Vector2.Perpendicular(maxYNormal) : new(1, 0)), ForceMode2D.Force);
         }
-        if (jumped && grounded)
+        if (jumped > 0 && grounded)
         {
             rb.AddForce(new(0, jumpSpeed*rb.mass), ForceMode2D.Impulse);
+            jumped = 0;
         }
-        jumped = false;
+        if (jumped > jumpBufferFrames)
+        {
+            jumped = 0;
+        }
+        if (stoppedJump && rb.velocity.y > 0)
+        {
+            rb.AddForce(new(0, -rb.velocity.y*jumpSlowFactor*rb.mass), ForceMode2D.Impulse);
+        }
+        stoppedJump = false;
         lastVelocity = rb.velocity;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         Vector2 newVelocity = rb.velocity;
-        for (int i = 0; i < collision.contactCount; ++i)
-        {
-            ContactPoint2D contact = collision.GetContact(i);
-            Vector2 normal = contact.normal;
-            Vector2 tangent = Vector2.Perpendicular(normal);
-            Vector2 lastNormal = Vector2.Dot(lastVelocity, normal)*normal;
-            Vector2 newNormal = Vector2.Dot(newVelocity, normal)*normal;
-            if (lastNormal.sqrMagnitude > 25)
-            {
-                Vector2 lastTangent = Vector2.Dot(lastVelocity, tangent)*tangent;
-                newVelocity = newNormal+lastTangent;
-            }
-            else
-            {
-                Vector2 currTangent = Vector2.Dot(rb.velocity, tangent)*tangent;
-                newVelocity = newNormal+currTangent;
-            }
-        }
+        ContactPoint2D contact = collision.GetContact(0);
+        Vector2 normal = contact.normal;
+        float factor = Math.Max(normal.y, 0)*Math.Clamp(-lastVelocity.y, 0, 5)*0.2f;
+        newVelocity.x = Mathf.Lerp(newVelocity.x, lastVelocity.x, factor); 
         rb.velocity = newVelocity;
     }
 
