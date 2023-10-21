@@ -80,15 +80,15 @@ public class Player : MonoBehaviour
     {
         if (Time.timeScale > 0)
         {
+            if (jumped > 0)
+            {
+                jumped++;
+            }
             if (jumpAction.WasPressedThisFrame())
             {
                 jumped = 1;
             }
-            else if (jumped > 0 && jumpAction.IsPressed())
-            {
-                jumped++;
-            }
-            else if (jumpAction.WasReleasedThisFrame())
+            if (jumpAction.WasReleasedThisFrame())
             {
                 stoppedJump = true;
             }
