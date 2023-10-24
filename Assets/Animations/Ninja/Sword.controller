@@ -32,7 +32,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: hensin
+  m_Name: Skill1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -182,13 +182,13 @@ AnimatorStateMachine:
     m_Position: {x: 320, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5550525939806065760}
-    m_Position: {x: 253.36314, y: 499.6093, z: 0}
+    m_Position: {x: 440, y: 450, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7790779293565534472}
     m_Position: {x: 193.99452, y: 448.4295, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6305999594514023935}
-    m_Position: {x: 228.99452, y: 513.4295, z: 0}
+    m_Position: {x: 260, y: 520, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -482,7 +482,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Substitute
+  m_Name: Skill2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
