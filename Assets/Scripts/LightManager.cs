@@ -30,10 +30,7 @@ public class LightManager : MonoBehaviour
         {
             entry.light.intensity = entry.startIntensity;
         }
-        if (!debug)
-        {
-            started = true;
-        }
+        started = true;
     }
 
     void Update()
@@ -48,7 +45,7 @@ public class LightManager : MonoBehaviour
         }
         if (started)
         {
-            dimProgress -= dimSpeed*Time.deltaTime;
+            dimProgress += dimSpeed*Time.deltaTime;
         }
         dimProgress = Math.Clamp(dimProgress, 0, 1);
         foreach(LightDimEntry entry in lightDimEntries)

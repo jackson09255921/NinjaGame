@@ -204,10 +204,9 @@ MonoBehaviour:
   jumpSlowFactor: 0.5
   dashRunTime: 2
   minGroundNormalY: 0.65
-  weapons:
-  - {fileID: 11400000, guid: e1e7b28204a76394fb19c692d66d3ee4, type: 2}
-  - {fileID: 11400000, guid: c6eb65bbc83e78541822b1009af4eab0, type: 2}
-  - {fileID: 11400000, guid: 92229ecf249edc64bbad39f937204d2c, type: 2}
+  activeWeapon: {fileID: 11400000, guid: e1e7b28204a76394fb19c692d66d3ee4, type: 2}
+  inactiveWeapon: {fileID: 11400000, guid: c6eb65bbc83e78541822b1009af4eab0, type: 2}
+  hud: {fileID: 0}
 --- !u!1 &3942257627793354725
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,8 +273,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0052500367, y: 0.0017000437, z: 0}
-    m_Extent: {x: 1.6954501, y: 1.6982, z: 0}
+    m_Center: {x: -0.005800009, y: 0.00054997206, z: 0}
+    m_Extent: {x: 1.7006, y: 1.70485, z: 0}
   m_PointLightInnerAngle: 352.29
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

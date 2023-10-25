@@ -1,16 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Pause : MonoBehaviour
 {
     public Canvas pauseCanvas;
     private bool isCanvasVisible = false;
+    private InputManager inputManager;
+    private InputAction pauseAction;
 
-    // Update is called once per frame
+    void Start()
+    {
+        inputManager = InputManager.Instance;
+        pauseAction = inputManager.FindAction("Pause");
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (pauseAction.WasPerformedThisFrame())
         {
             isCanvasVisible = !isCanvasVisible; 
             pauseCanvas.gameObject.SetActive(isCanvasVisible);

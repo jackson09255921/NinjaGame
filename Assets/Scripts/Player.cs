@@ -16,7 +16,9 @@ public class Player : MonoBehaviour
     public float jumpSlowFactor = 0.5f;
     public float dashRunTime = 2;
     public float minGroundNormalY = 0.65f;
-    public Weapon[] weapons;
+    public Weapon activeWeapon;
+    public Weapon inactiveWeapon;
+    public HUD hud;
 
     // Components
     internal Rigidbody2D rb;
@@ -29,9 +31,6 @@ public class Player : MonoBehaviour
     InputAction equipmentAction;
     InputAction attackAction;
     InputAction interactAction;
-
-    // Weapon fields
-    int slot;
 
     // Movement fields
     internal HorizontalState horizontalState = HorizontalState.Idle;
@@ -59,6 +58,7 @@ public class Player : MonoBehaviour
         equipmentAction = inputManager.FindAction("Equipment");
         attackAction = inputManager.FindAction("Attack");
         interactAction = inputManager.FindAction("Interact");
+        hud.UpdateEquipment(activeWeapon, inactiveWeapon);
     }
 
     void Update()
@@ -98,14 +98,14 @@ public class Player : MonoBehaviour
     void UpdateEquipment()
     {
         if (Time.timeScale > 0 && equipmentAction.WasPerformedThisFrame())
-        { 
-            int nextSlot = (slot+1)%weapons.Length;
-            if (weapons[nextSlot] != null)
+        {
+            if (inactiveWeapon != null)
             {
-                slot = nextSlot;
+                (activeWeapon, inactiveWeapon) = (inactiveWeapon, activeWeapon);
                 float speed = animator.GetFloat("Speed");
-                animator.runtimeAnimatorController = weapons[slot].animationController;
+                animator.runtimeAnimatorController = activeWeapon.animationController;
                 animator.SetFloat("Speed", speed);
+                hud.UpdateEquipment(activeWeapon, inactiveWeapon);
             }
         }
     }
@@ -114,7 +114,7 @@ public class Player : MonoBehaviour
     {
         if (Time.timeScale > 0 && attackAction.WasPerformedThisFrame())
         {
-            weapons[slot].PerformAttack(this);
+            activeWeapon.PerformAttack(this);
         }
     }
 
@@ -212,7 +212,8 @@ public class Player : MonoBehaviour
 
     void UpdateForces()
     {
-        float currentVelocityX = rb.velocity.x;
+        Vector2 groundTangent = grounded ? -Vector2.Perpendicular(maxYNormal) : new(1, 0);
+        float currentVelocityX = Vector2.Dot(rb.velocity, groundTangent);
         if (currentVelocityX != targetVelocityX)
         {
             float accelerationX = 0;
@@ -242,7 +243,7 @@ public class Player : MonoBehaviour
                     accelerationX = -Math.Min(1, (currentVelocityX-targetVelocityX)*4)*acceleration;
                 }
             }
-            rb.AddForce(accelerationX*rb.mass*(grounded ? -Vector2.Perpendicular(maxYNormal) : new(1, 0)), ForceMode2D.Force);
+            rb.AddForce(accelerationX*rb.mass*groundTangent, ForceMode2D.Force);
         }
         if (jumped > 0 && grounded)
         {

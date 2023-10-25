@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749396efde89c52419863dc2390eed41, type: 3}
   m_Name: Shuriken
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 22e1a31db6f3db54f86f9d68f07a04be, type: 3}
+  icon: {fileID: 21300000, guid: be173402f4a7cdd4d8bbf722cb13d5ac, type: 3}
   animationController: {fileID: 9100000, guid: 103b7e74aae7a0547b2fb685fe3da6eb, type: 2}
   attackPrefab: {fileID: 1925589848503485498, guid: dec78be0445f1314394bd76bacfa30f9, type: 3}
   offset: {x: 0.25, y: 0.3}

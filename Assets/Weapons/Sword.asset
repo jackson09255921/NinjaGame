@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749396efde89c52419863dc2390eed41, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 40b17691298e8ef4a84869818472e967, type: 3}
   animationController: {fileID: 9100000, guid: d021d8d7669a6d0498ca016a894e5f2a, type: 2}
   attackPrefab: {fileID: 1755109611008728672, guid: 18c93e93b301c5a4cbd1832d4e6515e2, type: 3}
   offset: {x: 0, y: 0}
