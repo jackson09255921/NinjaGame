@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 224361269946906357}
   - component: {fileID: 6561883014523689431}
   - component: {fileID: 3537335586935129840}
+  - component: {fileID: 922250219445155636}
   m_Layer: 5
   m_Name: ChestCanvas
   m_TagString: Untagged
@@ -179,6 +180,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &922250219445155636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177770485255191013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6119c087694b5d47adc6edf78bfc047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5630097226815880399
 GameObject:
   m_ObjectHideFlags: 0

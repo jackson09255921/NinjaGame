@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,23 +6,36 @@ using UnityEngine;
 public class Treasure : MonoBehaviour
 {
     public Animator animator;
-    public Canvas chestCanvas;
+    bool open;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            animator.SetBool("open", true);
-            chestCanvas.gameObject.SetActive(true);
+    public bool Open {
+        get => open;
+        internal set {
+            open = value;
+            animator.SetBool("open", open);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!open)
         {
-            animator.SetBool("open", false);
-            chestCanvas.gameObject.SetActive(false);
+            if (other.TryGetComponent(out Player player))
+            {
+                player.treasure = this;
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out Player player))
+        {
+            if (player.treasure == this)
+            {
+                player.treasure = null;
+                player.chestMenu.gameObject.SetActive(false);
+            }
         }
     }
 }

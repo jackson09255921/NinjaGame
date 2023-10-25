@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public Weapon activeWeapon;
     public Weapon inactiveWeapon;
     public HUD hud;
+    public ChestMenu chestMenu;
 
     // Components
     internal Rigidbody2D rb;
@@ -43,6 +44,9 @@ public class Player : MonoBehaviour
     readonly ContactPoint2D[] contacts = new ContactPoint2D[16];
     Vector2 maxYNormal;
     bool grounded;
+
+    // Interactable fields
+    internal Treasure treasure;
 
     void Awake()
     {
@@ -122,7 +126,11 @@ public class Player : MonoBehaviour
     {
         if (Time.timeScale > 0 && interactAction.WasPerformedThisFrame())
         {
-
+            if (treasure != null && !treasure.Open)
+            {
+                treasure.Open = true;
+                chestMenu.gameObject.SetActive(true);
+            }
         }
     }
 
