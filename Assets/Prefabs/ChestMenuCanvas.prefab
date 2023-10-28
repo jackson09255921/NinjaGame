@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4279419904629022091}
   - component: {fileID: 1659286857874784848}
   m_Layer: 5
-  m_Name: InactiveIcon
+  m_Name: InactiveWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 8703045344077714017}
   - component: {fileID: 4528560209120803279}
   m_Layer: 5
-  m_Name: ToSetIcon
+  m_Name: ChestWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,6 +523,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6119c087694b5d47adc6edf78bfc047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chestWeaponIcon: {fileID: 4528560209120803279}
+  activeWeaponIcon: {fileID: 6540553772130631622}
+  inactiveWeaponIcon: {fileID: 1659286857874784848}
 --- !u!1 &6356589822213094887
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +538,7 @@ GameObject:
   - component: {fileID: 7604118392147519857}
   - component: {fileID: 7530004130234304956}
   m_Layer: 5
-  m_Name: ToSetFrame
+  m_Name: ChestFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -867,7 +870,7 @@ GameObject:
   - component: {fileID: 7035036745503020277}
   - component: {fileID: 6540553772130631622}
   m_Layer: 5
-  m_Name: ActiveIcon
+  m_Name: ActiveWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
