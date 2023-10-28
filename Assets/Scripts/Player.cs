@@ -57,11 +57,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         inputManager = InputManager.Instance;
-        jumpAction = inputManager.FindAction("Jump");
-        horizontalAction = inputManager.FindAction("Horizontal");
-        equipmentAction = inputManager.FindAction("Equipment");
-        attackAction = inputManager.FindAction("Attack");
-        interactAction = inputManager.FindAction("Interact");
+        jumpAction = inputManager.FindAction("Default/Jump");
+        horizontalAction = inputManager.FindAction("Default/Horizontal");
+        equipmentAction = inputManager.FindAction("Default/Equipment");
+        attackAction = inputManager.FindAction("Default/Attack");
+        interactAction = inputManager.FindAction("Default/Interact");
         hud.UpdateEquipment(activeWeapon, inactiveWeapon);
     }
 

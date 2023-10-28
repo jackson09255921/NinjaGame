@@ -5,6 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class LightManager : MonoBehaviour
 {
+    public static LightManager Instance { get; private set; }
     public float dimTime = 30;
     public LightDimEntry[] lightDimEntries;
     public bool debug;
@@ -17,14 +18,27 @@ public class LightManager : MonoBehaviour
 
     void Awake()
     {
+        Instance = this;
         dimSpeed = 1/dimTime;
+    }
+
+    void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
     }
 
     void Start()
     {
         inputManager = InputManager.Instance;
-        toggleAction = inputManager.FindDebugAction("Light Toggle");
-        adjustAction = inputManager.FindDebugAction("Light Adjust");
+        if (debug)
+        {
+            inputManager.EnableActionMap("Debug");
+        }
+        toggleAction = inputManager.FindAction("Debug/Light Toggle");
+        adjustAction = inputManager.FindAction("Debug/Light Adjust");
         dimProgress = 0;
         foreach(LightDimEntry entry in lightDimEntries)
         {
@@ -35,7 +49,8 @@ public class LightManager : MonoBehaviour
 
     void Update()
     {
-        if (debug) {
+        if (debug)
+        {
             if (toggleAction.WasPerformedThisFrame())
             {
                 started = !started;

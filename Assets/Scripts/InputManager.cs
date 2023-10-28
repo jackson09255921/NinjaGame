@@ -9,7 +9,6 @@ public class InputManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        actionAsset.Enable();
     }
 
     void OnDestroy()
@@ -23,11 +22,16 @@ public class InputManager : MonoBehaviour
 
     public InputAction FindAction(string nameOrId)
     {
-        return actionAsset.FindActionMap("Default").FindAction(nameOrId);
+        return actionAsset.FindAction(nameOrId);
     }
 
-    public InputAction FindDebugAction(string nameOrId)
+    public void EnableActionMap(string nameOrId)
     {
-        return actionAsset.FindActionMap("Debug").FindAction(nameOrId);
+        actionAsset.FindActionMap(nameOrId).Enable();
+    }
+
+    public void DisableActionMap(string nameOrId)
+    {
+        actionAsset.FindActionMap(nameOrId).Disable();
     }
 }
