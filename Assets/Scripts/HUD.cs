@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    //public FractionBar healthBar;
-    //public FractionBar cooldownBar;
+    public Slider healthBar;
+    public Slider cooldownBar;
     public Image activeWeaponIcon;
     public Image inactiveWeaponIcon;
 
