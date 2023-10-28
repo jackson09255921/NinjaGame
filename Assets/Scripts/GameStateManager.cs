@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.InputSystem;
 
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
     public Canvas pauseCanvas;
-    bool paused = false;
     InputManager inputManager;
-    InputAction pauseAction;
+    InputAction escapeAction;
+    GameState state = GameState.Play;
 
     void Awake()
     {
@@ -28,24 +29,47 @@ public class GameStateManager : MonoBehaviour
     {
         inputManager = InputManager.Instance;
         inputManager.EnableActionMap("Default");
-        pauseAction = inputManager.FindAction("Default/Pause");
+        escapeAction = inputManager.FindAction("Default/Escape");
     }
 
     void Update()
     {
-        if (pauseAction.WasPerformedThisFrame())
+        if (escapeAction.WasPerformedThisFrame())
         {
-            paused = !paused; 
-            pauseCanvas.gameObject.SetActive(paused);
-            
-            if (paused)
+            UpdateEscape();
+        }
+    }
+
+    void UpdateEscape()
+    {
+        switch (state)
+        {
+            case GameState.Play:
             {
+                state = GameState.Pause;
+                pauseCanvas.gameObject.SetActive(true);
                 Time.timeScale = 0;
+                break;
             }
-            else
+            case GameState.Chest:
             {
-                Time.timeScale = 1; 
+                state = GameState.Play;
+                Time.timeScale = 1;
+                break;
+            }
+            case GameState.Pause:
+            {
+                state = GameState.Play;
+                pauseCanvas.gameObject.SetActive(false);
+                Time.timeScale = 1;
+                break;
             }
         }
+    }
+
+    public enum GameState {
+            Play,
+            Pause,
+            Chest,
     }
 }
