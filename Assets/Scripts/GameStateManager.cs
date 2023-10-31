@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
-    public Canvas pauseCanvas;
+    public ChestMenu chestMenu;
+    public PauseMenu pauseMenu;
     InputManager inputManager;
     InputAction escapeAction;
     GameState state = GameState.Play;
@@ -47,22 +48,49 @@ public class GameStateManager : MonoBehaviour
             case GameState.Play:
             {
                 state = GameState.Pause;
-                pauseCanvas.gameObject.SetActive(true);
+                pauseMenu.gameObject.SetActive(true);
                 Time.timeScale = 0;
                 break;
             }
             case GameState.Chest:
             {
                 state = GameState.Play;
+                chestMenu.gameObject.SetActive(false);
                 Time.timeScale = 1;
                 break;
             }
             case GameState.Pause:
             {
                 state = GameState.Play;
-                pauseCanvas.gameObject.SetActive(false);
+                pauseMenu.gameObject.SetActive(false);
                 Time.timeScale = 1;
                 break;
+            }
+        }
+    }
+
+    internal void OpenChest(Player player, Chest chest)
+    {
+        if (state == GameState.Play)
+        {
+            if (!chest.Open)
+            {
+                chest.Open = true;
+            }
+            if (chest.weapon != null)
+            {
+                if (player.inactiveWeapon == null)
+                {
+                    player.inactiveWeapon = chest.weapon;
+                    chest.weapon = null;
+                }
+                else
+                {
+                    state = GameState.Chest;
+                    chestMenu.SetContents(player, chest);
+                    chestMenu.gameObject.SetActive(true);
+                    Time.timeScale = 0;
+                }
             }
         }
     }

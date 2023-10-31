@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Treasure : MonoBehaviour
+public class Chest : MonoBehaviour
 {
     public Animator animator;
+    public Weapon weapon;
     bool open;
 
     public bool Open {
@@ -18,12 +16,9 @@ public class Treasure : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!open)
+        if (other.TryGetComponent(out Player player))
         {
-            if (other.TryGetComponent(out Player player))
-            {
-                player.treasure = this;
-            }
+            player.chest = this;
         }
     }
 
@@ -31,10 +26,9 @@ public class Treasure : MonoBehaviour
     {
         if (other.TryGetComponent(out Player player))
         {
-            if (player.treasure == this)
+            if (player.chest == this)
             {
-                player.treasure = null;
-                player.chestMenu.gameObject.SetActive(false);
+                player.chest = null;
             }
         }
     }

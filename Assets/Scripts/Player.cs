@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
     bool grounded;
 
     // Interactable fields
-    internal Treasure treasure;
+    internal Chest chest;
 
     void Awake()
     {
@@ -126,10 +126,9 @@ public class Player : MonoBehaviour
     {
         if (Time.timeScale > 0 && interactAction.WasPerformedThisFrame())
         {
-            if (treasure != null && !treasure.Open)
+            if (chest != null)
             {
-                treasure.Open = true;
-                chestMenu.gameObject.SetActive(true);
+                GameStateManager.Instance.OpenChest(this, chest);
             }
         }
     }

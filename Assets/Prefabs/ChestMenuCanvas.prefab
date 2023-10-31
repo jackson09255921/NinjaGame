@@ -196,7 +196,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5046746669496735842}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 922250219445155636}
+        m_TargetAssemblyTypeName: ChestMenu, Assembly-CSharp
+        m_MethodName: SwapActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3755630776276173948
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +735,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1317635000249302738}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 922250219445155636}
+        m_TargetAssemblyTypeName: ChestMenu, Assembly-CSharp
+        m_MethodName: SwapInactive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7139863203976677833
 GameObject:
   m_ObjectHideFlags: 0
