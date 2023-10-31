@@ -7825,7 +7825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd21bc1cbca7a924296e50a713ad03d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: {x: 0.1, y: 0.1}
+  scrollSpeed: {x: 0.01, y: 0.01}
 --- !u!114 &1166645733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7967,7 +7967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd21bc1cbca7a924296e50a713ad03d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: {x: 0.1, y: 0.1}
+  scrollSpeed: {x: 0.01, y: 0.01}
 --- !u!114 &1170146331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8236,7 +8236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d17a20413a6294d8021aab074b4ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: {x: 0.1, y: 0.1}
+  scrollSpeed: {x: 0.01, y: 0.01}
 --- !u!1001 &1279041466
 PrefabInstance:
   m_ObjectHideFlags: 0
