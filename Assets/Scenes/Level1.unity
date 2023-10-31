@@ -10633,6 +10633,10 @@ PrefabInstance:
       value: Treasure
       objectReference: {fileID: 0}
     - target: {fileID: 4760794897080076412, guid: 5208db63574993040a9c5fb303176d8c, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 92229ecf249edc64bbad39f937204d2c, type: 2}
+    - target: {fileID: 4760794897080076412, guid: 5208db63574993040a9c5fb303176d8c, type: 3}
       propertyPath: chestCanvas
       value: 
       objectReference: {fileID: 1635736934}
