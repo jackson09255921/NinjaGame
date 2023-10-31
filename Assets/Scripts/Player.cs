@@ -39,8 +39,9 @@ public class Player : MonoBehaviour
     float targetVelocityX = 0;
     int direction = 0;
     float runTime = 0;
-    int jumped = 0;
+    int jumpInput = 0;
     bool stoppedJump = false;
+    int jumpTicks = 0;
     readonly ContactPoint2D[] contacts = new ContactPoint2D[16];
     Vector2 maxYNormal;
     bool grounded;
@@ -84,13 +85,13 @@ public class Player : MonoBehaviour
     {
         if (Time.timeScale > 0)
         {
-            if (jumped > 0)
+            if (jumpInput > 0)
             {
-                jumped++;
+                jumpInput++;
             }
             if (jumpAction.WasPressedThisFrame())
             {
-                jumped = 1;
+                jumpInput = 1;
             }
             if (jumpAction.WasReleasedThisFrame())
             {
@@ -221,7 +222,21 @@ public class Player : MonoBehaviour
     {
         Vector2 groundTangent = grounded ? -Vector2.Perpendicular(maxYNormal) : new(1, 0);
         float currentVelocityX = Vector2.Dot(rb.velocity, groundTangent);
-        if (currentVelocityX != targetVelocityX)
+        if (jumpTicks > 0)
+        {
+            jumpTicks++;
+        }
+        if (jumpInput > 0 && grounded)
+        {
+            rb.AddForce(new(0, jumpSpeed*rb.mass), ForceMode2D.Impulse);
+            jumpInput = 0;
+            jumpTicks = 1;
+        }
+        else if (stoppedJump && rb.velocity.y > 0)
+        {
+            rb.AddForce(new(0, -rb.velocity.y*jumpSlowFactor*rb.mass), ForceMode2D.Impulse);
+        }
+        else if (jumpTicks == 0 && currentVelocityX != targetVelocityX)
         {
             float accelerationX = 0;
             if (currentVelocityX == 0)
@@ -252,18 +267,13 @@ public class Player : MonoBehaviour
             }
             rb.AddForce(accelerationX*rb.mass*groundTangent, ForceMode2D.Force);
         }
-        if (jumped > 0 && grounded)
+        if (jumpInput > jumpBufferFrames)
         {
-            rb.AddForce(new(0, jumpSpeed*rb.mass), ForceMode2D.Impulse);
-            jumped = 0;
+            jumpInput = 0;
         }
-        if (jumped > jumpBufferFrames)
+        if (jumpTicks > 1)
         {
-            jumped = 0;
-        }
-        if (stoppedJump && rb.velocity.y > 0)
-        {
-            rb.AddForce(new(0, -rb.velocity.y*jumpSlowFactor*rb.mass), ForceMode2D.Impulse);
+            jumpTicks = 0;
         }
         stoppedJump = false;
         lastVelocity = rb.velocity;
@@ -274,7 +284,7 @@ public class Player : MonoBehaviour
         Vector2 newVelocity = rb.velocity;
         ContactPoint2D contact = collision.GetContact(0);
         Vector2 normal = contact.normal;
-        float factor = Math.Max(normal.y, 0)*Math.Clamp(-lastVelocity.y, 0, 5)*0.2f;
+        float factor = Math.Max(normal.y, 0)*Math.Clamp(-lastVelocity.y*0.2f, 0, 5);
         newVelocity.x = Mathf.Lerp(newVelocity.x, lastVelocity.x, factor); 
         rb.velocity = newVelocity;
     }
