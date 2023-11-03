@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
     public Transform initialSpawnPoint;
-    public Transform currentSpawnPoint;
-    // Start is called before the first frame update
+    Transform currentSpawnPoint;
+
     void Start()
     {
         currentSpawnPoint = initialSpawnPoint;
