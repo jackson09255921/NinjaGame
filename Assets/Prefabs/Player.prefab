@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1100170929915547699}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -9.77, y: -2.34, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -207,6 +207,7 @@ MonoBehaviour:
   activeWeapon: {fileID: 11400000, guid: e1e7b28204a76394fb19c692d66d3ee4, type: 2}
   inactiveWeapon: {fileID: 11400000, guid: c6eb65bbc83e78541822b1009af4eab0, type: 2}
   hud: {fileID: 0}
+  chestMenu: {fileID: 0}
 --- !u!1 &3942257627793354725
 GameObject:
   m_ObjectHideFlags: 0
