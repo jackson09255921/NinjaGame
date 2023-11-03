@@ -14,13 +14,19 @@ public class SwordAttack : Attack
     void Start()
     {
         rb.velocity = player.rb.velocity;
-        if (player.horizontalState != Player.HorizontalState.Dash)
+        switch (param)
         {
-            normalAttack.gameObject.SetActive(true);
-        }
-        else
-        {
-            dashAttack.gameObject.SetActive(true);
+            default:
+            case 0:
+            {
+                normalAttack.gameObject.SetActive(true);
+                break;
+            }
+            case 1:
+            {
+                dashAttack.gameObject.SetActive(true);
+                break;
+            }
         }
         Destroy(gameObject, 0.2f);
     }

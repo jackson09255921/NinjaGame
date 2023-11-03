@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     public Weapon activeWeapon;
     public Weapon inactiveWeapon;
     public HUD hud;
-    public ChestMenu chestMenu;
 
     // Components
     internal Rigidbody2D rb;
@@ -119,7 +118,15 @@ public class Player : MonoBehaviour
     {
         if (Time.timeScale > 0 && attackAction.WasPerformedThisFrame())
         {
-            activeWeapon.PerformAttack(this);
+            activeWeapon.StartAttack(this);
+        }
+    }
+
+    internal void PerformAttack(int param)
+    {
+        if (Time.timeScale > 0)
+        {
+            activeWeapon.PerformAttack(this, param);
         }
     }
 

@@ -20,15 +20,21 @@ public class Weapon : ScriptableObject
         contactFilter.useTriggers = false;
     }
 
-    public virtual void PerformAttack(Player player)
+    public virtual void StartAttack(Player player)
     {
         Vector2 position = player.transform.TransformPoint(offset);
         if (attackPrefab != null && CanSpawn(position))
         {
-            Attack attack = Instantiate(attackPrefab, position, player.transform.rotation);
-            attack.player = player;
             player.animator.SetTrigger("Attack");
         }
+    }
+
+    public virtual void PerformAttack(Player player, int param)
+    {
+        Vector2 position = player.transform.TransformPoint(offset);
+        Attack attack = Instantiate(attackPrefab, position, player.transform.rotation);
+        attack.player = player;
+        attack.param = param;
     }
 
     bool CanSpawn(Vector2 position)
