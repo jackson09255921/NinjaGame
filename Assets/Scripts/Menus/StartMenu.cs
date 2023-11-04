@@ -1,11 +1,13 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    public SceneTransition sceneTransitionPrefab;
+
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneTransition transition = Instantiate(sceneTransitionPrefab);
+        transition.sceneName = "Level1";
     }
 
     public void QuitGame()
@@ -13,5 +15,4 @@ public class StartMenu : MonoBehaviour
         Debug.Log("leave game");
         Application.Quit();
     }
-
 }

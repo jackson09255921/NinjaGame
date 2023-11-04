@@ -96,5 +96,6 @@ public class GameStateManager : MonoBehaviour
             Play,
             Pause,
             Chest,
+            Result,
     }
 }
