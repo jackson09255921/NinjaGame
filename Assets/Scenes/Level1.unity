@@ -9164,7 +9164,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.8682353, g: 0.8, b: 1, a: 1}
+  m_Color: {r: 0.8666667, g: 0.8, b: 1, a: 1}
   m_Intensity: 1.5
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -9341,11 +9341,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!223 &1635736934 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 224361269946906357, guid: 46b55f6419b5e75479dfd0b420fea0b1, type: 3}
-  m_PrefabInstance: {fileID: 2861314527194873798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1682900044
 GameObject:
   m_ObjectHideFlags: 0
@@ -10941,10 +10936,6 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 11400000, guid: 92229ecf249edc64bbad39f937204d2c, type: 2}
-    - target: {fileID: 4760794897080076412, guid: 5208db63574993040a9c5fb303176d8c, type: 3}
-      propertyPath: chestCanvas
-      value: 
-      objectReference: {fileID: 1635736934}
     - target: {fileID: 7785738720589624770, guid: 5208db63574993040a9c5fb303176d8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5
