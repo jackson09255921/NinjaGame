@@ -106,12 +106,17 @@ public class Player : MonoBehaviour
             if (inactiveWeapon != null)
             {
                 (activeWeapon, inactiveWeapon) = (inactiveWeapon, activeWeapon);
-                float speed = animator.GetFloat("Speed");
-                animator.runtimeAnimatorController = activeWeapon.animationController;
-                animator.SetFloat("Speed", speed);
-                hud.UpdateEquipment(activeWeapon, inactiveWeapon);
+                UpdateActiveEquipment();
             }
         }
+    }
+
+    internal void UpdateActiveEquipment()
+    {
+        float speed = animator.GetFloat("Speed");
+        animator.runtimeAnimatorController = activeWeapon.animationController;
+        animator.SetFloat("Speed", speed);
+        hud.UpdateEquipment(activeWeapon, inactiveWeapon);
     }
     
     void UpdateAttack()

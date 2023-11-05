@@ -22,8 +22,7 @@ public class Weapon : ScriptableObject
 
     public virtual void StartAttack(Player player)
     {
-        Vector2 position = player.transform.TransformPoint(offset);
-        if (attackPrefab != null && CanSpawn(position))
+        if (attackPrefab != null && CanSpawn(player.transform))
         {
             player.animator.SetTrigger("Attack");
         }
@@ -31,16 +30,17 @@ public class Weapon : ScriptableObject
 
     public virtual void PerformAttack(Player player, int param)
     {
-        Attack attack = Instantiate(attackPrefab, player.transform);
+        Vector2 position = player.transform.TransformPoint(offset);
+        Attack attack = Instantiate(attackPrefab, position, player.transform.rotation);
         attack.player = player;
         attack.param = param;
     }
 
-    bool CanSpawn(Vector2 position)
+    bool CanSpawn(Transform playerTransform)
     {
         if (groundCheckRadius > 0)
         {
-            int count = Physics2D.OverlapCircle(position, groundCheckRadius, contactFilter, overlaps); 
+            int count = Physics2D.OverlapCircle(playerTransform.TransformPoint(offset), playerTransform.localScale.x*groundCheckRadius, contactFilter, overlaps); 
             return overlaps.Take(count).All(c => !c.CompareTag("Ground"));
         }
         return true;

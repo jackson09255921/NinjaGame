@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.77, y: -2.34, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2563525780388310922}
@@ -122,18 +122,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.24}
+  m_Offset: {x: 0, y: 0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5032258, y: 0.16216215}
-    oldSize: {x: 1.55, y: 1.11}
+    oldSize: {x: 4.84375, y: 3.46875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.48}
+  m_Size: {x: 0.625, y: 1.5}
   m_EdgeRadius: 0
 --- !u!50 &6752384441668661684
 Rigidbody2D:
@@ -287,8 +287,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.000050008297, y: -0.0045000315, z: 0}
-    m_Extent: {x: 1.6951499, y: 1.6984, z: 0}
+    m_Center: {x: -0.0010999441, y: -0.00014996529, z: 0}
+    m_Extent: {x: 2.9970999, y: 2.99875, z: 0}
   m_PointLightInnerAngle: 352.29
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -299,11 +299,11 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 1
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0, y: -0.7, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.7, y: 0, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: 0, y: 0.7, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
-  - {x: -0.7, y: 0, z: 0}
+  - {x: -1.4, y: -1.4, z: 0}
+  - {x: 0, y: -2, z: 0}
+  - {x: 1.4, y: -1.4, z: 0}
+  - {x: 2, y: 0, z: 0}
+  - {x: 1.4, y: 1.4, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: -1.4, y: 1.4, z: 0}
+  - {x: -2, y: 0, z: 0}

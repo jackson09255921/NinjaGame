@@ -38,6 +38,7 @@ public class ChestMenu : MonoBehaviour
         {
             (player.activeWeapon, chest.weapon) = (chest.weapon, player.activeWeapon);
             UpdateIcons();
+            player.UpdateActiveEquipment();
         }
     }
 
@@ -47,6 +48,7 @@ public class ChestMenu : MonoBehaviour
         {
             (player.inactiveWeapon, chest.weapon) = (chest.weapon, player.inactiveWeapon);
             UpdateIcons();
+            player.UpdateActiveEquipment();
         }
     }
 }
