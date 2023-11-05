@@ -11,6 +11,8 @@ public class EnemyController : Enemy
     public float attackRange = 3;
     public float specialAttackCooldown = 5;
     public float attackCooldown = 1;
+    public Transform charmPoint;
+    public CharmEnemyAttack charmAttackPrefab;
     public Transform lightningPoint;
     public GameObject lightningPrefab;
 
@@ -115,9 +117,12 @@ public class EnemyController : Enemy
             {
                 lastAttackTime = Time.time;
                 animator.SetTrigger("Attack");
-                // GameObject attackInstance = Instantiate(attackPrefab, attackPoint.position, attackPoint.rotation);
-                // Destroy(attackInstance, 0.5f);
             }
         }
+    }
+
+    internal void PerformAttack()
+    {
+        CharmEnemyAttack attack = Instantiate(charmAttackPrefab, charmPoint.position, charmPoint.rotation);
     }
 }
