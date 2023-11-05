@@ -15,14 +15,21 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Awake()
     {
+        healthBar.value = 1;
         health = maxHealth;
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
     }
 
+    protected virtual void Update()
+    {
+        healthBar.transform.rotation = Constants.rightRotation;
+    }
+
     public void TakeDamage(int damage)
     {
         health -= damage;
+        healthBar.value = (float)health/maxHealth;
         FlashColor(flashTime);
         if (health <= 0)
         {

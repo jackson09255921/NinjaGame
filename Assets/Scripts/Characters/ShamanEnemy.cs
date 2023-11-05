@@ -17,7 +17,7 @@ public class EnemyController : Enemy
     internal Rigidbody2D rb;
     internal Animator animator;
     internal float homeX;
-    Transform player;
+    Player player;
     float lastAttackTime = 0;
     float lastSpecialAttackTime = 0;
     float idleTimer;
@@ -33,13 +33,14 @@ public class EnemyController : Enemy
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = FindAnyObjectByType<Player>();
         homeX = transform.position.x;
         idleTimer = patrolRange;
     }
 
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         UpdateAttack();
     }
 
@@ -52,7 +53,7 @@ public class EnemyController : Enemy
     {
         float currentVelocityX = rb.velocity.x;
         float speed = Math.Abs(rb.velocity.x);
-        if (Vector2.Distance(transform.position, player.position) > attackRange)
+        if (Vector2.Distance(transform.position, player.transform.position) > attackRange)
         {
             if (isIdle)
             {
@@ -91,7 +92,7 @@ public class EnemyController : Enemy
         else
         {
             animator.SetFloat("Speed", speed > 1 ? currentVelocityX*0.5f : 0);
-            movingRight = player.position.x > transform.position.x;
+            movingRight = player.transform.position.x > transform.position.x;
             transform.rotation = movingRight ? Constants.rightRotation : Constants.leftRotation;
             idleTimer = idleDuration;
             isIdle = true;
@@ -100,7 +101,7 @@ public class EnemyController : Enemy
 
     void UpdateAttack()
     {
-        if (Vector2.Distance(transform.position, player.position) <= attackRange)
+        if (Vector2.Distance(transform.position, player.transform.position) <= attackRange)
         {
             if (Time.time >= lastSpecialAttackTime+specialAttackCooldown)
             {
