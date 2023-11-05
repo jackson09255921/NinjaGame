@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6444569727135660277}
   - component: {fileID: 4399461992161920524}
   - component: {fileID: 8781891880831282301}
+  - component: {fileID: -7079887481859593630}
   m_Layer: 0
   m_Name: ShamanEnemy
   m_TagString: Enemy
@@ -202,3 +203,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.20000002, y: 0.48}
   m_EdgeRadius: 0
+--- !u!114 &-7079887481859593630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5783077185675967048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4274b52b4dd6ff840aabd6f3a50987dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  damage: 1
