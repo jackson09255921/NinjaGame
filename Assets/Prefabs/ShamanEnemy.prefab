@@ -217,3 +217,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   damage: 1
+  flashTime: 0.2
