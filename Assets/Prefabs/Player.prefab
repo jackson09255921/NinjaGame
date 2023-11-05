@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ad2d5306df49809428d30d55a9d58aa2, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -287,8 +287,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0010999441, y: -0.00014996529, z: 0}
-    m_Extent: {x: 2.9970999, y: 2.99875, z: 0}
+    m_Center: {x: 0.00080001354, y: -0.0026500225, z: 0}
+    m_Extent: {x: 2.9989, y: 2.99795, z: 0}
   m_PointLightInnerAngle: 352.29
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
