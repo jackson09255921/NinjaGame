@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class SwordAttack : Attack
 {
-    public Collider2D normalAttack;
-    public Collider2D dashAttack;
+    public AttackTrigger normalAttack;
+    public int normalDamage;
+    public AttackTrigger dashAttack;
+    public int dashDamage;
     Rigidbody2D rb;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        normalAttack.enemyEnter = ApplyDamage;
+        dashAttack.enemyEnter = ApplyDamage;
     }
 
     void Start()
@@ -29,5 +33,23 @@ public class SwordAttack : Attack
             }
         }
         Destroy(gameObject, 0.2f);
+    }
+
+    void ApplyDamage(int id, Enemy enemy)
+    {
+        switch (param)
+        {
+            default:
+            case 0:
+            {
+                enemy.TakeDamage(normalDamage);
+                break;
+            }
+            case 1:
+            {
+                enemy.TakeDamage(dashDamage);
+                break;
+            }
+        }
     }
 }

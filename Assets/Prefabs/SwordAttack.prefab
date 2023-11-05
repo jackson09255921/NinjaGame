@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4720946026494833404}
   - component: {fileID: 7871189200080082819}
+  - component: {fileID: 5445645022657716262}
   m_Layer: 0
   m_Name: Trigger1
   m_TagString: Untagged
@@ -77,6 +78,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &5445645022657716262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019054793205707720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc203c4ee20dd94286348a323f2c3b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
 --- !u!1 &7042642578938614245
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,8 +138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0554f91682b244f8343f40743ed5b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalAttack: {fileID: 6513878423169994335}
-  dashAttack: {fileID: 7871189200080082819}
+  normalAttack: {fileID: 7304367621486918354}
+  normalDamage: 1
+  dashAttack: {fileID: 5445645022657716262}
+  dashDamage: 1
 --- !u!50 &5725180015957903428
 Rigidbody2D:
   serializedVersion: 4
@@ -163,6 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1383148994743558850}
   - component: {fileID: 6513878423169994335}
+  - component: {fileID: 7304367621486918354}
   m_Layer: 0
   m_Name: Trigger0
   m_TagString: Untagged
@@ -238,3 +255,16 @@ PolygonCollider2D:
       - {x: 0.2, y: -0.2}
       - {x: 0.65, y: 0.25}
   m_UseDelaunayMesh: 0
+--- !u!114 &7304367621486918354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089517587410584035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc203c4ee20dd94286348a323f2c3b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0

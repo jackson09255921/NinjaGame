@@ -31,8 +31,7 @@ public class Weapon : ScriptableObject
 
     public virtual void PerformAttack(Player player, int param)
     {
-        Vector2 position = player.transform.TransformPoint(offset);
-        Attack attack = Instantiate(attackPrefab, position, player.transform.rotation);
+        Attack attack = Instantiate(attackPrefab, player.transform);
         attack.player = player;
         attack.param = param;
     }

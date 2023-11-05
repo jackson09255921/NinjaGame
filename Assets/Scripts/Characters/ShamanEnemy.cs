@@ -1,8 +1,8 @@
 using System;
-using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : Enemy
 {
     public float moveSpeed = 2;
     public float acceleration = 40;
@@ -24,8 +24,9 @@ public class EnemyController : MonoBehaviour
     bool movingRight = true;
     bool isIdle = false;
 
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -117,10 +118,5 @@ public class EnemyController : MonoBehaviour
                 // Destroy(attackInstance, 0.5f);
             }
         }
-    }
-
-    IEnumerator StopForSeconds(float seconds)
-    {
-        yield return new WaitForSeconds(seconds);
     }
 }
