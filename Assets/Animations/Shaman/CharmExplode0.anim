@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Atk
+  m_Name: CharmExplode0
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,17 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 35a4952eeb0c0164285d7aff149c9ee6, type: 3}
+      value: {fileID: 772929635, guid: 875afc416521d4d47944d27082f7406e, type: 3}
     - time: 0.1
-      value: {fileID: 21300000, guid: b9c6cfd2d311a1947bf8fcbe17448467, type: 3}
+      value: {fileID: -544670304, guid: 875afc416521d4d47944d27082f7406e, type: 3}
     - time: 0.2
-      value: {fileID: 21300000, guid: a9f3ea9ab73f912439cc8700c9329ba8, type: 3}
+      value: {fileID: -68843858, guid: 875afc416521d4d47944d27082f7406e, type: 3}
     - time: 0.3
-      value: {fileID: 21300000, guid: 0a50bf26eb09789438c2ea7e66c89372, type: 3}
-    - time: 0.4
-      value: {fileID: 21300000, guid: 0e0b31a37707d264a981171851014f9c, type: 3}
-    - time: 0.5
-      value: {fileID: 21300000, guid: a3e3f62ec049a3c4386b68fcd8c98b54, type: 3}
+      value: {fileID: -1115763302, guid: 875afc416521d4d47944d27082f7406e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -54,18 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 35a4952eeb0c0164285d7aff149c9ee6, type: 3}
-    - {fileID: 21300000, guid: b9c6cfd2d311a1947bf8fcbe17448467, type: 3}
-    - {fileID: 21300000, guid: a9f3ea9ab73f912439cc8700c9329ba8, type: 3}
-    - {fileID: 21300000, guid: 0a50bf26eb09789438c2ea7e66c89372, type: 3}
-    - {fileID: 21300000, guid: 0e0b31a37707d264a981171851014f9c, type: 3}
-    - {fileID: 21300000, guid: a3e3f62ec049a3c4386b68fcd8c98b54, type: 3}
+    - {fileID: 772929635, guid: 875afc416521d4d47944d27082f7406e, type: 3}
+    - {fileID: -544670304, guid: 875afc416521d4d47944d27082f7406e, type: 3}
+    - {fileID: -68843858, guid: 875afc416521d4d47944d27082f7406e, type: 3}
+    - {fileID: -1115763302, guid: 875afc416521d4d47944d27082f7406e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6
+    m_StopTime: 0.4
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -85,8 +79,15 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0
+    functionName: StartExplode
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.3
-    functionName: PerformAttack
+    functionName: EndExplode
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
