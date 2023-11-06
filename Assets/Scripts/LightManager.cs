@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
@@ -54,11 +55,7 @@ public class LightManager : MonoBehaviour
         {
             entry.graphic.color = entry.startColor;
         }
-        maxTime = Enumerable.Empty<float>().
-                Concat(lightDimEntries.Select(e => e.dimTime)).
-                Concat(spriteFadeEntries.Select(e => e.fadeTime)).
-                Concat(graphicFadeEntries.Select(e => e.fadeTime)).
-                Max();
+        maxTime = LinqUtility.Concat<float>(lightDimEntries.Select(e => e.dimTime), spriteFadeEntries.Select(e => e.fadeTime), graphicFadeEntries.Select(e => e.fadeTime)).Max();
         started = true;
     }
 
