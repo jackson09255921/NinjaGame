@@ -22,6 +22,6 @@ public class HUD : MonoBehaviour
 
     internal void UpdateHealth(float health)
     {
-        
+        healthBar.value = health;
     }
 }

@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -60,7 +59,6 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        originalColor = sr.color;
     }
 
     void Start()
@@ -72,6 +70,9 @@ public class Player : MonoBehaviour
         attackAction = inputManager.FindAction("Default/Attack");
         interactAction = inputManager.FindAction("Default/Interact");
         hud.UpdateEquipment(activeWeapon, inactiveWeapon);
+        health = maxHealth;
+        hud.UpdateHealth(1);
+        originalColor = sr.color;
     }
 
     void Update()

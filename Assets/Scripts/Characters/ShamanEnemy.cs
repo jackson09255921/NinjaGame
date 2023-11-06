@@ -33,8 +33,9 @@ public class EnemyController : Enemy
         animator = GetComponent<Animator>();
     }
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         player = FindAnyObjectByType<Player>();
         homeX = transform.position.x;
         idleTimer = patrolRange;

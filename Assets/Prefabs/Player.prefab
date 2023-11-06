@@ -207,6 +207,9 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   activeWeapon: {fileID: 11400000, guid: e1e7b28204a76394fb19c692d66d3ee4, type: 2}
   inactiveWeapon: {fileID: 11400000, guid: c6eb65bbc83e78541822b1009af4eab0, type: 2}
+  maxHealth: 10
+  flashTime: 0.2
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
   hud: {fileID: 0}
 --- !u!114 &1188712540775511567
 MonoBehaviour:
@@ -266,9 +269,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_LightType: 1
+  m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.7
+  m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0
   m_LightVolumeIntensity: 1
@@ -287,16 +290,16 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.00080001354, y: -0.0026500225, z: 0}
-    m_Extent: {x: 2.9989, y: 2.99795, z: 0}
-  m_PointLightInnerAngle: 352.29
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2.2259443
+  m_PointLightInnerRadius: 2
+  m_PointLightOuterRadius: 5
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 1
+  m_ShapeLightFalloffSize: 3
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -1.4, y: -1.4, z: 0}
