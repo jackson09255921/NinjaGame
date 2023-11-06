@@ -15,9 +15,13 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Awake()
     {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
+    protected virtual void Start()
+    {
         healthBar.value = 1;
         health = maxHealth;
-        sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
     }
 

@@ -28,6 +28,11 @@ public class CharmEnemyAttack : MonoBehaviour
         animator.SetBool("Large", large);
     }
 
+    void TriggerExplode()
+    {
+        animator.SetTrigger("Explode");
+    }
+
     internal void StartExplode()
     {
         c2.enabled = false;
@@ -49,7 +54,7 @@ public class CharmEnemyAttack : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        animator.SetTrigger("Explode");
+        Invoke(nameof(TriggerExplode), 0.2f);
     }
 
     void ApplyDamage(int id, Player player)
@@ -57,11 +62,11 @@ public class CharmEnemyAttack : MonoBehaviour
         Debug.Log("hit player");
         if (!large)
         {
-
+            player.TakeDamage(smallDamage);
         }
         else
         {
-
+            player.TakeDamage(largeDamage);
         }
     }
 }
