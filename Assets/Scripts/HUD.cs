@@ -19,4 +19,9 @@ public class HUD : MonoBehaviour
             inactiveWeaponIcon.sprite = inactive.icon;
         }
     }
+
+    internal void UpdateHealth(float health)
+    {
+        
+    }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,11 +19,15 @@ public class Player : MonoBehaviour
     public float minGroundNormalY = 0.65f;
     public Weapon activeWeapon;
     public Weapon inactiveWeapon;
+    public int maxHealth;
+    public float flashTime;
+    public Color flashColor = Color.red;
     public HUD hud;
 
     // Components
     internal Rigidbody2D rb;
     internal Animator animator;
+    SpriteRenderer sr;
 
     // Inputs
     InputManager inputManager;
@@ -44,7 +49,9 @@ public class Player : MonoBehaviour
     readonly ContactPoint2D[] contacts = new ContactPoint2D[16];
     Vector2 maxYNormal;
     bool grounded;
-
+    // Health fields
+    int health;
+    Color originalColor;
     // Interactable fields
     internal Chest chest;
 
@@ -52,6 +59,8 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        originalColor = sr.color;
     }
 
     void Start()
@@ -289,6 +298,25 @@ public class Player : MonoBehaviour
         }
         stoppedJump = false;
         lastVelocity = rb.velocity;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        hud.UpdateHealth((float)health/maxHealth);
+        FlashColor(flashTime);
+        Debug.Log(health);
+    }
+
+    void FlashColor(float flashTime)
+    {
+        sr.color = flashColor;
+        Invoke(nameof(ResetColor), flashTime);
+    }
+
+    void ResetColor()
+    {
+        sr.color = originalColor;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
