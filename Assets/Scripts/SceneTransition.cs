@@ -24,20 +24,20 @@ public class SceneTransition : MonoBehaviour
         if (op.progress < 0.9f)
         {
             currentProgress = (int)(op.progress * 100);
+            displayedProgress = currentProgress;
+            progressText.text = $"{displayedProgress}%";
+            progressBar.value = displayedProgress / 100f;
         }
         else
         {
             currentProgress = 100;
-        }
-        if (displayedProgress < currentProgress)
-        {
             ++displayedProgress;
             progressText.text = $"{displayedProgress}%";
             progressBar.value = displayedProgress / 100f;
-        }
-        else if (displayedProgress == 100)
-        {
-            op.allowSceneActivation = true;
+            if (displayedProgress == 100)
+            {
+                op.allowSceneActivation = true;
+            }
         }
     }
 }
