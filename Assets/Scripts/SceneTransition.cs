@@ -12,7 +12,8 @@ public class SceneTransition : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(LoadScene());
+        SceneManager.LoadScene(sceneName);
+        //StartCoroutine(LoadScene());
     }
  
     IEnumerator LoadScene()
