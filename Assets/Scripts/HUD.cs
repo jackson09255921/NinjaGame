@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,22 @@ public class HUD : MonoBehaviour
     public Slider cooldownBar;
     public Image activeWeaponIcon;
     public Image inactiveWeaponIcon;
+    public RectTransform requiredItemPanel;
+    public RectTransform extraItemPanel;
+    public ItemImage requiredItemIconPrefab;
+    public ItemImage extraItemIconPrefab;
+    readonly List<ItemImage> requiredItemIcons = new();
+
+    void Start()
+    {
+        foreach (ItemManager.Item item in ItemManager.Instance.requiredItems)
+        {
+            ItemImage image = Instantiate(requiredItemIconPrefab, requiredItemPanel);
+            image.Item = item;
+            image.color = Color.gray;
+            requiredItemIcons.Add(image);
+        }
+    }
 
     internal void UpdateEquipment(Weapon active, Weapon inactive)
     {
@@ -23,5 +40,24 @@ public class HUD : MonoBehaviour
     internal void UpdateHealth(float health)
     {
         healthBar.value = health;
+    }
+
+    internal void UpdateItems(int[] items)
+    {
+        foreach (int itemId in items)
+        {
+            ItemImage image = requiredItemIcons.Find(im => im.Item.id == itemId);
+            if (image != null)
+            {
+                image.color = Color.white;
+                continue;
+            }
+            ItemManager itemManager = ItemManager.Instance;
+            if (itemManager.itemDict.TryGetValue(itemId, out ItemManager.Item item))
+            {
+                image = Instantiate(extraItemIconPrefab, extraItemPanel);
+                image.Item = item;
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -53,6 +54,7 @@ public class Player : MonoBehaviour
     Color originalColor;
     // Interactable fields
     internal Chest chest;
+    internal List<int> collectedItems = new();
 
     void Awake()
     {

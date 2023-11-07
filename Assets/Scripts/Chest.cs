@@ -1,14 +1,17 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Chest : MonoBehaviour
 {
     public Animator animator;
     public Weapon weapon;
+    public int[] itemIds;
     bool open;
 
     public bool Open {
         get => open;
-        internal set {
+        internal set
+        {
             open = value;
             animator.SetBool("open", open);
         }
