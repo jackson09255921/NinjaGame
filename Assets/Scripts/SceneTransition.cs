@@ -9,38 +9,35 @@ public class SceneTransition : MonoBehaviour
     public TextMeshProUGUI progressText;
     public Slider progressBar;
     internal string sceneName;
+    AsyncOperation op;
+    int displayedProgress = 0;
+    int currentProgress = 0;
 
     void Start()
     {
-        SceneManager.LoadScene(sceneName);
-        //StartCoroutine(LoadScene());
-    }
- 
-    IEnumerator LoadScene()
-    {
-        AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
+        op = SceneManager.LoadSceneAsync(sceneName);
         op.allowSceneActivation = false;
-        int displayedProgress = 0;
-        int currentProgress;
-        while (op.progress < 0.9f)
+    }
+
+    void Update()
+    {
+        if (op.progress < 0.9f)
         {
             currentProgress = (int)(op.progress * 100);
-            while (displayedProgress < currentProgress)
-            {
-                ++displayedProgress;
-                progressText.text = $"{displayedProgress}%";
-                progressBar.value = displayedProgress / 100f;
-                yield return new WaitForEndOfFrame();
-            }
         }
-        currentProgress = 100;
-        while (displayedProgress < currentProgress)
+        else
+        {
+            currentProgress = 100;
+        }
+        if (displayedProgress < currentProgress)
         {
             ++displayedProgress;
             progressText.text = $"{displayedProgress}%";
             progressBar.value = displayedProgress / 100f;
-            yield return new WaitForEndOfFrame();
         }
-        op.allowSceneActivation = true;
+        else if (displayedProgress == 100)
+        {
+            op.allowSceneActivation = true;
+        }
     }
 }
