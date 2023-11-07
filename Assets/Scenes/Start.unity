@@ -1867,6 +1867,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7204897884221651059, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
   m_PrefabInstance: {fileID: 935453409}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &935453411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 783286067265654606, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
+  m_PrefabInstance: {fileID: 935453409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &970402211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,7 +2755,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 935453411}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
