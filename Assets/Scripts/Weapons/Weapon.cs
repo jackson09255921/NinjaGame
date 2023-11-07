@@ -1,12 +1,12 @@
 using System.Linq;
-using UnityEditor.Animations;
+using UnityEngine.Animations;
 using UnityEngine;
 
 [CreateAssetMenu]
 public class Weapon : ScriptableObject
 {
     public Sprite icon;
-    public AnimatorController animationController;
+    public RuntimeAnimatorController animationController;
     public Attack attackPrefab;
     public Vector2 offset;
     public float groundCheckRadius;
