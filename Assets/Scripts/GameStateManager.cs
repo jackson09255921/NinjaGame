@@ -28,6 +28,7 @@ public class GameStateManager : MonoBehaviour
         inputManager = InputManager.Instance;
         inputManager.EnableActionMap("Default");
         escapeAction = inputManager.FindAction("Default/Escape");
+        Time.timeScale = 1;
     }
 
     void Update()
