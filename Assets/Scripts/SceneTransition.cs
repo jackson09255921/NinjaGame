@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -31,6 +33,7 @@ public class SceneTransition : MonoBehaviour
         else
         {
             currentProgress = 100;
+            displayedProgress = Math.Max(displayedProgress, 89);
             ++displayedProgress;
             progressText.text = $"{displayedProgress}%";
             progressBar.value = displayedProgress / 100f;
