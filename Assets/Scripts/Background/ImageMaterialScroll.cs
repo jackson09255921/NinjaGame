@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class CanvasImageScroll : MonoBehaviour
 {
-    public Vector2 scrollSpeed = new(1, 1);
+    public Vector2 scrollSpeed = Vector2.one;
     Image image;
     Vector3 initialCameraPos;
     Vector2 textureScale;
@@ -21,7 +21,7 @@ public class CanvasImageScroll : MonoBehaviour
 
     void OnDestroy()
     {
-        image.material.mainTextureOffset = new(0, 0);
+        image.material.mainTextureOffset = Vector2.zero;
     }
 
     void Update()
