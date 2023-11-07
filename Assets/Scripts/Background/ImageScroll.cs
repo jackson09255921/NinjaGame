@@ -19,11 +19,6 @@ public class ImageScroll : MonoBehaviour
         initialCameraPos = image.canvas.worldCamera.transform.position;
     }
 
-    void OnDestroy()
-    {
-        image.material.mainTextureOffset = new(0, 0);
-    }
-
     void Update()
     {
         Camera camera = image.canvas.worldCamera;
