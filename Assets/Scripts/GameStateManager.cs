@@ -6,6 +6,7 @@ public class GameStateManager : MonoBehaviour
     public static GameStateManager Instance { get; private set; }
     public ChestMenu chestMenu;
     public PauseMenu pauseMenu;
+    public ResultMenu resultMenu;
     InputManager inputManager;
     InputAction escapeAction;
     GameState state = GameState.Play;
@@ -91,6 +92,21 @@ public class GameStateManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    internal void ShowResults(Player player)
+    {
+        state = GameState.Result;
+        if (player.health <= 0)
+        {
+            resultMenu.PlayerDied();
+        }
+        else
+        {
+            resultMenu.PlayerComplete("test");
+        }
+        resultMenu.gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public enum GameState {

@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     Vector2 maxYNormal;
     bool grounded;
     // Health fields
-    int health;
+    internal int health;
     Color originalColor;
     // Interactable fields
     internal Chest chest;
@@ -306,7 +306,16 @@ public class Player : MonoBehaviour
         health -= damage;
         hud.UpdateHealth((float)health/maxHealth);
         FlashColor(flashTime);
+        if (health <= 0)
+        {
+            Invoke(nameof(PlayerDied), 0.1f);
+        }
         Debug.Log(health);
+    }
+
+    void PlayerDied()
+    {
+        GameStateManager.Instance.ShowResults(this);
     }
 
     void FlashColor(float flashTime)
