@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,7 @@ public class HUD : MonoBehaviour
     public ItemImage requiredItemIconPrefab;
     public ItemImage extraItemIconPrefab;
     readonly List<ItemImage> requiredItemIcons = new();
+    public TextMeshProUGUI timeText;
 
     void Start()
     {
@@ -23,6 +25,11 @@ public class HUD : MonoBehaviour
             image.color = Color.gray;
             requiredItemIcons.Add(image);
         }
+    }
+
+    void Update()
+    {
+        timeText.text = GameStateManager.Instance.PlayTimeText;
     }
 
     internal void UpdateEquipment(Weapon active, Weapon inactive)
