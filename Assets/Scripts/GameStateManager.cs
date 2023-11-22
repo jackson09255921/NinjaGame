@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -117,12 +118,21 @@ public class GameStateManager : MonoBehaviour
         {
             resultMenu.PlayerDied();
         }
+        else if (HasRequiredItems(player))
+        {
+            resultMenu.PlayerComplete("Level Complete");
+        }
         else
         {
-            resultMenu.PlayerComplete("test");
+            resultMenu.PlayerIncomplete("You did not collect all required items.");
         }
         resultMenu.gameObject.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    internal bool HasRequiredItems(Player player)
+    {
+        return ItemManager.Instance.requiredItems.Select(i => i.id).All(player.collectedItems.Contains);
     }
 
     public enum GameState {
