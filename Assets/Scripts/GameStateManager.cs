@@ -47,7 +47,7 @@ public class GameStateManager : MonoBehaviour
             gameTime += Time.unscaledDeltaTime;
             GameTimeText = $"{(int)gameTime/60:00}:{gameTime%60:00.00}";
         }
-        if (state != GameState.Result)
+        if (state != GameState.Pause && state != GameState.Result)
         {
             totalTime += Time.unscaledDeltaTime;
             TotalTimeText = $"{(int)totalTime/60:00}:{totalTime%60:00.00}";
