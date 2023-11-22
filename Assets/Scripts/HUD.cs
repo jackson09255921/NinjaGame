@@ -23,7 +23,7 @@ public class HUD : MonoBehaviour
         {
             ItemImage image = Instantiate(requiredItemIconPrefab, requiredItemPanel);
             image.Item = item;
-            image.color = Color.gray;
+            image.Collected = false;
             requiredItemIcons.Add(image);
         }
     }
@@ -64,9 +64,9 @@ public class HUD : MonoBehaviour
         foreach (int itemId in items)
         {
             ItemImage image = requiredItemIcons.Find(im => im.Item.id == itemId);
-            if (image != null)
+            if (image != null && !image.Collected)
             {
-                image.color = Color.white;
+                image.Collected = true;
                 continue;
             }
             ItemManager itemManager = ItemManager.Instance;
