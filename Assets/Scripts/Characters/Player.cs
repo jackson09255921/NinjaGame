@@ -49,9 +49,14 @@ public class Player : MonoBehaviour
     readonly ContactPoint2D[] contacts = new ContactPoint2D[16];
     Vector2 maxYNormal;
     bool grounded;
+
+    // Attack fields
+    float attackCooldown;
+
     // Health fields
     internal int health;
     Color originalColor;
+
     // Interactable fields
     internal Chest chest;
     internal List<int> collectedItems = new();
@@ -74,6 +79,7 @@ public class Player : MonoBehaviour
         hud.UpdateEquipment(activeWeapon, inactiveWeapon);
         health = maxHealth;
         hud.UpdateHealth(1);
+        hud.UpdateCooldown(0, 0);
         originalColor = sr.color;
     }
 
@@ -133,9 +139,21 @@ public class Player : MonoBehaviour
     
     void UpdateAttack()
     {
-        if (Time.timeScale > 0 && attackAction.WasPerformedThisFrame())
+        if (Time.timeScale > 0)
         {
-            activeWeapon.StartAttack(this);
+            if (attackCooldown > 0)
+            {
+                attackCooldown -= Time.deltaTime;
+                hud.UpdateCooldown(attackCooldown, activeWeapon.cooldown);
+            }
+            if (attackCooldown <= 0 && attackAction.WasPerformedThisFrame())
+            {
+                if (activeWeapon.StartAttack(this))
+                {
+                    attackCooldown = activeWeapon.cooldown;
+                    hud.UpdateCooldown(attackCooldown, activeWeapon.cooldown);
+                }
+            }
         }
     }
 

@@ -51,6 +51,14 @@ public class HUD : MonoBehaviour
         healthBar.value = health;
     }
 
+    internal void UpdateCooldown(float cooldown, float maxCooldown)
+    {
+        if(cooldown > maxCooldown)
+        {
+        }
+        cooldownBar.value = maxCooldown > 0 ? cooldown/maxCooldown : 0;
+    }
+
     internal void UpdateItems(int[] items)
     {
         foreach (int itemId in items)

@@ -17,3 +17,4 @@ MonoBehaviour:
   attackPrefab: {fileID: -8901384227509971917, guid: 1312aa44b4d1a9947b3b2af6ab3ff45e, type: 3}
   offset: {x: 0.75, y: 1}
   groundCheckRadius: 1
+  cooldown: 0.5

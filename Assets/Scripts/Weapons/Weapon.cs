@@ -1,5 +1,4 @@
 using System.Linq;
-using UnityEngine.Animations;
 using UnityEngine;
 
 [CreateAssetMenu]
@@ -10,6 +9,7 @@ public class Weapon : ScriptableObject
     public Attack attackPrefab;
     public Vector2 offset;
     public float groundCheckRadius;
+    public float cooldown;
     ContactFilter2D contactFilter;
     readonly Collider2D[] overlaps = new Collider2D[16];
 
@@ -20,12 +20,14 @@ public class Weapon : ScriptableObject
         contactFilter.useTriggers = false;
     }
 
-    public virtual void StartAttack(Player player)
+    public virtual bool StartAttack(Player player)
     {
         if (attackPrefab != null && CanSpawn(player.transform))
         {
             player.animator.SetTrigger("Attack");
+            return true;
         }
+        return false;
     }
 
     public virtual void PerformAttack(Player player, int param)
