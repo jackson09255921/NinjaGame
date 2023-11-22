@@ -14,7 +14,7 @@ public class KunaiAttack : Attack
     void Start()
     {
         Vector2 facing = transform.right;
-        rb.velocity = player.rb.velocity+facing*speed;
+        rb.velocity = new Vector2(player.rb.velocity.x, 0)+facing*speed;
         Destroy(gameObject, 0.5f);
     }
 
