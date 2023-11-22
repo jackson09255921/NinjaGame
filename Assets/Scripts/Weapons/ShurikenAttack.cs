@@ -15,7 +15,7 @@ public class ShurikenAttack : Attack
     void Start()
     {
         Vector2 facing = transform.right;
-        rb.velocity = facing*speed;
+        rb.velocity = player.rb.velocity+facing*speed;
         rb.angularVelocity = facing.x*angularSpeed;
         Destroy(gameObject, 0.5f);
     }
