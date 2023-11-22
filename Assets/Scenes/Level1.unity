@@ -15647,11 +15647,11 @@ PrefabInstance:
       objectReference: {fileID: 2097153476}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: lightDimEntries.Array.data[0].dimTime
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: lightDimEntries.Array.data[1].dimTime
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: lightDimEntries.Array.data[2].dimTime
@@ -15667,7 +15667,7 @@ PrefabInstance:
       objectReference: {fileID: 1170146328}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: graphicFadeEntries.Array.data[0].fadeTime
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: graphicFadeEntries.Array.data[1].fadeTime

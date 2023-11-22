@@ -14,7 +14,8 @@ public class HUD : MonoBehaviour
     public ItemImage requiredItemIconPrefab;
     public ItemImage extraItemIconPrefab;
     readonly List<ItemImage> requiredItemIcons = new();
-    public TextMeshProUGUI timeText;
+    public TextMeshProUGUI gameTimeText;
+    public TextMeshProUGUI totalTimeText;
 
     void Start()
     {
@@ -29,7 +30,8 @@ public class HUD : MonoBehaviour
 
     void Update()
     {
-        timeText.text = GameStateManager.Instance.PlayTimeText;
+        gameTimeText.text = GameStateManager.Instance.GameTimeText;
+        totalTimeText.text = GameStateManager.Instance.TotalTimeText;
     }
 
     internal void UpdateEquipment(Weapon active, Weapon inactive)

@@ -10,8 +10,10 @@ public class GameStateManager : MonoBehaviour
     InputManager inputManager;
     InputAction escapeAction;
     GameState state = GameState.Play;
-    float playTime;
-    public string PlayTimeText {get; internal set;}
+    float gameTime;
+    float totalTime;
+    public string GameTimeText {get; internal set;}
+    public string TotalTimeText {get; internal set;}
 
     void Awake()
     {
@@ -42,8 +44,13 @@ public class GameStateManager : MonoBehaviour
         }
         if (Time.timeScale != 0)
         {
-            playTime += Time.unscaledDeltaTime;
-            PlayTimeText = $"{(int)playTime/60:00}:{playTime%60:00.00}";
+            gameTime += Time.unscaledDeltaTime;
+            GameTimeText = $"{(int)gameTime/60:00}:{gameTime%60:00.00}";
+        }
+        if (state != GameState.Result)
+        {
+            totalTime += Time.unscaledDeltaTime;
+            TotalTimeText = $"{(int)totalTime/60:00}:{totalTime%60:00.00}";
         }
     }
 
