@@ -4,15 +4,15 @@ using UnityEngine;
 public class EnemyAttackTrigger : MonoBehaviour
 {
     public int id;
-    internal Action<int, Player> playerEnter;
-    internal Action<int, Player> playerStay;
-    internal Action<int, Player> playerExit;
+    internal Action<EnemyAttackTrigger, Player> playerEnter;
+    internal Action<EnemyAttackTrigger, Player> playerStay;
+    internal Action<EnemyAttackTrigger, Player> playerExit;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(playerEnter != null && other.TryGetComponent(out Player player))
         {
-            playerEnter(id, player);
+            playerEnter(this, player);
         }
     }
 
@@ -20,7 +20,7 @@ public class EnemyAttackTrigger : MonoBehaviour
     {
         if(playerStay != null && other.TryGetComponent(out Player player))
         {
-            playerStay(id, player);
+            playerStay(this, player);
         }
     }
 
@@ -28,7 +28,7 @@ public class EnemyAttackTrigger : MonoBehaviour
     {
         if(playerExit != null && other.TryGetComponent(out Player player))
         {
-            playerExit(id, player);
+            playerExit(this, player);
         }
     }
 }

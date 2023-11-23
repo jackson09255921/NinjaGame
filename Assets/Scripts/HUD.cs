@@ -53,10 +53,7 @@ public class HUD : MonoBehaviour
 
     internal void UpdateCooldown(float cooldown, float maxCooldown)
     {
-        if(cooldown > maxCooldown)
-        {
-        }
-        cooldownBar.value = maxCooldown > 0 ? cooldown/maxCooldown : 0;
+        cooldownBar.value = cooldown > 0 && maxCooldown > 0 ? cooldown/maxCooldown : 0;
     }
 
     internal void UpdateItems(int[] items)

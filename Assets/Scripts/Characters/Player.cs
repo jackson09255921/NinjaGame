@@ -52,6 +52,7 @@ public class Player : MonoBehaviour
 
     // Attack fields
     float attackCooldown;
+    float attackCooldownMax;
 
     // Health fields
     internal int health;
@@ -144,14 +145,14 @@ public class Player : MonoBehaviour
             if (attackCooldown > 0)
             {
                 attackCooldown -= Time.deltaTime;
-                hud.UpdateCooldown(attackCooldown, activeWeapon.cooldown);
+                hud.UpdateCooldown(attackCooldown, attackCooldownMax);
             }
             if (attackCooldown <= 0 && attackAction.WasPerformedThisFrame())
             {
                 if (activeWeapon.StartAttack(this))
                 {
-                    attackCooldown = activeWeapon.cooldown;
-                    hud.UpdateCooldown(attackCooldown, activeWeapon.cooldown);
+                    attackCooldown = attackCooldownMax = activeWeapon.cooldown;
+                    hud.UpdateCooldown(attackCooldown, attackCooldownMax);
                 }
             }
         }

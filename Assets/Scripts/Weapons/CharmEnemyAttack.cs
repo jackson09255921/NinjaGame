@@ -57,7 +57,7 @@ public class CharmEnemyAttack : MonoBehaviour
         Invoke(nameof(TriggerExplode), 0.2f);
     }
 
-    void ApplyDamage(int id, Player player)
+    void ApplyDamage(EnemyAttackTrigger trigger, Player player)
     {
         Debug.Log("hit player");
         if (!large)

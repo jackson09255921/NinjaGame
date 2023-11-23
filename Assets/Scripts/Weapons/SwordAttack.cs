@@ -35,7 +35,7 @@ public class SwordAttack : Attack
         Destroy(gameObject, 0.2f);
     }
 
-    void ApplyDamage(int id, Enemy enemy)
+    void ApplyDamage(AttackTrigger trigger, Enemy enemy)
     {
         switch (param)
         {

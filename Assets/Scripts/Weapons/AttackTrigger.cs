@@ -4,15 +4,21 @@ using UnityEngine;
 public class AttackTrigger : MonoBehaviour
 {
     public int id;
-    internal Action<int, Enemy> enemyEnter;
-    internal Action<int, Enemy> enemyStay;
-    internal Action<int, Enemy> enemyExit;
+    internal Action<AttackTrigger, Enemy> enemyEnter;
+    internal Action<AttackTrigger, Enemy> enemyStay;
+    internal Action<AttackTrigger, Enemy> enemyExit;
+    internal Collider2D c2D;
+
+    void Awake()
+    {
+        c2D = GetComponent<Collider2D>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(enemyEnter != null && other.TryGetComponent(out Enemy enemy))
         {
-            enemyEnter(id, enemy);
+            enemyEnter(this, enemy);
         }
     }
 
@@ -20,7 +26,7 @@ public class AttackTrigger : MonoBehaviour
     {
         if(enemyStay != null && other.TryGetComponent(out Enemy enemy))
         {
-            enemyStay(id, enemy);
+            enemyStay(this, enemy);
         }
     }
 
@@ -28,7 +34,7 @@ public class AttackTrigger : MonoBehaviour
     {
         if(enemyExit != null && other.TryGetComponent(out Enemy enemy))
         {
-            enemyExit(id, enemy);
+            enemyExit(this, enemy);
         }
     }
 }

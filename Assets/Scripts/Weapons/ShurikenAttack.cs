@@ -1,31 +1,45 @@
+using System;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ShurikenAttack : Attack
 {
     public int damage;
+    public List<AttackProjectile> projectiles;
     public float speed = 20;
+    public float gapAngle = 15;
     public float angularSpeed = 360;
-    Rigidbody2D rb;
-
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
 
     void Start()
     {
+        int count = projectiles.Count;
+        float startAngle = gapAngle*(count-1)/2;
         Vector2 facing = transform.right;
-        rb.velocity = new Vector2(player.rb.velocity.x, 0)+facing*speed;
-        rb.angularVelocity = facing.x*angularSpeed;
+        for (int i = 0; i < count; ++i)
+        {
+            AttackProjectile p = projectiles[i];
+            p.enemyEnter = ApplyDamage;
+            foreach (AttackProjectile p1 in projectiles)
+            {
+                Physics2D.IgnoreCollision(p.c2D, p1.c2D);
+            }
+            float angle = startAngle-i*gapAngle;
+            p.rb.velocity = new Vector2(player.rb.velocity.x, 0)+AngleVector(angle)*speed;
+            p.rb.angularVelocity = facing.x*angularSpeed;
+        }
         Destroy(gameObject, 0.5f);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void ApplyDamage(AttackProjectile projectile, Enemy enemy)
     {
-        if (collision.collider.TryGetComponent(out Enemy enemy))
-        {
-            enemy.TakeDamage(damage);
-            Destroy(gameObject);
-        }
+        enemy.TakeDamage(damage);
+        Destroy(projectile);
+    }
+
+    Vector2 AngleVector(float angle)
+    {
+        angle *= Mathf.Deg2Rad;
+        return transform.TransformVector(new(Mathf.Cos(angle), Mathf.Sin(angle)));
     }
 }
