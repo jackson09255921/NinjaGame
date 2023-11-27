@@ -14914,7 +14914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748046294592317179, guid: cb79bfa831521d9478acda80385fe560, type: 3}
       propertyPath: m_Name
-      value: Grid
+      value: GridLevel2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
