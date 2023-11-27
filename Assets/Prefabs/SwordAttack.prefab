@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalAttack: {fileID: 7304367621486918354}
-  normalDamage: 1
+  normalDamage: 2
   dashAttack: {fileID: 5445645022657716262}
-  dashDamage: 1
+  dashDamage: 2
 --- !u!50 &5725180015957903428
 Rigidbody2D:
   serializedVersion: 4
