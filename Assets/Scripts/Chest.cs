@@ -1,14 +1,15 @@
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Chest : MonoBehaviour
 {
     public Animator animator;
     public Weapon weapon;
     public int[] itemIds;
+    public GameObject hintCanvasElement;
     bool open;
 
-    public bool Open {
+    public bool Open
+    {
         get => open;
         internal set
         {
@@ -17,11 +18,32 @@ public class Chest : MonoBehaviour
         }
     }
 
+    public bool Empty
+    {
+        get => open && weapon == null;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (Empty)
+        {
+            return;
+        }
         if (other.TryGetComponent(out Player player))
         {
             player.chest = this;
+            hintCanvasElement.SetActive(true);
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out Player player))
+        {
+            if (player.chest != this || Empty)
+            {
+                hintCanvasElement.SetActive(false);
+            }
         }
     }
 
@@ -32,6 +54,7 @@ public class Chest : MonoBehaviour
             if (player.chest == this)
             {
                 player.chest = null;
+                hintCanvasElement.SetActive(false);
             }
         }
     }
