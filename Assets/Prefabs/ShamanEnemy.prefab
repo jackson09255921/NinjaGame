@@ -414,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef50d8bb90e9ca4ebc13394331346b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 10
   flashTime: 0.2
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   healthBar: {fileID: 9146329217130480831}
