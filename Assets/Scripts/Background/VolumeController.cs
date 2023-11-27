@@ -1,28 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class VolumeController : MonoBehaviour
 {
-    public Slider voulmeSlider;
-    public AudioSource audioSource;
+    public AudioSource musicAudioSource;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        if (voulmeSlider == null || audioSource == null)
-        {
-            Debug.LogError("VolumeSlider or AudioSource is not assigned in the inspector!");
-            return;
-        }
-        voulmeSlider.onValueChanged.AddListener(onValueChanged);
+        SettingsManager.Instance.AddMusicVolumeListener(OnMusicVolumeChanged);
+        musicAudioSource.volume = SettingsManager.Instance.MusicVolume;
     }
 
-    private void onValueChanged(float value)
+    void OnDestroy()
     {
-        audioSource.volume = value;
+        SettingsManager.Instance.RemoveMusicVolumeListener(OnMusicVolumeChanged);
+    }
 
-        BroadcastMessage("OnVolumeChanged", value, SendMessageOptions.DontRequireReceiver);  
+    void OnMusicVolumeChanged(float value)
+    {
+        musicAudioSource.volume = value;
     }
 }
