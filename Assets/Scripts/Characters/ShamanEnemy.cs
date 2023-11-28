@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,28 +10,34 @@ public class EnemyController : Enemy
     public float patrolRange = 3;
     public float idleDuration = 1;
     public float attackRange = 3;
-    public float specialAttackCooldown = 5;
     public float attackCooldown = 1;
+    public bool doesSpecialAttack = false;
+    public int specialAttackCooldown = 5;
     public Transform charmPoint;
+    public float groundCheckRadius;
     public CharmEnemyAttack charmAttackPrefab;
-    public Transform lightningPoint;
-    public GameObject lightningPrefab;
+    public LightningEnemyAttack lightningAttackPrefab;
 
     internal Rigidbody2D rb;
     internal Animator animator;
     internal float homeX;
     Player player;
     float lastAttackTime = 0;
-    float lastSpecialAttackTime = 0;
+    float attackCount = 0;
     float idleTimer;
     bool movingRight = true;
     bool isIdle = false;
+    ContactFilter2D contactFilter;
+    readonly Collider2D[] overlaps = new Collider2D[16];
 
     protected override void Awake()
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        contactFilter = new();
+        contactFilter.NoFilter();
+        contactFilter.useTriggers = false;
     }
 
     protected override void Start()
@@ -106,24 +113,40 @@ public class EnemyController : Enemy
     {
         if (Vector2.Distance(transform.position, player.transform.position) <= attackRange)
         {
-            if (Time.time >= lastSpecialAttackTime+specialAttackCooldown)
+            if (Time.time >= lastAttackTime+attackCooldown)
             {
                 lastAttackTime = Time.time;
-                lastSpecialAttackTime = Time.time;
-                animator.SetTrigger("Skill");
-                // GameObject lightningInstance = Instantiate(lightningPrefab, lightningPoint.position, lightningPoint.rotation);
-                // Destroy(lightningInstance, 0.5f);
-            }
-            else if (Time.time >= lastAttackTime+attackCooldown)
-            {
-                lastAttackTime = Time.time;
-                animator.SetTrigger("Attack");
+                if (doesSpecialAttack && attackCount >= specialAttackCooldown)
+                {
+                    animator.SetTrigger("Skill");
+                    attackCount = 0;
+                }
+                else if (CanCharmAttack())
+                {
+                    animator.SetTrigger("Attack");
+                    attackCount++;
+                }
             }
         }
     }
 
-    internal void PerformAttack()
+    bool CanCharmAttack()
+    {
+        if (groundCheckRadius > 0)
+        {
+            int count = Physics2D.OverlapCircle(charmPoint.position, transform.localScale.x*groundCheckRadius, contactFilter, overlaps); 
+            return overlaps.Take(count).All(c => !c.CompareTag("Ground"));
+        }
+        return true;
+    }
+
+    internal void PerformCharmAttack()
     {
         CharmEnemyAttack attack = Instantiate(charmAttackPrefab, charmPoint.position, charmPoint.rotation);
+    }
+
+    internal void PerformLightningAttack()
+    {
+        LightningEnemyAttack attack = Instantiate(lightningAttackPrefab, transform.position, transform.rotation);
     }
 }

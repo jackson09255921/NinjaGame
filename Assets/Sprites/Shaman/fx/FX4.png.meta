@@ -128,10 +128,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 279
+        width: 41
         height: 114
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.41463414, y: 0.01754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: FX4_1
       rect:
         serializedVersion: 2
-        x: 279
+        x: 41
         y: 0
-        width: 279
+        width: 68
         height: 114
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.44117647, y: 0.01754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: FX4_2
       rect:
         serializedVersion: 2
-        x: 558
+        x: 109
         y: 0
-        width: 279
+        width: 83
         height: 114
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.43373492, y: 0.01754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: FX4_3
       rect:
         serializedVersion: 2
-        x: 837
+        x: 192
         y: 0
-        width: 279
+        width: 97
         height: 114
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.44329897, y: 0.01754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: FX4_4
       rect:
         serializedVersion: 2
-        x: 1116
+        x: 289
         y: 0
-        width: 279
+        width: 144
         height: 114
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.4652778, y: 0.01754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,6 +223,90 @@ TextureImporter:
       bones: []
       spriteID: cd705f9ec051a284d9f6a6775e8ed95d
       internalID: -547135620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX4_5
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 0
+        width: 272
+        height: 114
+      alignment: 9
+      pivot: {x: 0.2647059, y: 0.01754386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ec3bf48474b264ba017da1e7d970e1
+      internalID: -2012998895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX4_6
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 0
+        width: 271
+        height: 114
+      alignment: 9
+      pivot: {x: 0.2509225, y: 0.01754386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f26b9a6ee1d1374b989a99f24350461
+      internalID: -1588275059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX4_7
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 0
+        width: 279
+        height: 114
+      alignment: 9
+      pivot: {x: 0.2580645, y: 0.01754386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf48d281ad597454f80595b82018ccb8
+      internalID: -493506337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX4_8
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 0
+        width: 236
+        height: 114
+      alignment: 9
+      pivot: {x: 0.19915254, y: 0.01754386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0b7edb2772f744f99a012bbaa73cd5
+      internalID: 1198206989
       vertices: []
       indices: 
       edges: []
@@ -243,6 +327,10 @@ TextureImporter:
       FX4_2: -1093832784
       FX4_3: 1965902144
       FX4_4: -547135620
+      FX4_5: -2012998895
+      FX4_6: -1588275059
+      FX4_7: -493506337
+      FX4_8: 1198206989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

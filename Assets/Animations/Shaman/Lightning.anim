@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CharmExplode0
+  m_Name: Lightning
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,14 +21,24 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 772929635, guid: 875afc416521d4d47944d27082f7406e, type: 3}
+      value: {fileID: -1664664085, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
     - time: 0.1
-      value: {fileID: -544670304, guid: 875afc416521d4d47944d27082f7406e, type: 3}
+      value: {fileID: -1810479070, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
     - time: 0.2
-      value: {fileID: -68843858, guid: 875afc416521d4d47944d27082f7406e, type: 3}
+      value: {fileID: -1093832784, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
     - time: 0.3
-      value: {fileID: -1115763302, guid: 875afc416521d4d47944d27082f7406e, type: 3}
+      value: {fileID: 1965902144, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
     - time: 0.4
+      value: {fileID: -547135620, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - time: 0.5
+      value: {fileID: -2012998895, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - time: 0.6
+      value: {fileID: -1588275059, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - time: 0.7
+      value: {fileID: -493506337, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - time: 0.8
+      value: {fileID: 1198206989, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - time: 0.9
       value: {fileID: 21300000, guid: a0b7a6e5862b9df4f9a51bd4d90133b6, type: 3}
     attribute: m_Sprite
     path: 
@@ -52,17 +62,22 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 772929635, guid: 875afc416521d4d47944d27082f7406e, type: 3}
-    - {fileID: -544670304, guid: 875afc416521d4d47944d27082f7406e, type: 3}
-    - {fileID: -68843858, guid: 875afc416521d4d47944d27082f7406e, type: 3}
-    - {fileID: -1115763302, guid: 875afc416521d4d47944d27082f7406e, type: 3}
+    - {fileID: -1664664085, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - {fileID: -1810479070, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - {fileID: -1093832784, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - {fileID: 1965902144, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - {fileID: -547135620, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - {fileID: -2012998895, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - {fileID: -1588275059, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - {fileID: -493506337, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
+    - {fileID: 1198206989, guid: 26ec56933354e1845b35d60a5cc9a5ac, type: 3}
     - {fileID: 21300000, guid: a0b7a6e5862b9df4f9a51bd4d90133b6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -82,15 +97,15 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0
-    functionName: StartExplode
+  - time: 0.5
+    functionName: StartLightning
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.4
-    functionName: EndExplode
+  - time: 0.9
+    functionName: EndLightning
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -423,12 +423,13 @@ MonoBehaviour:
   patrolRange: 3
   idleDuration: 1
   attackRange: 3
-  specialAttackCooldown: 5
   attackCooldown: 1
+  doesSpecialAttack: 1
+  specialAttackCooldown: 5
   charmPoint: {fileID: 6674092813081782982}
+  groundCheckRadius: 0.5
   charmAttackPrefab: {fileID: 2861430979844291797, guid: d2191d0120c12f94d9f1740f2deec644, type: 3}
-  lightningPoint: {fileID: 0}
-  lightningPrefab: {fileID: 0}
+  lightningAttackPrefab: {fileID: 1174313383652874936, guid: 896a1983e9647f44ea1f538247feecba, type: 3}
 --- !u!50 &4399461992161920524
 Rigidbody2D:
   serializedVersion: 4
