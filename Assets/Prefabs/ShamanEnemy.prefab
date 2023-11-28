@@ -424,7 +424,7 @@ MonoBehaviour:
   idleDuration: 1
   attackRange: 3
   attackCooldown: 1
-  doesSpecialAttack: 1
+  doesSpecialAttack: 0
   specialAttackCooldown: 5
   charmPoint: {fileID: 6674092813081782982}
   groundCheckRadius: 0.5
