@@ -180,7 +180,7 @@ public class Player : MonoBehaviour
     void UpdateGrounded()
     {
         int count = rb.GetContacts(contacts);
-        maxYNormal = contacts.Take(count).Select(c => c.normal).OrderBy(n => n.y).DefaultIfEmpty(new(0, -1)).Last();
+        maxYNormal = contacts.Take(count).Where(c => c.normalImpulse != 0).Select(c => c.normal).OrderBy(n => n.y).DefaultIfEmpty(new(0, -1)).Last();
         grounded = maxYNormal.y > minGroundNormalY;
     }
 

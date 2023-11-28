@@ -425,7 +425,7 @@ MonoBehaviour:
   attackRange: 3
   attackCooldown: 1
   doesSpecialAttack: 0
-  specialAttackCooldown: 5
+  specialAttackCooldown: 3
   charmPoint: {fileID: 6674092813081782982}
   groundCheckRadius: 0.5
   charmAttackPrefab: {fileID: 2861430979844291797, guid: d2191d0120c12f94d9f1740f2deec644, type: 3}
@@ -492,7 +492,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.39130434, y: 0.019607844}
+    pivot: {x: 0.39130434, y: 0.01960784}
     oldSize: {x: 2.15625, y: 1.59375}
     newSize: {x: 0.69, y: 0.51}
     adaptiveTilingThreshold: 0.5
