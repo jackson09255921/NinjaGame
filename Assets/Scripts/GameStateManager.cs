@@ -76,6 +76,7 @@ public class GameStateManager : MonoBehaviour
             case GameState.Pause:
             {
                 state = GameState.Play;
+                pauseMenu.Reset();
                 pauseMenu.gameObject.SetActive(false);
                 Time.timeScale = 1;
                 break;
