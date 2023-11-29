@@ -55,7 +55,7 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    void UpdateEscape()
+    internal void UpdateEscape()
     {
         switch (state)
         {

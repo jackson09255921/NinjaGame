@@ -51,4 +51,9 @@ public class ChestMenu : MonoBehaviour
             player.UpdateActiveEquipment();
         }
     }
+
+    public void Exit()
+    {
+        GameStateManager.Instance.UpdateEscape();
+    }
 }
