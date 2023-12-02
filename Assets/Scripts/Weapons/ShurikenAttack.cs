@@ -8,13 +8,14 @@ public class ShurikenAttack : Attack
     public int damage;
     public List<AttackProjectile> projectiles;
     public float speed = 20;
-    public float gapAngle = 15;
+    public float baseAngle = 10;
+    public float gapAngle = 10;
     public float angularSpeed = 360;
 
     void Start()
     {
         int count = projectiles.Count;
-        float startAngle = gapAngle*(count-1)/2;
+        float startAngle = baseAngle+gapAngle*(count-1)/2;
         Vector2 facing = transform.right;
         for (int i = 0; i < count; ++i)
         {
@@ -34,7 +35,7 @@ public class ShurikenAttack : Attack
     void ApplyDamage(AttackProjectile projectile, Enemy enemy)
     {
         enemy.TakeDamage(damage);
-        Destroy(projectile);
+        Destroy(projectile.gameObject);
     }
 
     Vector2 AngleVector(float angle)

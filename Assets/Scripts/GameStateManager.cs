@@ -5,16 +5,20 @@ using UnityEngine.InputSystem;
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
+    public HUD hud;
     public ChestMenu chestMenu;
     public PauseMenu pauseMenu;
     public ResultMenu resultMenu;
+    public FadeTransition fadeTransition;
+    public float startFadeTime = 0.5f;
+    public bool startFadeToLeft;
     InputManager inputManager;
     InputAction escapeAction;
-    GameState state = GameState.Play;
+    GameState state = GameState.Start;
     float gameTime;
     float totalTime;
-    public string GameTimeText {get; internal set;}
-    public string TotalTimeText {get; internal set;}
+    public string GameTimeText {get; internal set;} = "00:00.00";
+    public string TotalTimeText {get; internal set;} = "00:00.00";
 
     void Awake()
     {
@@ -34,7 +38,8 @@ public class GameStateManager : MonoBehaviour
         inputManager = InputManager.Instance;
         inputManager.EnableActionMap("Default");
         escapeAction = inputManager.FindAction("Default/Escape");
-        Time.timeScale = 1;
+        Time.timeScale = 0;
+        fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, startFadeTime, PlayGame);
     }
 
     void Update()
@@ -48,11 +53,17 @@ public class GameStateManager : MonoBehaviour
             gameTime += Time.unscaledDeltaTime;
             GameTimeText = $"{(int)gameTime/60:00}:{gameTime%60:00.00}";
         }
-        if (state != GameState.Pause && state != GameState.Result)
+        if (state is GameState.Play or GameState.Chest)
         {
             totalTime += Time.unscaledDeltaTime;
             TotalTimeText = $"{(int)totalTime/60:00}:{totalTime%60:00.00}";
         }
+    }
+
+    internal void PlayGame()
+    {
+        state = GameState.Play;
+        Time.timeScale = 1;
     }
 
     internal void UpdateEscape()
@@ -92,14 +103,14 @@ public class GameStateManager : MonoBehaviour
             {
                 chest.Open = true;
                 player.collectedItems.AddRange(chest.itemIds);
-                player.hud.UpdateItems(chest.itemIds);
+                hud.UpdateItems(chest.itemIds);
             }
             if (chest.weapon != null)
             {
                 if (player.inactiveWeapon == null)
                 {
                     (player.inactiveWeapon, chest.weapon) = (chest.weapon, null);
-                    player.hud.UpdateEquipment(player.activeWeapon, player.inactiveWeapon);
+                    hud.UpdateEquipment(player.activeWeapon, player.inactiveWeapon);
                 }
                 else
                 {
@@ -136,11 +147,13 @@ public class GameStateManager : MonoBehaviour
         return ItemManager.Instance.requiredItems.Select(i => i.id).All(player.collectedItems.Contains);
     }
 
-    public enum GameState {
-            Start,
-            Play,
-            Pause,
-            Chest,
-            Result,
+    public enum GameState
+    {
+        Start,
+        Play,
+        Pause,
+        Chest,
+        Transition,
+        Result,
     }
 }

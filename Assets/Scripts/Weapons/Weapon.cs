@@ -8,7 +8,9 @@ public class Weapon : ScriptableObject
     public RuntimeAnimatorController animationController;
     public Attack attackPrefab;
     public Vector2 offset;
-    public float groundCheckRadius;
+    public float checkRadius;
+    public bool checkGround = true;
+    public bool checkEnemy = false;
     public float cooldown;
     ContactFilter2D contactFilter;
     readonly Collider2D[] overlaps = new Collider2D[16];
@@ -40,10 +42,10 @@ public class Weapon : ScriptableObject
 
     bool CanSpawn(Transform playerTransform)
     {
-        if (groundCheckRadius > 0)
+        if (checkRadius > 0)
         {
-            int count = Physics2D.OverlapCircle(playerTransform.TransformPoint(offset), playerTransform.localScale.x*groundCheckRadius, contactFilter, overlaps); 
-            return overlaps.Take(count).All(c => !c.CompareTag("Ground"));
+            int count = Physics2D.OverlapCircle(playerTransform.TransformPoint(offset), playerTransform.localScale.x*checkRadius, contactFilter, overlaps); 
+            return overlaps.Take(count).All(c => (!checkGround || !c.CompareTag("Ground")) && (!checkEnemy || !c.CompareTag("Enemy")));
         }
         return true;
     }

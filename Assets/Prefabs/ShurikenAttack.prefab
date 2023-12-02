@@ -112,7 +112,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.1
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -274,7 +274,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.1
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -436,7 +436,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.1
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -598,7 +598,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.1
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -705,7 +705,8 @@ MonoBehaviour:
   - {fileID: 6424387846769756365}
   - {fileID: 2491851263914209943}
   speed: 20
-  gapAngle: 15
+  baseAngle: 10
+  gapAngle: 10
   angularSpeed: 1800
 --- !u!1 &7805058212043208992
 GameObject:
@@ -819,7 +820,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.1
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0

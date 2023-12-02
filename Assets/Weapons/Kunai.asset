@@ -16,5 +16,7 @@ MonoBehaviour:
   animationController: {fileID: 9100000, guid: 277c6d0b004333a4faec9fba65661320, type: 2}
   attackPrefab: {fileID: -8901384227509971917, guid: 1312aa44b4d1a9947b3b2af6ab3ff45e, type: 3}
   offset: {x: 0.75, y: 1}
-  groundCheckRadius: 1
+  checkRadius: 1
+  checkGround: 1
+  checkEnemy: 0
   cooldown: 0.7

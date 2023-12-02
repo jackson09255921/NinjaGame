@@ -15,6 +15,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: be173402f4a7cdd4d8bbf722cb13d5ac, type: 3}
   animationController: {fileID: 9100000, guid: 103b7e74aae7a0547b2fb685fe3da6eb, type: 2}
   attackPrefab: {fileID: 1925589848503485498, guid: dec78be0445f1314394bd76bacfa30f9, type: 3}
-  offset: {x: 0.75, y: 1}
-  groundCheckRadius: 1
+  offset: {x: 0.5, y: 1}
+  checkRadius: 1
+  checkGround: 1
+  checkEnemy: 1
   cooldown: 1.5

@@ -164,7 +164,6 @@ MonoBehaviour:
   maxHealth: 10
   flashTime: 0.2
   flashColor: {r: 1, g: 0, b: 0, a: 1}
-  hud: {fileID: 0}
 --- !u!60 &7712961811343162160
 PolygonCollider2D:
   m_ObjectHideFlags: 0

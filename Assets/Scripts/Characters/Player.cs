@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
     public int maxHealth;
     public float flashTime;
     public Color flashColor = Color.red;
-    public HUD hud;
 
     // Components
     internal Rigidbody2D rb;
@@ -61,6 +60,7 @@ public class Player : MonoBehaviour
     // Interactable fields
     internal Chest chest;
     internal List<int> collectedItems = new();
+    HUD hud;
 
     void Awake()
     {
@@ -77,6 +77,7 @@ public class Player : MonoBehaviour
         equipmentAction = inputManager.FindAction("Default/Equipment");
         attackAction = inputManager.FindAction("Default/Attack");
         interactAction = inputManager.FindAction("Default/Interact");
+        hud = GameStateManager.Instance.hud;
         hud.UpdateEquipment(activeWeapon, inactiveWeapon);
         health = maxHealth;
         hud.UpdateHealth(1);
