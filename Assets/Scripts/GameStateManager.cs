@@ -134,6 +134,7 @@ public class GameStateManager : MonoBehaviour
         {
             state = GameState.Result;
             resultMenu.PlayerDied();
+            resultMenu.startFadeFromRight = startFadeToLeft;
             resultMenu.gameObject.SetActive(true);
             Time.timeScale = 0;
         }
@@ -145,8 +146,8 @@ public class GameStateManager : MonoBehaviour
         {
             state = GameState.Result;
             resultMenu.PlayerComplete("Level Complete");
-            resultMenu.gameObject.SetActive(true);
             resultMenu.startFadeFromRight = startFadeFromRight;
+            resultMenu.gameObject.SetActive(true);
         }
         else
         {
