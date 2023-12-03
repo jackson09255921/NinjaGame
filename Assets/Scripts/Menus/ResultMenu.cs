@@ -33,19 +33,32 @@ public class ResultMenu : MonoBehaviour
 
     public void Quit()
     {
-        SceneTransition transition = Instantiate(sceneTransitionPrefab);
-        transition.sceneName = "Start";
+        StartTransition("Start");
     }
 
     public void Restart()
     {
-        SceneTransition transition = Instantiate(sceneTransitionPrefab);
-        transition.sceneName = SceneManager.GetActiveScene().path;
+        StartTransition(SceneManager.GetActiveScene().path);
     }
 
     public void NextLevel()
     {
+        StartTransition(nextSceneName);
+    }
+
+    void StartTransition(string sceneName)
+    {
+        GameStateManager.Instance.fadeTransition.StartFade
+        (
+            startFadeFromRight ? FadeTransition.FadeType.FromRight : FadeTransition.FadeType.FromLeft,
+            GameStateManager.Instance.fadeTime,
+            () => TransitionScene(sceneName)
+        );
+    }
+
+    void TransitionScene(string sceneName)
+    {
         SceneTransition transition = Instantiate(sceneTransitionPrefab);
-        transition.sceneName = nextSceneName;
+        transition.sceneName = sceneName;
     }
 }

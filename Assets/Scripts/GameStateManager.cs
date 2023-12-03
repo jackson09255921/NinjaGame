@@ -12,7 +12,7 @@ public class GameStateManager : MonoBehaviour
     public PauseMenu pauseMenu;
     public ResultMenu resultMenu;
     public FadeTransition fadeTransition;
-    public float startFadeTime = 0.5f;
+    public float fadeTime = 0.5f;
     public bool startFadeToLeft;
     InputManager inputManager;
     InputAction escapeAction;
@@ -43,7 +43,7 @@ public class GameStateManager : MonoBehaviour
         escapeAction = inputManager.FindAction("Default/Escape");
         virtualCamera = FindAnyObjectByType<CinemachineVirtualCamera>();
         Time.timeScale = 0;
-        fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, startFadeTime, PlayGame);
+        fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, fadeTime, PlayGame);
     }
 
     void Update()
@@ -162,7 +162,7 @@ public class GameStateManager : MonoBehaviour
         virtualCamera.enabled = false;
         // TODO display text
         yield return new WaitForSecondsRealtime(1);
-        fadeTransition.StartFade(startFadeFromRight ? FadeTransition.FadeType.FromRight : FadeTransition.FadeType.FromLeft, startFadeTime, () => StartCoroutine(MidTransition(player)));
+        fadeTransition.StartFade(startFadeFromRight ? FadeTransition.FadeType.FromRight : FadeTransition.FadeType.FromLeft, fadeTime, () => StartCoroutine(MidTransition(player)));
     } 
 
     IEnumerator MidTransition(Player player)
@@ -174,7 +174,7 @@ public class GameStateManager : MonoBehaviour
         Time.timeScale = 1;
         yield return 0; // Snap camera back to start
         Time.timeScale = 0;
-        fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, startFadeTime, PlayGame);
+        fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, fadeTime, PlayGame);
     }
 
     internal bool HasRequiredItems(Player player)
