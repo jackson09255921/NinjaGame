@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Linq;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,6 +19,7 @@ public class GameStateManager : MonoBehaviour
     GameState state = GameState.Start;
     float gameTime;
     float totalTime;
+    CinemachineVirtualCamera virtualCamera;
     public string GameTimeText {get; internal set;} = "00:00.00";
     public string TotalTimeText {get; internal set;} = "00:00.00";
 
@@ -38,6 +41,7 @@ public class GameStateManager : MonoBehaviour
         inputManager = InputManager.Instance;
         inputManager.EnableActionMap("Default");
         escapeAction = inputManager.FindAction("Default/Escape");
+        virtualCamera = FindAnyObjectByType<CinemachineVirtualCamera>();
         Time.timeScale = 0;
         fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, startFadeTime, PlayGame);
     }
@@ -48,14 +52,15 @@ public class GameStateManager : MonoBehaviour
         {
             UpdateEscape();
         }
+        float deltaTime = Time.unscaledDeltaTime;
         if (Time.timeScale != 0)
         {
-            gameTime += Time.unscaledDeltaTime;
+            gameTime += deltaTime;
             GameTimeText = $"{(int)gameTime/60:00}:{gameTime%60:00.00}";
         }
-        if (state is GameState.Play or GameState.Chest)
+        if (state is GameState.Play or GameState.Chest or GameState.Transition)
         {
-            totalTime += Time.unscaledDeltaTime;
+            totalTime += deltaTime;
             TotalTimeText = $"{(int)totalTime/60:00}:{totalTime%60:00.00}";
         }
     }
@@ -123,23 +128,52 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    internal void ShowResults(Player player)
+    internal void PlayerDied(Player player)
     {
-        state = GameState.Result;
         if (player.health <= 0)
         {
+            state = GameState.Result;
             resultMenu.PlayerDied();
+            resultMenu.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
-        else if (HasRequiredItems(player))
+    } 
+
+    internal void EnterGoal(Player player, bool startFadeFromRight)
+    {
+        if (HasRequiredItems(player))
         {
+            state = GameState.Result;
             resultMenu.PlayerComplete("Level Complete");
+            resultMenu.gameObject.SetActive(true);
+            resultMenu.startFadeFromRight = startFadeFromRight;
         }
         else
         {
-            resultMenu.PlayerIncomplete("You did not collect all required items.");
+            StartCoroutine(StartTransition(player, startFadeFromRight));
         }
-        resultMenu.gameObject.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    IEnumerator StartTransition(Player player, bool startFadeFromRight)
+    {
+        state = GameState.Transition;
+        virtualCamera.enabled = false;
+        // TODO display text
+        yield return new WaitForSecondsRealtime(1);
+        fadeTransition.StartFade(startFadeFromRight ? FadeTransition.FadeType.FromRight : FadeTransition.FadeType.FromLeft, startFadeTime, () => StartCoroutine(MidTransition(player)));
+    } 
+
+    IEnumerator MidTransition(Player player)
+    {
+        player.rb.velocity = Vector2.zero;
+        player.animator.SetFloat("Speed", 0);
+        player.transform.SetPositionAndRotation(player.startPosition, player.startRotation);
+        virtualCamera.enabled = true;
+        Time.timeScale = 1;
+        yield return 0; // Snap camera back to start
+        Time.timeScale = 0;
+        fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, startFadeTime, PlayGame);
     }
 
     internal bool HasRequiredItems(Player player)

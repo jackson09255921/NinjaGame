@@ -10,6 +10,7 @@ public class ResultMenu : MonoBehaviour
     public TextMeshProUGUI messageText;
     public Button nextLevelButton;
     public string nextSceneName;
+    internal bool startFadeFromRight;
 
     internal void PlayerDied()
     {

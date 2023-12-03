@@ -37,6 +37,8 @@ public class Player : MonoBehaviour
     InputAction interactAction;
 
     // Movement fields
+    internal Vector3 startPosition;
+    internal Quaternion startRotation;
     internal HorizontalState horizontalState = HorizontalState.Idle;
     Vector2 lastVelocity;
     float targetVelocityX = 0;
@@ -82,6 +84,7 @@ public class Player : MonoBehaviour
         health = maxHealth;
         hud.UpdateHealth(1);
         hud.UpdateCooldown(0, 0);
+        transform.GetPositionAndRotation(out startPosition, out startRotation);
         originalColor = sr.color;
     }
 
@@ -337,7 +340,7 @@ public class Player : MonoBehaviour
 
     void PlayerDied()
     {
-        GameStateManager.Instance.ShowResults(this);
+        GameStateManager.Instance.PlayerDied(this);
     }
 
     void FlashColor(float flashTime)
