@@ -10,7 +10,7 @@ public class ResultMenu : MonoBehaviour
     public TextMeshProUGUI messageText;
     public Button nextLevelButton;
     public string nextSceneName;
-    internal bool startFadeFromRight;
+    internal FadeTransition.Direction fadeDirection;
 
     internal void PlayerDied()
     {
@@ -48,12 +48,7 @@ public class ResultMenu : MonoBehaviour
 
     void StartTransition(string sceneName)
     {
-        GameStateManager.Instance.fadeTransition.StartFade
-        (
-            startFadeFromRight ? FadeTransition.FadeType.FromRight : FadeTransition.FadeType.FromLeft,
-            GameStateManager.Instance.fadeTime,
-            () => TransitionScene(sceneName)
-        );
+        GameStateManager.Instance.fadeTransition.StartFade(fadeDirection, true, GameStateManager.Instance.fadeTime, () => TransitionScene(sceneName));
     }
 
     void TransitionScene(string sceneName)

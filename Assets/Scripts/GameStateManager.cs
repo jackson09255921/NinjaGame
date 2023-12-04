@@ -13,7 +13,7 @@ public class GameStateManager : MonoBehaviour
     public ResultMenu resultMenu;
     public FadeTransition fadeTransition;
     public float fadeTime = 0.5f;
-    public bool startFadeToLeft;
+    public FadeTransition.Direction fadeDirection = FadeTransition.Direction.Right;
     InputManager inputManager;
     InputAction escapeAction;
     GameState state = GameState.Start;
@@ -43,7 +43,7 @@ public class GameStateManager : MonoBehaviour
         escapeAction = inputManager.FindAction("Default/Escape");
         virtualCamera = FindAnyObjectByType<CinemachineVirtualCamera>();
         Time.timeScale = 0;
-        fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, fadeTime, PlayGame);
+        fadeTransition.StartFade(fadeDirection, false, fadeTime, PlayGame);
     }
 
     void Update()
@@ -134,35 +134,35 @@ public class GameStateManager : MonoBehaviour
         {
             state = GameState.Result;
             resultMenu.PlayerDied();
-            resultMenu.startFadeFromRight = startFadeToLeft;
+            resultMenu.fadeDirection = FadeTransition.Direction.Alpha;
             resultMenu.gameObject.SetActive(true);
             Time.timeScale = 0;
         }
     } 
 
-    internal void EnterGoal(Player player, bool startFadeFromRight)
+    internal void EnterGoal(Player player, FadeTransition.Direction fadeDirection)
     {
         if (HasRequiredItems(player))
         {
             state = GameState.Result;
             resultMenu.PlayerComplete("Level Complete");
-            resultMenu.startFadeFromRight = startFadeFromRight;
+            resultMenu.fadeDirection = fadeDirection;
             resultMenu.gameObject.SetActive(true);
         }
         else
         {
-            StartCoroutine(StartTransition(player, startFadeFromRight));
+            StartCoroutine(StartTransition(player, fadeDirection));
         }
         Time.timeScale = 0;
     }
 
-    IEnumerator StartTransition(Player player, bool startFadeFromRight)
+    IEnumerator StartTransition(Player player, FadeTransition.Direction fadeDirection)
     {
         state = GameState.Transition;
         virtualCamera.enabled = false;
         // TODO display text
         yield return new WaitForSecondsRealtime(1);
-        fadeTransition.StartFade(startFadeFromRight ? FadeTransition.FadeType.FromRight : FadeTransition.FadeType.FromLeft, fadeTime, () => StartCoroutine(MidTransition(player)));
+        fadeTransition.StartFade(fadeDirection, true, fadeTime, () => StartCoroutine(MidTransition(player)));
     } 
 
     IEnumerator MidTransition(Player player)
@@ -174,7 +174,7 @@ public class GameStateManager : MonoBehaviour
         Time.timeScale = 1;
         yield return 0; // Snap camera back to start
         Time.timeScale = 0;
-        fadeTransition.StartFade(startFadeToLeft ? FadeTransition.FadeType.ToLeft : FadeTransition.FadeType.ToRight, fadeTime, PlayGame);
+        fadeTransition.StartFade(fadeDirection, false, fadeTime, PlayGame);
     }
 
     internal bool HasRequiredItems(Player player)

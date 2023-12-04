@@ -70,8 +70,8 @@ MonoBehaviour:
   pauseMenu: {fileID: 5588780119490917977}
   resultMenu: {fileID: 7095070492597425818}
   fadeTransition: {fileID: 6256800801910622205}
-  startFadeTime: 0.5
-  startFadeToLeft: 0
+  fadeTime: 0.5
+  fadeDirection: 1
 --- !u!114 &996880023395137260
 MonoBehaviour:
   m_ObjectHideFlags: 0

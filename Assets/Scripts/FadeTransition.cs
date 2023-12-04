@@ -5,91 +5,119 @@ using UnityEngine.UI;
 public class FadeTransition : MonoBehaviour
 {
     public RectTransform fadeRect;
-    public Image fadeLeft;
     public Image fadeCenter;
+    public Image fadeLeft;
     public Image fadeRight;
+    public Image fadeUp;
+    public Image fadeDown;
     public Color color;
     public float maxDeltaTime = 0.04f;
     Vector2 leftEnd;
     Vector2 rightEnd;
-    FadeType fadeType;
-    float fadeProgress;
-    float fadeDuration;
+    Vector2 upEnd;
+    Vector2 downEnd;
+    Direction direction;
+    bool inbound;
+    Vector2 end;
+    float progress;
+    float duration;
     Action endCallback;
     Action<float> cancelCallback;
 
-    public Color Color
-    {
-        get => color;
-        internal set
-        {
-            fadeLeft.color = fadeCenter.color = fadeRight.color = color = value;
-        }
-    }
-
     void Start()
     {
-        Color = color;
         OnRectTransformDimensionsChange();
     }
 
     void Update()
     {
-        if (fadeDuration > 0)
+        if (duration > 0)
         {
-            fadeProgress += Math.Min(Time.unscaledDeltaTime, maxDeltaTime);
-            float progress = fadeProgress / fadeDuration;
-            Vector2 aPos = fadeType switch
+            progress += Math.Min(Time.unscaledDeltaTime, maxDeltaTime);
+            float prop = progress / duration;
+            if (direction == Direction.Alpha)
             {
-                FadeType.ToLeft => Vector2.Lerp(Vector2.zero, leftEnd, progress),
-                FadeType.ToRight => Vector2.Lerp(Vector2.zero, rightEnd, progress),
-                FadeType.FromLeft => Vector2.Lerp(leftEnd, Vector2.zero, progress),
-                FadeType.FromRight => Vector2.Lerp(rightEnd, Vector2.zero, progress),
-                _ => Vector2.zero,
-            };
-            fadeRect.anchoredPosition = aPos;
-            if (progress >= 1)
+                SetColor(color * new Color(1, 1, 1, inbound ? prop*(2-prop) : 1-prop*prop));
+            }
+            else
             {
-                if (fadeType is FadeType.ToLeft or FadeType.ToRight)
+                fadeRect.anchoredPosition = Vector2.Lerp(Vector2.zero, end, inbound ? 1-prop : prop);
+            }
+            if (prop >= 1)
+            {
+                if (!inbound)
                 {
                     gameObject.SetActive(false);
                 }
-                fadeDuration = fadeProgress = 0;
+                duration = progress = 0;
                 endCallback?.Invoke();
             }
         }
+    }
+
+    void SetColor(Color color)
+    {
+        fadeCenter.color = fadeLeft.color = fadeRight.color = fadeUp.color = fadeDown.color = color;
     }
 
     void OnRectTransformDimensionsChange()
     {
         float leftWidth = fadeCenter.rectTransform.rect.width + fadeRight.rectTransform.rect.width;
         float rightWidth = fadeCenter.rectTransform.rect.width + fadeLeft.rectTransform.rect.width;
+        float upHeight = fadeCenter.rectTransform.rect.height + fadeUp.rectTransform.rect.height;
+        float downHeight = fadeCenter.rectTransform.rect.height + fadeDown.rectTransform.rect.height;
         leftEnd = new(-leftWidth, 0);
         rightEnd = new(rightWidth, 0);
+        upEnd = new(0, -upHeight);
+        downEnd = new(0, downHeight);
     }
 
-    internal void StartFade(FadeType type, float duration, Action endCallback, Action<float> cancelCallback = null)
+    internal void StartFade(Direction direction, bool inbound, float duration, Action endCallback, Action<float> cancelCallback = null)
     {
-        if (fadeDuration > 0)
+        if (this.duration > 0)
         {
-            this.cancelCallback?.Invoke(fadeProgress);
+            this.cancelCallback?.Invoke(progress);
         }
         if (!gameObject.activeInHierarchy)
         {
             gameObject.SetActive(true);
         }
-        fadeType = type;
-        fadeProgress = 0;
-        fadeDuration = duration;
+        SetColor(color);
+        fadeRect.anchoredPosition = Vector2.zero;
+        this.direction = direction;
+        this.inbound = inbound;
+        end = direction switch
+        {
+            Direction.Left => leftEnd,
+            Direction.Right => rightEnd,
+            Direction.Up => upEnd,
+            Direction.Down => downEnd,
+            _ => Vector2.zero,
+        };
+        progress = 0;
+        this.duration = duration;
         this.endCallback = endCallback;
         this.cancelCallback = cancelCallback;
     }
 
-    public enum FadeType
+    public enum Direction
     {
-        ToLeft,
-        ToRight,
-        FromLeft,
-        FromRight,
+        Left,
+        Right,
+        Up,
+        Down,
+        Alpha
+    }
+
+    public Direction Opposite(Direction direction)
+    {
+        return direction switch
+        {
+            Direction.Left => Direction.Right,
+            Direction.Right => Direction.Left,
+            Direction.Up => Direction.Down,
+            Direction.Down => Direction.Up,
+            _ => Direction.Alpha,
+        };
     }
 }
