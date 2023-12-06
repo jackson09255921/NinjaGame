@@ -14,8 +14,8 @@ public class HUD : MonoBehaviour
     public ItemImage requiredItemIconPrefab;
     public ItemImage extraItemIconPrefab;
     readonly List<ItemImage> requiredItemIcons = new();
-    public TextMeshProUGUI gameTimeText;
     public TextMeshProUGUI totalTimeText;
+    public TextMeshProUGUI gameTimeText;
 
     void Start()
     {

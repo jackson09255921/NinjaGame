@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 3075242583731090060}
   - component: {fileID: 6087344496879449271}
   m_Layer: 5
-  m_Name: TotalTimeText
+  m_Name: GameTimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 3180626153011494187}
   - component: {fileID: 3890355541575582047}
   m_Layer: 5
-  m_Name: GameTimeText
+  m_Name: TotalTimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -977,8 +977,8 @@ MonoBehaviour:
   extraItemPanel: {fileID: 8674140745101263426}
   requiredItemIconPrefab: {fileID: -4926578872157146840, guid: 60ec27b1849dd3c4cb7b7944a69eb769, type: 3}
   extraItemIconPrefab: {fileID: -7985962572822678029, guid: 0818801d1f9ac5b49adb616964c8e3f0, type: 3}
-  gameTimeText: {fileID: 3890355541575582047}
-  totalTimeText: {fileID: 6087344496879449271}
+  gameTimeText: {fileID: 6087344496879449271}
+  totalTimeText: {fileID: 3890355541575582047}
 --- !u!1 &5940083090940749277
 GameObject:
   m_ObjectHideFlags: 0

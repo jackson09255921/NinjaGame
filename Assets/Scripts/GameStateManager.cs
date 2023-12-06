@@ -20,8 +20,8 @@ public class GameStateManager : MonoBehaviour
     float gameTime;
     float totalTime;
     CinemachineVirtualCamera virtualCamera;
-    public string GameTimeText {get; internal set;} = "00:00.00";
     public string TotalTimeText {get; internal set;} = "00:00.00";
+    public string GameTimeText {get; internal set;} = "00:00.00";
 
     void Awake()
     {
@@ -53,15 +53,15 @@ public class GameStateManager : MonoBehaviour
             UpdateEscape();
         }
         float deltaTime = Time.unscaledDeltaTime;
-        if (Time.timeScale != 0)
-        {
-            gameTime += deltaTime;
-            GameTimeText = $"{(int)gameTime/60:00}:{gameTime%60:00.00}";
-        }
         if (state is GameState.Play or GameState.Chest or GameState.Transition)
         {
             totalTime += deltaTime;
             TotalTimeText = $"{(int)totalTime/60:00}:{totalTime%60:00.00}";
+        }
+        if (Time.timeScale != 0)
+        {
+            gameTime += deltaTime;
+            GameTimeText = $"{(int)gameTime/60:00}:{gameTime%60:00.00}";
         }
     }
 
