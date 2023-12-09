@@ -15379,6 +15379,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7095070492597425818, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
+      propertyPath: nextSceneName
+      value: Level3
+      objectReference: {fileID: 0}
     - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: extraItems.Array.size
       value: 2
