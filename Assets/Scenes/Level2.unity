@@ -14810,6 +14810,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d930557d0f935644aa4abd74934dd04c, type: 3}
+--- !u!1001 &5444580683706410652
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 631292561961910808, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5f8351a34ad124a49ab1a61c97ab3369, type: 2}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470463021158969565, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674174443440085176, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
+      propertyPath: m_Name
+      value: Fire Magician
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51d78e74e2926804488dfcc1c821965f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -14834,3 +14895,4 @@ SceneRoots:
   - {fileID: 1477028090}
   - {fileID: 2012884316}
   - {fileID: 1341341330}
+  - {fileID: 5444580683706410652}
