@@ -108,6 +108,7 @@ public class GameStateManager : MonoBehaviour
             {
                 chest.Open = true;
                 player.collectedItems.AddRange(chest.itemIds);
+                chest.UpdateHint();
                 hud.UpdateItems(chest.itemIds);
             }
             if (chest.weapon != null)
@@ -115,6 +116,7 @@ public class GameStateManager : MonoBehaviour
                 if (player.inactiveWeapon == null)
                 {
                     (player.inactiveWeapon, chest.weapon) = (chest.weapon, null);
+                    chest.UpdateHint();
                     hud.UpdateEquipment(player.activeWeapon, player.inactiveWeapon);
                 }
                 else

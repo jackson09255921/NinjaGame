@@ -30,8 +30,8 @@ public class HUD : MonoBehaviour
 
     void Update()
     {
-        gameTimeText.text = GameStateManager.Instance.GameTimeText;
         totalTimeText.text = GameStateManager.Instance.TotalTimeText;
+        gameTimeText.text = GameStateManager.Instance.GameTimeText;
     }
 
     internal void UpdateEquipment(Weapon active, Weapon inactive)
@@ -66,8 +66,7 @@ public class HUD : MonoBehaviour
                 image.Collected = true;
                 continue;
             }
-            ItemManager itemManager = ItemManager.Instance;
-            if (itemManager.itemDict.TryGetValue(itemId, out ItemManager.Item item))
+            if (ItemManager.Instance.itemDict.TryGetValue(itemId, out ItemManager.Item item))
             {
                 image = Instantiate(extraItemIconPrefab, extraItemPanel);
                 image.Item = item;
