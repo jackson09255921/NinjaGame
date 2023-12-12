@@ -56,21 +56,18 @@ public class HUD : MonoBehaviour
         cooldownBar.value = cooldown > 0 && maxCooldown > 0 ? cooldown/maxCooldown : 0;
     }
 
-    internal void UpdateItems(int[] items)
+    internal void UpdateItems(ItemManager.Item[] items)
     {
-        foreach (int itemId in items)
+        foreach (ItemManager.Item item in items)
         {
-            ItemImage image = requiredItemIcons.Find(im => im.Item.id == itemId);
+            ItemImage image = requiredItemIcons.Find(im => im.Item == item);
             if (image != null && !image.Collected)
             {
                 image.Collected = true;
                 continue;
             }
-            if (ItemManager.Instance.itemDict.TryGetValue(itemId, out ItemManager.Item item))
-            {
-                image = Instantiate(extraItemIconPrefab, extraItemPanel);
-                image.Item = item;
-            }
+            image = Instantiate(extraItemIconPrefab, extraItemPanel);
+            image.Item = item;
         }
     }
 }

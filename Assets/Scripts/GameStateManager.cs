@@ -107,9 +107,9 @@ public class GameStateManager : MonoBehaviour
             if (!chest.Open)
             {
                 chest.Open = true;
-                player.collectedItems.AddRange(chest.itemIds);
+                player.collectedItems.AddRange(chest.items);
                 chest.UpdateHint();
-                hud.UpdateItems(chest.itemIds);
+                hud.UpdateItems(chest.items);
             }
             if (chest.weapon != null)
             {
@@ -181,7 +181,8 @@ public class GameStateManager : MonoBehaviour
 
     internal bool HasRequiredItems(Player player)
     {
-        return ItemManager.Instance.requiredItems.Select(i => i.id).All(player.collectedItems.Contains);
+        ItemManager im = ItemManager.Instance;
+        return im.requiredItems.All(player.collectedItems.Contains) && player.collectedItems.Count >= im.requiredItems.Length + im.extraRequirement;
     }
 
     public enum GameState

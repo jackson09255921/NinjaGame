@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,7 @@ public class Chest : MonoBehaviour
     public Image hintImagePrefab;
     public Color openRangeColor;
     public RectTransform hintButtonPanel;
+    internal ItemManager.Item[] items;
     readonly LinkedList<Image> itemIcons = new();
     bool open;
 
@@ -33,6 +35,7 @@ public class Chest : MonoBehaviour
 
     void Start()
     {
+        items = itemIds.Select(i => ItemManager.Instance.GetItem(i, out ItemManager.Item item) ? item : null).Where(i => i != null).ToArray();
         UpdateHint();
     }
 
@@ -45,7 +48,7 @@ public class Chest : MonoBehaviour
         }
         if (!open)
         {
-            requiredCount += itemIds.Length;
+            requiredCount += items.Length;
         }
         while (itemIcons.Count < requiredCount)
         {
@@ -64,13 +67,10 @@ public class Chest : MonoBehaviour
         }
         if (!open)
         {
-            foreach (int itemId in itemIds)
+            foreach (ItemManager.Item item in items)
             {
                 enumerator.MoveNext();
-                if (ItemManager.Instance.itemDict.TryGetValue(itemId, out ItemManager.Item item))
-                {
-                    enumerator.Current.sprite = item.icon;
-                }
+                enumerator.Current.sprite = item.icon;
             }
         }
         enumerator.Dispose();

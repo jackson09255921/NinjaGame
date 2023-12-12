@@ -1,24 +1,23 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
     public static ItemManager Instance { get; private set; }
-    public Item[] requiredItems;
-    public Item[] extraItems;
-    internal Dictionary<int, Item> itemDict = new();
+    public int extraRequirement = 1;
+    public Item[] items;
+    internal Item[] requiredItems;
+    internal Item[] extraItems;
 
     void Awake()
     {
         Instance = this;
-        requiredItems = requiredItems.DistinctBy(i => i.id).ToArray();
-        extraItems = extraItems.Except(requiredItems).DistinctBy(i => i.id).ToArray();
-        foreach (Item item in LinqUtility.Concat<Item>(requiredItems, extraItems))
+        requiredItems = items.Where(i => i.required).ToArray();
+        extraItems = items.Where(i => !i.required).ToArray();
+        for(int i = 0; i < items.Length; ++i)
         {
-            itemDict.TryAdd(item.id, item);
+            items[i].id = i;
         }
     }
 
@@ -30,10 +29,22 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    [Serializable]
-    public struct Item
+    public bool GetItem(int id, out Item item)
     {
-        public int id;
+        if (id >= 0 && id < items.Length)
+        {
+            item = items[id];
+            return true;
+        }
+        item = null;
+        return false;
+    }
+
+    [Serializable]
+    public class Item
+    {
         public Sprite icon;
+        public bool required;
+        internal int id;
     }
 }
