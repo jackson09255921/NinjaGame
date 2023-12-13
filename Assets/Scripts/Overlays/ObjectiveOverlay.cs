@@ -27,8 +27,8 @@ public class ObjectiveOverlay : MonoBehaviour
         int extra = ItemManager.Instance.extraRequirement;
         messageText.text += extra switch
         {
-            1 => $", and {extra} additional item",
-            >1 => $", and {extra} additional items",
+            1 => $", and collect {extra} additional item",
+            >1 => $", and collect {extra} additional items",
             _ => "",
         };
         messageText.text += ":";
