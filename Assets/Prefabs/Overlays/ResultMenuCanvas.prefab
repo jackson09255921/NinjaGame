@@ -320,7 +320,7 @@ MonoBehaviour:
   sceneTransitionPrefab: {fileID: 3537453110308428423, guid: c99a7434174cb7f4487050d089fd7851, type: 3}
   titleText: {fileID: 6827954933244786765}
   messageText: {fileID: 1851608509649799267}
-  restartButton: {fileID: 0}
+  restartButton: {fileID: 29804959192115471}
   nextLevelButton: {fileID: 6141340484817935111}
   nextSceneName: End
 --- !u!1 &4412732725630783118
