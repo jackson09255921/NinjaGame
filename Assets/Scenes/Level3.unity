@@ -10497,22 +10497,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4259746310058453216, guid: f908d6d0199340e4c9c486617923a94a, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[12].x
-      value: 163.99998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259746310058453216, guid: f908d6d0199340e4c9c486617923a94a, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[12].y
-      value: 0.99999243
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259746310058453216, guid: f908d6d0199340e4c9c486617923a94a, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[13].x
-      value: 162.99998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4259746310058453216, guid: f908d6d0199340e4c9c486617923a94a, type: 3}
-      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[11].X
-      value: 1640000000
-      objectReference: {fileID: 0}
     - target: {fileID: 7444162897319831370, guid: f908d6d0199340e4c9c486617923a94a, type: 3}
       propertyPath: m_Name
       value: GridLevel3
