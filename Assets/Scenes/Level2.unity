@@ -15140,7 +15140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 693303236158078776, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 128.84
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: lightDimEntries.Array.size
@@ -15278,10 +15278,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1556967848671040004, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3886900183664135142, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -15352,7 +15348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5078373726998840923, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078373726998840923, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -15384,7 +15380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017938523103178423, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7095070492597425818, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: nextSceneName
@@ -15404,7 +15400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8260280174321295247, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: items.Array.size

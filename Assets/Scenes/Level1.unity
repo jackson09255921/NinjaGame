@@ -14332,7 +14332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 693303236158078776, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 128.84
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: lightDimEntries.Array.size
@@ -14462,20 +14462,12 @@ PrefabInstance:
       propertyPath: graphicFadeEntries.Array.data[1].startColor.r
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1368759147538463152, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: incompleteInfo
-      value: 
-      objectReference: {fileID: 746387867047464062}
     - target: {fileID: 1406447461432655958, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1556967848671040004, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1556967848671040004, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3886900183664135142, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
@@ -14548,7 +14540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5078373726998840923, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078373726998840923, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14580,7 +14572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017938523103178423, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7095070492597425818, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: nextSceneName
@@ -14604,7 +14596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8260280174321295247, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: items.Array.size
@@ -14671,11 +14663,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
---- !u!223 &746387867047464062 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 8094230311126984252, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-  m_PrefabInstance: {fileID: 746387867047464061}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3818801208753881546
 PrefabInstance:
   m_ObjectHideFlags: 0
