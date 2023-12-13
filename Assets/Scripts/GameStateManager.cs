@@ -10,6 +10,7 @@ public class GameStateManager : MonoBehaviour
     public HUD hud;
     public ChestMenu chestMenu;
     public PauseMenu pauseMenu;
+    public Canvas incompleteInfo;
     public ResultMenu resultMenu;
     public FadeTransition fadeTransition;
     public float fadeTime = 0.5f;
@@ -161,6 +162,7 @@ public class GameStateManager : MonoBehaviour
     IEnumerator StartTransition(Player player, FadeTransition.Direction fadeDirection)
     {
         state = GameState.Transition;
+        incompleteInfo.gameObject.SetActive(true);
         virtualCamera.enabled = false;
         // TODO display text
         yield return new WaitForSecondsRealtime(1);
@@ -169,11 +171,12 @@ public class GameStateManager : MonoBehaviour
 
     IEnumerator MidTransition(Player player)
     {
+        incompleteInfo.gameObject.SetActive(false);
         player.rb.velocity = Vector2.zero;
         player.animator.SetFloat("Speed", 0);
         player.transform.SetPositionAndRotation(player.startPosition, player.startRotation);
-        virtualCamera.enabled = true;
         Time.timeScale = 1;
+        virtualCamera.enabled = true;
         yield return 0; // Snap camera back to start
         Time.timeScale = 0;
         fadeTransition.StartFade(fadeDirection, false, fadeTime, PlayGame);
