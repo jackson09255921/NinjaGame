@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7785738720589624770}
+  - component: {fileID: 4760794897080076412}
   - component: {fileID: 1798163705117603878}
   - component: {fileID: 5984306585172850980}
   - component: {fileID: 3739089532704918898}
-  - component: {fileID: 4760794897080076412}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -37,6 +37,26 @@ Transform:
   - {fileID: 3376391293630481167}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4760794897080076412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276730331245901948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66694d37958b6754e88b7c965c112482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5984306585172850980}
+  weapon: {fileID: 0}
+  itemIds: 
+  openRangeCollider: {fileID: 1746564632842982292}
+  hintIconPanel: {fileID: 4692698823279915441}
+  hintImagePrefab: {fileID: 6233215139487262361, guid: 9c64964b441df9941a09c91741892c6e, type: 3}
+  openRangeColor: {r: 1, g: 0.27058825, b: 0, a: 1}
+  hintButtonPanel: {fileID: 1570521167825557484}
 --- !u!212 &1798163705117603878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -145,26 +165,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
   m_Radius: 3
---- !u!114 &4760794897080076412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276730331245901948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66694d37958b6754e88b7c965c112482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5984306585172850980}
-  weapon: {fileID: 0}
-  itemIds: 
-  openRangeCollider: {fileID: 1746564632842982292}
-  hintIconPanel: {fileID: 4692698823279915441}
-  hintImagePrefab: {fileID: 6233215139487262361, guid: 9c64964b441df9941a09c91741892c6e, type: 3}
-  openRangeColor: {r: 1, g: 0.27058825, b: 0, a: 1}
-  hintButtonPanel: {fileID: 1570521167825557484}
 --- !u!1 &5828284050948376612
 GameObject:
   m_ObjectHideFlags: 0
