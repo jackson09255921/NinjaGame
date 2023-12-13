@@ -55,7 +55,7 @@ MonoBehaviour:
   openRangeCollider: {fileID: 1746564632842982292}
   hintIconPanel: {fileID: 4692698823279915441}
   hintImagePrefab: {fileID: 6233215139487262361, guid: 9c64964b441df9941a09c91741892c6e, type: 3}
-  openRangeColor: {r: 1, g: 0.27058825, b: 0, a: 1}
+  openRangeColor: {r: 1, g: 0.25, b: 0, a: 1}
   hintButtonPanel: {fileID: 1570521167825557484}
 --- !u!212 &1798163705117603878
 SpriteRenderer:

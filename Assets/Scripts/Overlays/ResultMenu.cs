@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -8,9 +9,22 @@ public class ResultMenu : MonoBehaviour
     public SceneTransition sceneTransitionPrefab;
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI messageText;
+    public Button restartButton;
     public Button nextLevelButton;
     public string nextSceneName;
     internal FadeTransition.Direction fadeDirection;
+
+    void OnEnable()
+    {
+        if (nextLevelButton.gameObject.activeInHierarchy)
+        {
+            EventSystem.current.SetSelectedGameObject(nextLevelButton.gameObject);
+        }
+        else
+        {
+            EventSystem.current.SetSelectedGameObject(restartButton.gameObject);
+        }
+    }
 
     internal void PlayerDied()
     {

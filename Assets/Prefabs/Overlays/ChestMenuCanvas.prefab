@@ -400,10 +400,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.26877472, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0.4, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 1, g: 0.25, b: 0, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.25, a: 1}
+    m_SelectedColor: {r: 1, g: 0.25, b: 0, a: 1}
+    m_DisabledColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -656,6 +656,7 @@ GameObject:
   - component: {fileID: 6561883014523689431}
   - component: {fileID: 3537335586935129840}
   - component: {fileID: 922250219445155636}
+  - component: {fileID: 3994671345422613602}
   m_Layer: 5
   m_Name: ChestMenuCanvas
   m_TagString: Untagged
@@ -765,6 +766,19 @@ MonoBehaviour:
   chestWeaponIcon: {fileID: 4528560209120803279}
   activeWeaponIcon: {fileID: 6540553772130631622}
   inactiveWeaponIcon: {fileID: 1659286857874784848}
+--- !u!114 &3994671345422613602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177770485255191013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621c63984cf1aeb4683ff2444dce27bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstNavigationObject: {fileID: 6464669365481566485}
 --- !u!1 &6104986120935649385
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +817,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -50, y: -50}
-  m_SizeDelta: {x: 35, y: 35}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &6292158859178853342
 CanvasRenderer:
@@ -826,7 +840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -865,10 +879,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 1, g: 0.25, b: 0, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.25, a: 1}
+    m_SelectedColor: {r: 1, g: 0.25, b: 0, a: 1}
+    m_DisabledColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1075,10 +1089,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99215686, g: 0.26666668, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0.4, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 1, g: 0.25, b: 0, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.25, a: 1}
+    m_SelectedColor: {r: 1, g: 0.25, b: 0, a: 1}
+    m_DisabledColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
