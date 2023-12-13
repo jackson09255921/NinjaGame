@@ -22,15 +22,17 @@ public class InfoMenu : MonoBehaviour
                 pages[page].SetActive(false);
                 page = value;
                 pages[page].SetActive(true);
-                prevButton.interactable = page > 0;
-                nextButton.interactable = page < pages.Length-1;
-                if (!prevButton.interactable && EventSystem.current.currentSelectedGameObject == prevButton.gameObject)
+                bool firstPage = page == 0;
+                bool lastPage = page == pages.Length-1;
+                prevButton.interactable = !firstPage;
+                nextButton.interactable = !lastPage;
+                if (firstPage)
                 {
-                    EventSystem.current.SetSelectedGameObject((nextButton.interactable ? nextButton : exitButton).gameObject);
+                    EventSystem.current.SetSelectedGameObject((lastPage ? exitButton : nextButton).gameObject);
                 }
-                if (!nextButton.interactable && EventSystem.current.currentSelectedGameObject == nextButton.gameObject)
+                if (lastPage)
                 {
-                    EventSystem.current.SetSelectedGameObject((prevButton.interactable ? prevButton : exitButton).gameObject);
+                    EventSystem.current.SetSelectedGameObject((firstPage ? exitButton : prevButton).gameObject);
                 }
             }
         }
@@ -38,8 +40,8 @@ public class InfoMenu : MonoBehaviour
 
     void OnEnable()
     {
-        EventSystem.current.SetSelectedGameObject((pages.Length > 1 ? nextButton : exitButton).gameObject);
         Page = 0;
+        EventSystem.current.SetSelectedGameObject((pages.Length > 1 ? nextButton : exitButton).gameObject);
     }
 
     public void PrevPage()
