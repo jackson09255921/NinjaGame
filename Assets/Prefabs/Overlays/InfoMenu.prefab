@@ -412,7 +412,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7204897884221651059}
   - component: {fileID: 4817654756179139716}
-  - component: {fileID: 6321618666552040188}
   m_Layer: 5
   m_Name: InfoMenu
   m_TagString: Untagged
@@ -433,9 +432,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1072354709806688393}
-  - {fileID: 3366537786588853138}
   - {fileID: 547485117874654002}
   - {fileID: 1536564507090194806}
+  - {fileID: 3366537786588853138}
   - {fileID: 1221362076343676201}
   - {fileID: 51514371557364091}
   - {fileID: 2238471093847509216}
@@ -474,19 +473,7 @@ MonoBehaviour:
   - {fileID: 3586475908930211894}
   prevButton: {fileID: 15080801761470437}
   nextButton: {fileID: 8134703720911043579}
---- !u!114 &6321618666552040188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783286067265654606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621c63984cf1aeb4683ff2444dce27bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstNavigationObject: {fileID: 1324112658896846599}
+  exitButton: {fileID: 5753034778257170411}
 --- !u!1 &836477282922461844
 GameObject:
   m_ObjectHideFlags: 0
