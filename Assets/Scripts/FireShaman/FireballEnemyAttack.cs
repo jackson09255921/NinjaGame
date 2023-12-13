@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Fireball1EnemyAttack : MonoBehaviour
+public class FireballEnemyAttack : MonoBehaviour
 {
     public float speed = 20;
     public EnemyAttackTrigger explode;

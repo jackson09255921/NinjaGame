@@ -14,7 +14,8 @@ public class FireShamanEnemy : Enemy
     public int specialAttackCooldown = 5;
     public Transform charmPoint;
     public float groundCheckRadius;
-    public Fireball1EnemyAttack fireball1EnemyAttackPrefab;
+    public FireballEnemyAttack fireball1EnemyAttackPrefab;
+    public FireballEnemyAttack fireball2EnemyAttackPrefab;
     //public FireTornadoEnemyAttack fireTornadoAttackPrefab;
 
     internal Rigidbody2D rb;
@@ -141,7 +142,7 @@ public class FireShamanEnemy : Enemy
 
     internal void PerformFireball1Attack()
     {
-        Fireball1EnemyAttack attack = Instantiate(fireball1EnemyAttackPrefab, charmPoint.position, charmPoint.rotation);
+        FireballEnemyAttack attack = Instantiate(fireball1EnemyAttackPrefab, charmPoint.position, charmPoint.rotation);
     }
 
     internal void PerformLightningAttack()
