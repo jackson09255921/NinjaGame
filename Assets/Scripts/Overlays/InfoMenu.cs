@@ -20,8 +20,8 @@ public class InfoMenu : MonoBehaviour
                 pages[page].SetActive(false);
                 page = value;
                 pages[page].SetActive(true);
-                prevButton.interactable = page >= 0;
-                nextButton.interactable = page < pages.Length;
+                prevButton.interactable = page > 0;
+                nextButton.interactable = page < pages.Length-1;
             }
         }
     }
