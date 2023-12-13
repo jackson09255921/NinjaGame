@@ -190,7 +190,7 @@ public class Player : MonoBehaviour
 
     void UpdateHorizontal()
     {
-        int horizontal = (int)horizontalAction.ReadValue<float>();
+        int horizontal = Math.Sign(horizontalAction.ReadValue<float>());
         if (horizontal == 0)
         {
             horizontalState = HorizontalState.Idle;
