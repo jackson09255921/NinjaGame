@@ -1,9 +1,8 @@
 using System;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyController : Enemy
+public class ShamanEnemy : Enemy
 {
     public float moveSpeed = 2;
     public float acceleration = 40;
