@@ -1215,57 +1215,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 836477282922461844, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2007491131782148067, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2238471093847509216, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 863.2805
-      objectReference: {fileID: 0}
-    - target: {fileID: 2238471093847509216, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 511.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2238471093847509216, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.6401978
-      objectReference: {fileID: 0}
-    - target: {fileID: 2238471093847509216, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -5.64151
-      objectReference: {fileID: 0}
-    - target: {fileID: 2635712207964950948, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 3119780411047610600, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3586475908930211894, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3640830720930269683, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -170
-      objectReference: {fileID: 0}
-    - target: {fileID: 3640830720930269683, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 3839149573692031980, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5377288199001791104, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5379166960517786272, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1363,10 +1319,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7263416591081594807, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7756229189578066718, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 148
@@ -1378,10 +1330,6 @@ PrefabInstance:
     - target: {fileID: 8514278453349203575, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -119
-      objectReference: {fileID: 0}
-    - target: {fileID: 8926461566146214157, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1843,7 +1791,7 @@ GameObject:
   - component: {fileID: 1312385113}
   - component: {fileID: 1312385112}
   m_Layer: 5
-  m_Name: RuleButton
+  m_Name: InfoButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2403,7 +2351,7 @@ GameObject:
   - component: {fileID: 1841926599}
   - component: {fileID: 1841926598}
   m_Layer: 5
-  m_Name: RuleText
+  m_Name: InfoText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2448,9 +2396,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Rule
-
-'
+  m_text: Info
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
