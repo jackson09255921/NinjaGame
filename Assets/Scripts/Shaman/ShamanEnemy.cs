@@ -10,6 +10,7 @@ public class ShamanEnemy : Enemy
     public float idleDuration = 1;
     public float attackRange = 3;
     public float attackCooldown = 1;
+    public float largeAttackChance = 0.1f;
     public bool doesSpecialAttack = false;
     public int specialAttackCooldown = 5;
     public Transform charmPoint;
@@ -19,10 +20,9 @@ public class ShamanEnemy : Enemy
 
     internal Rigidbody2D rb;
     internal Animator animator;
-    internal float homeX;
     Player player;
-    float lastAttackTime = 0;
-    float attackCount = 0;
+    float lastAttackTime = float.NegativeInfinity;
+    int attackCount = 0;
     float idleTimer;
     bool movingRight = true;
     bool isIdle = false;
@@ -43,7 +43,6 @@ public class ShamanEnemy : Enemy
     {
         base.Start();
         player = FindAnyObjectByType<Player>();
-        homeX = transform.position.x;
         idleTimer = patrolRange;
     }
 
@@ -76,13 +75,13 @@ public class ShamanEnemy : Enemy
             else
             {
                 float accelerationX = 0;
-                if (movingRight && transform.position.x-homeX < patrolRange)
+                if (movingRight && transform.position.x-home.x < patrolRange)
                 {
                     accelerationX = Math.Min(1, (moveSpeed-speed)*4)*acceleration;
                     transform.rotation = Constants.rightRotation;
                     animator.SetFloat("Speed", currentVelocityX < 0.5f ? 0.5f : speed);
                 }
-                else if (!movingRight && homeX-transform.position.x < patrolRange)
+                else if (!movingRight && home.x-transform.position.x < patrolRange)
                 {
                     accelerationX = -Math.Min(1, (moveSpeed-speed)*4)*acceleration;
                     transform.rotation = Constants.leftRotation;
@@ -142,6 +141,7 @@ public class ShamanEnemy : Enemy
     internal void PerformCharmAttack()
     {
         CharmEnemyAttack attack = Instantiate(charmAttackPrefab, charmPoint.position, charmPoint.rotation);
+        attack.large = UnityEngine.Random.Range(0, 1) < largeAttackChance;
     }
 
     internal void PerformLightningAttack()

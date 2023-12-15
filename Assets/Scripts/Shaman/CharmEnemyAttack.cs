@@ -59,7 +59,6 @@ public class CharmEnemyAttack : MonoBehaviour
 
     void ApplyDamage(EnemyAttackTrigger trigger, Player player)
     {
-        Debug.Log("hit player");
         if (!large)
         {
             player.TakeDamage(smallDamage);

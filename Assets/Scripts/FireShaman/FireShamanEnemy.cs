@@ -10,20 +10,21 @@ public class FireShamanEnemy : Enemy
     public float idleDuration = 1;
     public float attackRange = 3;
     public float attackCooldown = 1;
+    public float largeAttackChance = 0.1f;
     public bool doesSpecialAttack = false;
     public int specialAttackCooldown = 5;
-    public Transform charmPoint;
+    public Transform fireballPoint;
+    public Transform fireTornadoPoint;
     public float groundCheckRadius;
     public FireballEnemyAttack fireball1EnemyAttackPrefab;
     public FireballEnemyAttack fireball2EnemyAttackPrefab;
-    //public FireTornadoEnemyAttack fireTornadoAttackPrefab;
+    public FireTornadoEnemyAttack fireTornadoAttackPrefab;
 
     internal Rigidbody2D rb;
     internal Animator animator;
-    internal float homeX;
     Player player;
-    float lastAttackTime = 0;
-    float attackCount = 0;
+    float lastAttackTime = float.NegativeInfinity;
+    int attackCount = 0;
     float idleTimer;
     bool movingRight = true;
     bool isIdle = false;
@@ -44,7 +45,6 @@ public class FireShamanEnemy : Enemy
     {
         base.Start();
         player = FindAnyObjectByType<Player>();
-        homeX = transform.position.x;
         idleTimer = patrolRange;
     }
 
@@ -77,13 +77,13 @@ public class FireShamanEnemy : Enemy
             else
             {
                 float accelerationX = 0;
-                if (movingRight && transform.position.x-homeX < patrolRange)
+                if (movingRight && transform.position.x-home.x < patrolRange)
                 {
                     accelerationX = Math.Min(1, (moveSpeed-speed)*4)*acceleration;
                     transform.rotation = Constants.rightRotation;
                     animator.SetFloat("Speed", currentVelocityX < 0.5f ? 0.5f : speed);
                 }
-                else if (!movingRight && homeX-transform.position.x < patrolRange)
+                else if (!movingRight && home.x-transform.position.x < patrolRange)
                 {
                     accelerationX = -Math.Min(1, (moveSpeed-speed)*4)*acceleration;
                     transform.rotation = Constants.leftRotation;
@@ -118,12 +118,19 @@ public class FireShamanEnemy : Enemy
                 lastAttackTime = Time.time;
                 if (doesSpecialAttack && attackCount >= specialAttackCooldown)
                 {
-                    animator.SetTrigger("Skill");
+                    animator.SetTrigger("Skill2");
                     attackCount = 0;
                 }
                 else if (CanFireballAttack())
                 {
-                    animator.SetTrigger("Attack");
+                    if (UnityEngine.Random.Range(0, 1) < largeAttackChance)
+                    {
+                        animator.SetTrigger("Skill1");
+                    }
+                    else
+                    {
+                        animator.SetTrigger("Attack");
+                    }
                     attackCount++;
                 }
             }
@@ -134,7 +141,7 @@ public class FireShamanEnemy : Enemy
     {
         if (groundCheckRadius > 0)
         {
-            int count = Physics2D.OverlapCircle(charmPoint.position, transform.localScale.x*groundCheckRadius, contactFilter, overlaps); 
+            int count = Physics2D.OverlapCircle(fireballPoint.position, transform.localScale.x*groundCheckRadius, contactFilter, overlaps); 
             return overlaps.Take(count).All(c => !c.CompareTag("Ground"));
         }
         return true;
@@ -142,11 +149,16 @@ public class FireShamanEnemy : Enemy
 
     internal void PerformFireball1Attack()
     {
-        FireballEnemyAttack attack = Instantiate(fireball1EnemyAttackPrefab, charmPoint.position, charmPoint.rotation);
+        FireballEnemyAttack attack = Instantiate(fireball1EnemyAttackPrefab, fireballPoint.position, fireballPoint.rotation);
     }
 
-    internal void PerformLightningAttack()
+    internal void PerformFireball2Attack()
     {
-        //FireTornadoEnemyAttack attack = Instantiate(fireTornadoAttackPrefab, transform.position, transform.rotation);
+        FireballEnemyAttack attack = Instantiate(fireball1EnemyAttackPrefab, fireballPoint.position, fireballPoint.rotation);
+    }
+
+    internal void PerformFireTornadoAttack()
+    {
+        FireTornadoEnemyAttack attack = Instantiate(fireTornadoAttackPrefab, fireTornadoPoint.position, fireTornadoPoint.rotation);
     }
 }

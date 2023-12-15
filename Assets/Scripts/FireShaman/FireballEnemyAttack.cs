@@ -47,7 +47,6 @@ public class FireballEnemyAttack : MonoBehaviour
 
     void ApplyDamage(EnemyAttackTrigger trigger, Player player)
     {
-        Debug.Log("hit player");
         player.TakeDamage(damage);
     }
 }
