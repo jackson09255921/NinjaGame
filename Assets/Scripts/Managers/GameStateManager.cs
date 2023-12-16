@@ -153,10 +153,10 @@ public class GameStateManager : MonoBehaviour
         if (HasRequiredItems(player))
         {
             state = GameState.Result;
-            resultMenu.PlayerComplete("Level Complete");
+            clearItemCount = player.collectedItems.Count;
+            resultMenu.PlayerComplete($"Level complete in {TotalTimeText}, {clearItemCount} / {ItemManager.Instance.totalItemCount} items collected");
             resultMenu.fadeDirection = fadeDirection;
             resultMenu.gameObject.SetActive(true);
-            clearItemCount = player.collectedItems.Count;
         }
         else
         {
