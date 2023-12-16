@@ -421,7 +421,7 @@ MonoBehaviour:
   healthBar: {fileID: 9146329217130480831}
   moveSpeed: 2
   acceleration: 20
-  patrolRange: 3
+  patrolRange: 2
   idleDuration: 1
   attackRange: 3
   attackCooldown: 1
