@@ -9,6 +9,7 @@ public class ItemManager : MonoBehaviour
     public Item[] items;
     internal Item[] requiredItems;
     internal Item[] extraItems;
+    internal int totalItemCount = 0;
 
     void Awake()
     {

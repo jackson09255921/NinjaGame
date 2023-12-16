@@ -9,6 +9,7 @@ public class Chest : MonoBehaviour
     public Animator animator;
     public Weapon weapon;
     public int[] itemIds;
+    public int healAmount;
     public Collider2D openRangeCollider;
     public Image hintIconPanel;
     public Image hintImagePrefab;
@@ -36,6 +37,7 @@ public class Chest : MonoBehaviour
     void Start()
     {
         items = itemIds.Select(i => ItemManager.Instance.GetItem(i, out ItemManager.Item item) ? item : null).Where(i => i != null).ToArray();
+        ItemManager.Instance.totalItemCount += items.Length;
         UpdateHint();
     }
 

@@ -326,16 +326,21 @@ public class Player : MonoBehaviour
         lastVelocity = rb.velocity;
     }
 
+    public void Heal(int heal)
+    {
+        health = Math.Min(health+heal, maxHealth);
+        hud.UpdateHealth((float)health/maxHealth);
+    }
+
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        health = Math.Max(health-damage, 0);
         hud.UpdateHealth((float)health/maxHealth);
         FlashColor(flashTime);
         if (health <= 0)
         {
             Invoke(nameof(PlayerDied), 0.1f);
         }
-        Debug.Log(health);
     }
 
     void PlayerDied()

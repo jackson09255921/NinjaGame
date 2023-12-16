@@ -8,6 +8,7 @@ public class StartMenu : MonoBehaviour
     {
         SceneTransition transition = Instantiate(sceneTransitionPrefab);
         transition.sceneName = "Level1";
+        ResultManager.Instance.Reset();
     }
 
     public void QuitGame()

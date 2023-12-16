@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class SettingsManager
 {
-    private static SettingsManager instance;
+    static SettingsManager instance;
     public static SettingsManager Instance
     {
         get

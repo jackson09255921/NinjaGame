@@ -11,7 +11,6 @@ public class ResultMenu : MonoBehaviour
     public TextMeshProUGUI messageText;
     public Button restartButton;
     public Button nextLevelButton;
-    public string nextSceneName;
     internal FadeTransition.Direction fadeDirection;
 
     void OnEnable()
@@ -53,11 +52,13 @@ public class ResultMenu : MonoBehaviour
     public void Restart()
     {
         StartTransition(SceneManager.GetActiveScene().path);
+        GameStateManager.Instance.RestartResults();
     }
 
     public void NextLevel()
     {
-        StartTransition(nextSceneName);
+        StartTransition(GameStateManager.Instance.nextSceneName);
+        GameStateManager.Instance.ClearResults();
     }
 
     void StartTransition(string sceneName)

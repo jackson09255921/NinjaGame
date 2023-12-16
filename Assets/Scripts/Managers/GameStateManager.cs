@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
+    public string levelName;
+    public string nextSceneName;
     public HUD hud;
     public ChestMenu chestMenu;
     public PauseMenu pauseMenu;
@@ -18,9 +20,11 @@ public class GameStateManager : MonoBehaviour
     InputManager inputManager;
     InputAction escapeAction;
     GameState state = GameState.Start;
-    float gameTime;
+    int clearItemCount = 0;
     float totalTime;
+    float gameTime;
     CinemachineVirtualCamera virtualCamera;
+
     public string TotalTimeText {get; internal set;} = "00:00.00";
     public string GameTimeText {get; internal set;} = "00:00.00";
 
@@ -108,6 +112,7 @@ public class GameStateManager : MonoBehaviour
             if (!chest.Open)
             {
                 chest.Open = true;
+                player.Heal(chest.healAmount);
                 player.collectedItems.AddRange(chest.items);
                 chest.UpdateHint();
                 hud.UpdateItems(chest.items);
@@ -151,6 +156,7 @@ public class GameStateManager : MonoBehaviour
             resultMenu.PlayerComplete("Level Complete");
             resultMenu.fadeDirection = fadeDirection;
             resultMenu.gameObject.SetActive(true);
+            clearItemCount = player.collectedItems.Count;
         }
         else
         {
@@ -186,6 +192,23 @@ public class GameStateManager : MonoBehaviour
     {
         ItemManager im = ItemManager.Instance;
         return im.requiredItems.All(player.collectedItems.Contains) && player.collectedItems.Count >= im.requiredItems.Length + im.extraRequirement;
+    }
+
+    internal void RestartResults()
+    {
+        if (clearItemCount > 0)
+        {
+            ResultManager.Instance.ResetLevel(levelName);
+        }
+        else
+        {
+            ResultManager.Instance.Restart(levelName, totalTime);
+        }
+    }
+
+    internal void ClearResults()
+    {
+        ResultManager.Instance.Clear(levelName, totalTime, clearItemCount, ItemManager.Instance.totalItemCount);
     }
 
     public enum GameState

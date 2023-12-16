@@ -20121,6 +20121,14 @@ PrefabInstance:
       propertyPath: graphicFadeEntries.Array.data[1].startColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1368759147538463152, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
+      propertyPath: levelName
+      value: Level 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368759147538463152, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
+      propertyPath: nextSceneName
+      value: End
+      objectReference: {fileID: 0}
     - target: {fileID: 1406447461432655958, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
