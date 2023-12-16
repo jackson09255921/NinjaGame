@@ -12,7 +12,7 @@ public class StartMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("leave game");
+        Debug.Log("Quit Game");
         Application.Quit();
     }
 }

@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public Color flashColor = Color.red;
     public Slider healthBar;
 
+    internal Vector2 home;
     internal int health;
     SpriteRenderer sr;
     Color originalColor;
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
     protected virtual void Start()
     {
         healthBar.value = 1;
+        home = transform.position;
         health = maxHealth;
         originalColor = sr.color;
     }
@@ -39,7 +41,6 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject, 0.1f);
         }
-        Debug.Log(health);
     }
 
     void FlashColor(float flashTime)
