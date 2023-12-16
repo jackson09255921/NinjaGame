@@ -19,4 +19,4 @@ MonoBehaviour:
   checkRadius: 1
   checkGround: 1
   checkEnemy: 1
-  cooldown: 1.5
+  cooldown: 0.5
