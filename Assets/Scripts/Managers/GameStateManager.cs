@@ -49,6 +49,9 @@ public class GameStateManager : MonoBehaviour
         virtualCamera = FindAnyObjectByType<CinemachineVirtualCamera>();
         Time.timeScale = 0;
         fadeTransition.StartFade(fadeDirection, false, fadeTime, PlayGame);
+        totalTime = ResultManager.Instance.GetTotalTime(levelName);
+        TotalTimeText = $"{(int)totalTime/60:00}:{totalTime%60:00.00}";
+        gameTime = 0;
     }
 
     void Update()
@@ -198,7 +201,7 @@ public class GameStateManager : MonoBehaviour
     {
         if (clearItemCount > 0)
         {
-            ResultManager.Instance.ResetLevel(levelName);
+            ResultManager.Instance.Reset(levelName);
         }
         else
         {

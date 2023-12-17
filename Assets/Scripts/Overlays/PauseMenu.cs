@@ -16,9 +16,9 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+        GameStateManager.Instance.RestartResults();
         SceneTransition transition = Instantiate(sceneTransitionPrefab);
         transition.sceneName = SceneManager.GetActiveScene().path;
-        GameStateManager.Instance.RestartResults();
     }
 
     public void Exit()

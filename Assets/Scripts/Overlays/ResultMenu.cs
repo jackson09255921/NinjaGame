@@ -51,14 +51,14 @@ public class ResultMenu : MonoBehaviour
 
     public void Restart()
     {
-        StartTransition(SceneManager.GetActiveScene().path);
         GameStateManager.Instance.RestartResults();
+        StartTransition(SceneManager.GetActiveScene().path);
     }
 
     public void NextLevel()
     {
-        StartTransition(GameStateManager.Instance.nextSceneName);
         GameStateManager.Instance.ClearResults();
+        StartTransition(GameStateManager.Instance.nextSceneName);
     }
 
     void StartTransition(string sceneName)

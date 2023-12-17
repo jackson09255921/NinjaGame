@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class ResultManager
 {
@@ -12,7 +13,7 @@ public class ResultManager
         }
     }
 
-    struct LevelData
+    class LevelData
     {
         internal int attempts;
         internal int fails;
@@ -24,12 +25,12 @@ public class ResultManager
 
     readonly Dictionary<string, LevelData> dataMap = new();
 
-    public void Reset()
+    public void ResetAll()
     {
         dataMap.Clear();
     }
 
-    public void ResetLevel(string level)
+    public void Reset(string level)
     {
         dataMap.Remove(level);
     }
@@ -55,5 +56,10 @@ public class ResultManager
         data.clearTime = Math.Min(data.clearTime, time);
         data.clearItemCount = itemCount;
         data.maxItemCount = maxItemCount;
+    }
+
+    public float GetTotalTime(string level)
+    {
+        return dataMap.TryGetValue(level, out LevelData data) ? data.totalTime : 0;
     }
 }
