@@ -3089,7 +3089,7 @@ GameObject:
   - component: {fileID: 9145135775462432854}
   - component: {fileID: 3412548234909997693}
   m_Layer: 5
-  m_Name: Poison
+  m_Name: Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
