@@ -425,7 +425,7 @@ MonoBehaviour:
   idleDuration: 1
   attackRange: 3
   attackCooldown: 1
-  largeAttackChance: 0.2
+  largeAttackChance: 0.25
   doesSpecialAttack: 1
   specialAttackCooldown: 4
   fireballPoint: {fileID: 8803436957954987758}

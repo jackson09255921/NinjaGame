@@ -32,7 +32,7 @@ public class GameStateManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        random = new(levelName.GetHashCode());
+        random = new(levelName.GetHashCode() ^ nextSceneName.GetHashCode());
     }
 
     void OnDestroy()

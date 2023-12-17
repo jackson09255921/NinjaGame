@@ -188,9 +188,9 @@ MonoBehaviour:
   large: 0
   speed: 10
   smallExplode: {fileID: 5762692484583119343}
-  smallDamage: 1
+  smallDamage: 2
   largeExplode: {fileID: 1988812187230328642}
-  largeDamage: 2
+  largeDamage: 3
 --- !u!1 &3446945214029477377
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,8 +18,8 @@ public class ResultManager
         internal int attempts;
         internal int fails;
         internal float totalTime;
-        internal int clearItemCount;
-        internal int totalItemCount;
+        internal int collectedItems;
+        internal int totalItems;
     }
 
     readonly Dictionary<string, LevelData> dataMap = new();
@@ -44,7 +44,7 @@ public class ResultManager
         data.totalTime = time;
     }
 
-    public void Clear(string level, float time, int itemCount, int totalItemCount)
+    public void Clear(string level, float time, int collectedItems, int totalItems)
     {
         if (!dataMap.TryGetValue(level, out LevelData data))
         {
@@ -52,8 +52,8 @@ public class ResultManager
         }
         data.attempts++;
         data.totalTime = time;
-        data.clearItemCount = itemCount;
-        data.totalItemCount = totalItemCount;
+        data.collectedItems = collectedItems;
+        data.totalItems = totalItems;
     }
 
     public int GetAttempts(string level)
@@ -71,13 +71,13 @@ public class ResultManager
         return dataMap.TryGetValue(level, out LevelData data) ? data.totalTime : 0;
     }
 
-    public int GetClearItemCountAll()
+    public int GetCollectedItemsAll()
     {
-        return dataMap.Values.Sum(d => d.clearItemCount);
+        return dataMap.Values.Sum(d => d.collectedItems);
     }
 
-    public int GetTotalItemCountAll()
+    public int GetTotalItemsAll()
     {
-        return dataMap.Values.Sum(d => d.totalItemCount);
+        return dataMap.Values.Sum(d => d.totalItems);
     }
 }

@@ -21,10 +21,6 @@ PrefabInstance:
       value: ShamanEnemyRed
       objectReference: {fileID: 0}
     - target: {fileID: 6444569727135660277, guid: 34d6baf99d61a14408405df114d031b0, type: 3}
-      propertyPath: patrolRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6444569727135660277, guid: 34d6baf99d61a14408405df114d031b0, type: 3}
       propertyPath: doesSpecialAttack
       value: 1
       objectReference: {fileID: 0}

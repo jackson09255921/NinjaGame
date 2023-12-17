@@ -424,7 +424,7 @@ MonoBehaviour:
   idleDuration: 1
   attackRange: 2
   attackCooldown: 1
-  largeAttackChance: 0.2
+  largeAttackChance: 0.25
   doesSpecialAttack: 0
   specialAttackCooldown: 3
   charmPoint: {fileID: 6674092813081782982}
