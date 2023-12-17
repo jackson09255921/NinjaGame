@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Linq;
 
 public class ResultManager
 {
@@ -18,9 +18,8 @@ public class ResultManager
         internal int attempts;
         internal int fails;
         internal float totalTime;
-        internal float clearTime;
         internal int clearItemCount;
-        internal int maxItemCount;
+        internal int totalItemCount;
     }
 
     readonly Dictionary<string, LevelData> dataMap = new();
@@ -41,25 +40,39 @@ public class ResultManager
         {
             dataMap[level] = data = new();
         }
-        data.attempts += 1;
-        data.totalTime += time;
+        data.attempts++;
+        data.totalTime = time;
     }
 
-    public void Clear(string level, float time, int itemCount, int maxItemCount)
+    public void Clear(string level, float time, int itemCount, int totalItemCount)
     {
         if (!dataMap.TryGetValue(level, out LevelData data))
         {
             dataMap[level] = data = new();
         }
-        data.attempts += 1;
-        data.totalTime += time;
-        data.clearTime = Math.Min(data.clearTime, time);
+        data.attempts++;
+        data.totalTime = time;
         data.clearItemCount = itemCount;
-        data.maxItemCount = maxItemCount;
+        data.totalItemCount = totalItemCount;
+    }
+
+    public float GetTotalTimeAll()
+    {
+        return dataMap.Values.Sum(d => d.totalTime);
     }
 
     public float GetTotalTime(string level)
     {
         return dataMap.TryGetValue(level, out LevelData data) ? data.totalTime : 0;
+    }
+
+    public int GetClearItemCountAll()
+    {
+        return dataMap.Values.Sum(d => d.clearItemCount);
+    }
+
+    public int GetTotalItemCountAll()
+    {
+        return dataMap.Values.Sum(d => d.totalItemCount);
     }
 }
