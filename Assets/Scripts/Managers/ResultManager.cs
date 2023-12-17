@@ -56,6 +56,11 @@ public class ResultManager
         data.totalItemCount = totalItemCount;
     }
 
+    public int GetAttempts(string level)
+    {
+        return dataMap.TryGetValue(level, out LevelData data) ? data.attempts : 0;
+    }
+
     public float GetTotalTimeAll()
     {
         return dataMap.Values.Sum(d => d.totalTime);

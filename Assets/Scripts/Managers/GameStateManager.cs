@@ -159,7 +159,7 @@ public class GameStateManager : MonoBehaviour
         {
             state = GameState.Result;
             clearItemCount = player.collectedItems.Count;
-            resultMenu.PlayerComplete($"Level complete in {TotalTimeText}, {clearItemCount} / {ItemManager.Instance.totalItemCount} items collected");
+            resultMenu.PlayerComplete($"Time: {TotalTimeText}, Attempts: {ResultManager.Instance.GetAttempts(levelName)+1}, Items: {clearItemCount}");
             resultMenu.fadeDirection = fadeDirection;
             resultMenu.gameObject.SetActive(true);
         }
