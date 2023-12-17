@@ -52,7 +52,7 @@ MonoBehaviour:
   animator: {fileID: 5984306585172850980}
   weapon: {fileID: 0}
   itemIds: 
-  healAmount: 2
+  healAmount: 1
   openRangeCollider: {fileID: 1746564632842982292}
   hintIconPanel: {fileID: 4692698823279915441}
   hintImagePrefab: {fileID: 6233215139487262361, guid: 9c64964b441df9941a09c91741892c6e, type: 3}
