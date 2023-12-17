@@ -123,7 +123,7 @@ public class FireShamanEnemy : Enemy
                 }
                 else if (CanFireballAttack())
                 {
-                    if (UnityEngine.Random.Range(0, 1) < largeAttackChance)
+                    if (GameStateManager.Instance.random.NextDouble() < largeAttackChance)
                     {
                         animator.SetTrigger("Skill1");
                     }

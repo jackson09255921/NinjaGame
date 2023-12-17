@@ -17,6 +17,7 @@ public class GameStateManager : MonoBehaviour
     public FadeTransition fadeTransition;
     public float fadeTime = 0.5f;
     public FadeTransition.Direction fadeDirection = FadeTransition.Direction.Right;
+    internal System.Random random;
     InputManager inputManager;
     InputAction escapeAction;
     GameState state = GameState.Start;
@@ -31,6 +32,7 @@ public class GameStateManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        random = new(levelName.GetHashCode());
     }
 
     void OnDestroy()

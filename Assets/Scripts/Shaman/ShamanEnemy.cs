@@ -141,7 +141,7 @@ public class ShamanEnemy : Enemy
     internal void PerformCharmAttack()
     {
         CharmEnemyAttack attack = Instantiate(charmAttackPrefab, charmPoint.position, charmPoint.rotation);
-        attack.large = UnityEngine.Random.Range(0, 1) < largeAttackChance;
+        Debug.Log(attack.large = GameStateManager.Instance.random.NextDouble() < largeAttackChance);
     }
 
     internal void PerformLightningAttack()
