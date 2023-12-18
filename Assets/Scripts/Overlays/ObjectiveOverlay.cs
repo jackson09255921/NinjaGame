@@ -32,7 +32,7 @@ public class ObjectiveOverlay : MonoBehaviour
             _ => "",
         };
         messageText.text += ":";
-        foreach (ItemManager.Item item in ItemManager.Instance.requiredItems)
+        foreach (Item item in ItemManager.Instance.requiredItems)
         {
             ItemImage image = Instantiate(requiredItemIconPrefab, requiredItemPanel);
             image.Item = item;

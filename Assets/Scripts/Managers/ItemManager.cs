@@ -40,12 +40,4 @@ public class ItemManager : MonoBehaviour
         item = null;
         return false;
     }
-
-    [Serializable]
-    public class Item
-    {
-        public Sprite icon;
-        public bool required;
-        internal int id;
-    }
 }

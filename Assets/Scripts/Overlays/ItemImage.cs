@@ -4,9 +4,9 @@ using UnityEngine.UI;
 public class ItemImage : Image
 {
     bool collected = true;
-    ItemManager.Item item;
+    Item item;
 
-    internal ItemManager.Item Item
+    internal Item Item
     {
         get => item;
         set

@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
 
     // Interactable fields
     internal Chest chest;
-    internal List<ItemManager.Item> collectedItems = new();
+    internal List<Item> collectedItems = new();
     HUD hud;
 
     void Awake()
