@@ -58,7 +58,7 @@ public class GameStateManager : MonoBehaviour
 
     void Update()
     {
-        if (escapeAction.WasPerformedThisFrame())
+        if (state == GameState.Play && escapeAction.WasPerformedThisFrame())
         {
             UpdateEscape();
         }

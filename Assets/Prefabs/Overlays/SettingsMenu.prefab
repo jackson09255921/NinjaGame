@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6112096617835257772}
   - component: {fileID: 8421342406359199614}
   - component: {fileID: 3023528466857121552}
+  - component: {fileID: 4366376714662716437}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: Untagged
@@ -66,6 +67,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstNavigationObject: {fileID: 8144173517981064615}
+--- !u!114 &4366376714662716437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469141909203244524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587bd7a8c0ef4ed4ba48d58ff05dcb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCancel:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1469141909203244524}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &3744142888490244887
 GameObject:
   m_ObjectHideFlags: 0

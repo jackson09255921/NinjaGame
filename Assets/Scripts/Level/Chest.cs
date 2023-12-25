@@ -13,7 +13,6 @@ public class Chest : MonoBehaviour
     public Image hintIconPanel;
     public Image hintImagePrefab;
     public Color openRangeColor;
-    public RectTransform hintButtonPanel;
     internal Item[] items;
     readonly LinkedList<Image> itemIcons = new();
     bool open;
@@ -97,7 +96,6 @@ public class Chest : MonoBehaviour
             {
                 hintIconPanel.color = Color.white;
                 hintIconPanel.gameObject.SetActive(false);
-                hintButtonPanel.gameObject.SetActive(false);
                 return;
             }
             if (openRangeCollider.IsTouching(other))
@@ -106,14 +104,12 @@ public class Chest : MonoBehaviour
                 {
                     player.chest = this;
                     hintIconPanel.color = openRangeColor;
-                    hintButtonPanel.gameObject.SetActive(true);
                 }
             }
             else if (player.chest == this)
             {
                 player.chest = null;
                 hintIconPanel.color = Color.white;
-                hintButtonPanel.gameObject.SetActive(false);
             }
         }
     }
@@ -125,7 +121,6 @@ public class Chest : MonoBehaviour
             if (player.chest == this)
             {
                 player.chest = null;
-                hintButtonPanel.gameObject.SetActive(false);
             }
             hintIconPanel.color = Color.white;
             hintIconPanel.gameObject.SetActive(false);

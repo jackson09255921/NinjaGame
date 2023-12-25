@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class NavigationInit : MonoBehaviour
+public class UINavigationInit : MonoBehaviour
 {
     public GameObject firstNavigationObject;
 

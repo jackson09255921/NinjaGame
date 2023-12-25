@@ -1016,6 +1016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3332336542416089450}
   - component: {fileID: 2673219317914405587}
+  - component: {fileID: 1389099464358623972}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -1062,6 +1063,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstNavigationObject: {fileID: 1508636611331243226}
+--- !u!114 &1389099464358623972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4616161805679513396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587bd7a8c0ef4ed4ba48d58ff05dcb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCancel:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5672099616309476129}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5079939142426856043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,6 +1659,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4366376714662716437, guid: 184f69f460d280d45896ada277895728, type: 3}
+      propertyPath: onCancel.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4616161805679513396}
+    - target: {fileID: 4366376714662716437, guid: 184f69f460d280d45896ada277895728, type: 3}
+      propertyPath: onCancel.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 6112096617835257772, guid: 184f69f460d280d45896ada277895728, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1766,6 +1802,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4616161805679513396}
+    - target: {fileID: 5844182596534855198, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
+      propertyPath: onCancel.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4616161805679513396}
+    - target: {fileID: 5844182596534855198, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
+      propertyPath: onCancel.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 7204897884221651059, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

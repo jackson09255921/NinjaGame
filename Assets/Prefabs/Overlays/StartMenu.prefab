@@ -465,6 +465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1817287829064237803}
   - component: {fileID: 8496684900075760527}
+  - component: {fileID: 6611582946664615215}
   m_Layer: 5
   m_Name: GeneralMenu
   m_TagString: Untagged
@@ -509,6 +510,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstNavigationObject: {fileID: 7302753167858459033}
+--- !u!114 &6611582946664615215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4159016216304514610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587bd7a8c0ef4ed4ba48d58ff05dcb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCancel:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4159016216304514610}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1022526452598557706}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &5523116745318391218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1859,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4366376714662716437, guid: 184f69f460d280d45896ada277895728, type: 3}
+      propertyPath: onCancel.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4159016216304514610}
+    - target: {fileID: 4366376714662716437, guid: 184f69f460d280d45896ada277895728, type: 3}
+      propertyPath: onCancel.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 6112096617835257772, guid: 184f69f460d280d45896ada277895728, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1988,6 +2036,14 @@ PrefabInstance:
       objectReference: {fileID: 4159016216304514610}
     - target: {fileID: 5753034778257170411, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844182596534855198, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
+      propertyPath: onCancel.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4159016216304514610}
+    - target: {fileID: 5844182596534855198, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
+      propertyPath: onCancel.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 7204897884221651059, guid: 806d8e16928a44843aee3787dbcae5b4, type: 3}
