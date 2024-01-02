@@ -11,6 +11,7 @@ public class HUD : MonoBehaviour
     public Image inactiveWeaponIcon;
     public RectTransform requiredItemPanel;
     public RectTransform extraItemPanel;
+    public RectTransform extraItemPanel2;
     public ItemImage requiredItemIconPrefab;
     public ItemImage extraItemIconPrefab;
     readonly List<ItemImage> requiredItemIcons = new();
@@ -26,6 +27,7 @@ public class HUD : MonoBehaviour
             image.Collected = false;
             requiredItemIcons.Add(image);
         }
+        extraItemPanel2.sizeDelta *= new Vector2(ItemManager.Instance.extraRequirement, 1);
     }
 
     void Update()
@@ -66,7 +68,7 @@ public class HUD : MonoBehaviour
                 image.Collected = true;
                 continue;
             }
-            image = Instantiate(extraItemIconPrefab, extraItemPanel);
+            image = Instantiate(extraItemIconPrefab, extraItemPanel.transform);
             image.Item = item;
         }
     }
