@@ -350,12 +350,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 5707128425823341173, guid: 6a18ea6f6835a434a9deb4a5a4f74895, type: 3}
+    - target: {fileID: 6074119285517939143, guid: 6a18ea6f6835a434a9deb4a5a4f74895, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5707128425823341173, guid: 6a18ea6f6835a434a9deb4a5a4f74895, type: 3}
+    - target: {fileID: 6074119285517939143, guid: 6a18ea6f6835a434a9deb4a5a4f74895, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074119285517939143, guid: 6a18ea6f6835a434a9deb4a5a4f74895, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8935092456876339135, guid: 6a18ea6f6835a434a9deb4a5a4f74895, type: 3}

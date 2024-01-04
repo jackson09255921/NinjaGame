@@ -15364,10 +15364,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2097153476}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: lightDimEntries.Array.data[2].light
-      value: 
-      objectReference: {fileID: 2097153476}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: lightDimEntries.Array.data[0].dimTime
       value: 80
       objectReference: {fileID: 0}
@@ -15376,15 +15372,7 @@ PrefabInstance:
       value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: lightDimEntries.Array.data[2].dimTime
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: graphicFadeEntries.Array.data[0].graphic
-      value: 
-      objectReference: {fileID: 1170146328}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].graphic
       value: 
       objectReference: {fileID: 1170146328}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
@@ -15392,19 +15380,11 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].fadeTime
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: lightDimEntries.Array.data[0].endIntensity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: lightDimEntries.Array.data[1].endIntensity
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: lightDimEntries.Array.data[2].endIntensity
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
@@ -15421,22 +15401,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: graphicFadeEntries.Array.data[0].endColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].endColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].endColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].endColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].endColor.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
@@ -15461,18 +15425,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: graphicFadeEntries.Array.data[0].startColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].startColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].startColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 996880023395137260, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: graphicFadeEntries.Array.data[1].startColor.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1368759147538463152, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
@@ -15595,10 +15547,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7095070492597425818, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: nextSceneName
-      value: Level3
-      objectReference: {fileID: 0}
     - target: {fileID: 8260280174321295247, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -15622,10 +15570,6 @@ PrefabInstance:
     - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: items.Array.size
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: extraItems.Array.size
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: items.Array.data[0].icon
@@ -15652,22 +15596,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: bfba932dde130bf44b6efdb6741d4919, type: 3}
     - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: items.Array.data[6].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 957f3e348761b9d4bbaa8e1d0d5c9530, type: 3}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: requiredItems.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: extraItems.Array.data[0].id
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: extraItems.Array.data[1].id
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: items.Array.data[0].required
       value: 1
       objectReference: {fileID: 0}
@@ -15679,26 +15607,6 @@ PrefabInstance:
       propertyPath: items.Array.data[2].required
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: extraItems.Array.data[0].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: a42176e02f4c3664dba4f1b10b791b59, type: 3}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: extraItems.Array.data[1].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 96830958785993345970e03328240a56, type: 3}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: requiredItems.Array.data[1].id
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: requiredItems.Array.data[0].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 55692be2a14db6a44ad35bb9b75126e1, type: 3}
-    - target: {fileID: 8387117868507569717, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
-      propertyPath: requiredItems.Array.data[1].icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 4e33b405729365c47bcef380290f7aec, type: 3}
     - target: {fileID: 8577199529415998666, guid: 173e08cad66bf2a4fb4ebb3e0f4425bc, type: 3}
       propertyPath: m_IsActive
       value: 1
